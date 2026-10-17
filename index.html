@@ -961,10 +961,10 @@
     <div class="controls-wrapper">
       <div class="category-chips">
         <button class="chip-btn active" onclick="applyCategory('all', this)">
-          All Materials (5)
+          All Materials (29)
         </button>
         <button class="chip-btn" onclick="applyCategory('qm', this)">
-          Quantum Mechanics (2)
+          Quantum Mechanics (26)
         </button>
         <button class="chip-btn" onclick="applyCategory('csir-gate', this)">
           CSIR-NET & GATE (3)
@@ -988,170 +988,891 @@
     <div class="category-block" data-category="qm">
       <div class="section-title-wrap">
         <h2>Quantum Mechanics</h2>
-        <span class="section-counter">2 Modules</span>
+        <span class="section-counter">26 Modules</span>
       </div>
 
       <div class="cards-list">
 
-        <!-- QM Card 1: Stern-Gerlach -->
-        <article 
-          class="item-card" 
-          data-type="qm" 
-          data-search="stern gerlach experiment atomic magnetic moments inhomogeneous magnetic fields spatial space quantization electron spin vector atom model"
-        >
-          <!-- Left Thumbnail: Slide is 100% fully seen in rectangle -->
-          <div 
-            class="thumb-column" 
-            onclick="triggerPopup('1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB', 'The Stern-Gerlach Experiment (Part 1): Atomic Magnetic Moments & Inhomogeneous Fields', 'Quantum Mechanics')"
-            title="Click to pop up slide preview"
-          >
+        <!-- 1. Black Body & Black Body Radiations -->
+        <article class="item-card" data-type="qm" data-search="1 black body and black body radiations thermal cavity spectral energy distribution wien displacement stefan boltzmann rayleigh jeans ultraviolet catastrophe">
+          <div class="thumb-column" onclick="triggerPopup('1oTQ0jk5FkUNu3uSsEZliPgWUNeutlgg7', '1. Black Body and Black Body Radiations', 'Quantum Mechanics')" title="Click to pop up slide preview">
             <div class="slide-frame">
-              <img 
-                class="thumb-photo" 
-                src="https://drive.google.com/thumbnail?id=1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB&sz=w800" 
-                alt="Stern-Gerlach Slide Thumbnail" 
-                loading="lazy"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-              />
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1oTQ0jk5FkUNu3uSsEZliPgWUNeutlgg7&sz=w800" alt="Black Body Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
               <div class="fallback-slide" style="display: none;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <circle cx="12" cy="12" r="3"></circle>
-                  <path d="M3 12h3m12 0h3M12 3v3m0 12v3"></path>
-                  <circle cx="12" cy="12" r="9"></circle>
-                </svg>
-                <span class="fb-badge">Quantum Slide</span>
-                <span class="fb-title">Stern-Gerlach (Part 1)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line></svg>
+                <span class="fb-badge">QM Lecture 1</span>
+                <span class="fb-title">Black Body Radiations</span>
               </div>
             </div>
-            <div class="thumb-curtain">
-              <span class="click-pill">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                Pop Up
-              </span>
-            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
           </div>
-
-          <!-- Right Description -->
           <div class="desc-column">
             <div class="desc-top">
               <div class="badge-row">
                 <span class="mini-badge badge-qm">Quantum Mechanics</span>
-                <span class="mini-badge badge-type">Lecture Slide Presentation • 11 Slides</span>
+                <span class="mini-badge badge-type">Lecture 1 • Slide Presentation</span>
               </div>
-              <h3 class="item-title">The Stern-Gerlach Experiment (Part 1): Atomic Magnetic Moments & Inhomogeneous Magnetic Fields</h3>
-              <div class="author-line">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                Dr. Sachin Pathak • Advanced Quantum Mechanics & Atomic Spectroscopy
-              </div>
-              <p class="item-summary">
-                Official presentation covering Otto Stern's 1921 hypothesis, experimental verification with silver (Ag) atomic beams, and spatial quantization of electron orbital & spin magnetic moments.
-              </p>
+              <h3 class="item-title">1_PPT_BLACK BODY AND BLACK BODY RADIATIONS</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Foundations of quantum theory: blackbody cavity radiation, spectral emissive power, Wien's displacement law, Stefan-Boltzmann law, and the failure of classical electrodynamics.</p>
               <ul class="key-points">
-                <li><strong>Inhomogeneous Field Gradient:</strong> Wedge-shaped knife-edge pole design providing uniform field gradient ∂B<sub>z</sub>/∂z.</li>
-                <li><strong>Force Dynamics:</strong> Detailed derivation proving F<sub>z</sub> = μ<sub>lz</sub>(∂B<sub>z</sub>/∂z) and trajectory deflection proportionality S<sub>z</sub> ∝ μ<sub>lz</sub>.</li>
-                <li><strong>Classical vs. Quantum:</strong> Rebuttal of classical continuous smear predictions in favor of discrete spatial quantization.</li>
+                <li><strong>Ultraviolet Catastrophe:</strong> Rayleigh-Jeans formula divergence at short wavelengths (high frequencies).</li>
+                <li><strong>Empirical Spectral Curves:</strong> Lummer and Pringsheim experimental distribution observations.</li>
               </ul>
             </div>
-
             <div class="action-row">
-              <button 
-                type="button" 
-                class="btn-action btn-preview" 
-                onclick="triggerPopup('1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB', 'The Stern-Gerlach Experiment (Part 1): Atomic Magnetic Moments & Inhomogeneous Fields', 'Quantum Mechanics')"
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                View Slide
-              </button>
-              <button 
-                type="button" 
-                class="btn-action btn-fs-card" 
-                onclick="triggerPopup('1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB', 'The Stern-Gerlach Experiment (Part 1): Atomic Magnetic Moments & Inhomogeneous Fields', 'Quantum Mechanics', true)"
-                title="Open in Full Screen"
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
-                Full Screen
-              </button>
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1oTQ0jk5FkUNu3uSsEZliPgWUNeutlgg7', '1. Black Body and Black Body Radiations', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1oTQ0jk5FkUNu3uSsEZliPgWUNeutlgg7', '1. Black Body and Black Body Radiations', 'Quantum Mechanics', true)">Full Screen</button>
             </div>
           </div>
         </article>
 
-        <!-- QM Card 2: Quantum Formalism -->
-        <article 
-          class="item-card" 
-          data-type="qm" 
-          data-search="quantum mechanics part 2 wave mechanics operators schrodinger equation spin angular momentum observables hilbert space"
-        >
-          <!-- Left Thumbnail: Slide is 100% fully seen in rectangle -->
-          <div 
-            class="thumb-column" 
-            onclick="triggerPopup('1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', 'Quantum Mechanics: Wave Mechanics, Operators & Spin Formalism (Part 2)', 'Quantum Mechanics')"
-            title="Click to pop up slide preview"
-          >
+        <!-- 2. Planck's Hypothesis and Energy Quantization -->
+        <article class="item-card" data-type="qm" data-search="2 plancks hypothesis and energy quantization discrete oscillator planck constant h radiation law">
+          <div class="thumb-column" onclick="triggerPopup('1LRQArHGnps-PDt16YmN94E_NAMkik2lW', '2. Planck\'s Hypothesis and Energy Quantization', 'Quantum Mechanics')" title="Click to pop up slide preview">
             <div class="slide-frame">
-              <img 
-                class="thumb-photo" 
-                src="https://drive.google.com/thumbnail?id=1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj&sz=w800" 
-                alt="Quantum Mechanics Part 2 Thumbnail" 
-                loading="lazy"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-              />
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1LRQArHGnps-PDt16YmN94E_NAMkik2lW&sz=w800" alt="Planck's Hypothesis Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
               <div class="fallback-slide" style="display: none;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                </svg>
-                <span class="fb-badge">Quantum Notes</span>
-                <span class="fb-title">Formalism & Spin (Part 2)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <span class="fb-badge">QM Lecture 2</span>
+                <span class="fb-title">Planck's Hypothesis</span>
               </div>
             </div>
-            <div class="thumb-curtain">
-              <span class="click-pill">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                Pop Up
-              </span>
-            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
           </div>
-
-          <!-- Right Description -->
           <div class="desc-column">
             <div class="desc-top">
               <div class="badge-row">
                 <span class="mini-badge badge-qm">Quantum Mechanics</span>
-                <span class="mini-badge badge-type">Comprehensive Notes & Derivations</span>
+                <span class="mini-badge badge-type">Lecture 2 • Slide Presentation</span>
               </div>
-              <h3 class="item-title">Quantum Mechanics: Wave Mechanics, Operators & Spin Formalism (Part 2)</h3>
-              <div class="author-line">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                Dr. Sachin Pathak • Academic Lecture Notes Series
-              </div>
-              <p class="item-summary">
-                Advanced theoretical continuation exploring Pauli matrices, sequential Stern-Gerlach filters, wavefunction collapse, and matrix mechanics representations in Hilbert space.
-              </p>
+              <h3 class="item-title">2_PPT_Planck’s Hypothesis and Energy Quantization</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Max Planck's revolutionary 1900 postulate of discrete atomic harmonic oscillators with quantized energy states E = nhν, bridging classical thermodynamics and quantum mechanics.</p>
               <ul class="key-points">
-                <li><strong>Spin Algebra:</strong> Commutation relations [S<sub>i</sub>, S<sub>j</sub>] = iħε<sub>ijk</sub>S<sub>k</sub> and spinor transformation rules.</li>
-                <li><strong>Measurement Postulates:</strong> Quantum state preparation, projection operators, and expectation value derivations.</li>
-                <li><strong>Sequential Filters:</strong> In-depth evaluation of SG<sub>z</sub> followed by SG<sub>x</sub> and SG<sub>z</sub> beam analyzers.</li>
+                <li><strong>Planck's Distribution Law:</strong> Derivation of average oscillator energy ⟨E⟩ = hν / (e^(hν/kT) - 1).</li>
+                <li><strong>Limiting Cases:</strong> Smooth reduction to Wien's law at high frequencies and Rayleigh-Jeans law at low frequencies.</li>
               </ul>
             </div>
-
             <div class="action-row">
-              <button 
-                type="button" 
-                class="btn-action btn-preview" 
-                onclick="triggerPopup('1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', 'Quantum Mechanics: Wave Mechanics, Operators & Spin Formalism (Part 2)', 'Quantum Mechanics')"
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                View Notes
-              </button>
-              <button 
-                type="button" 
-                class="btn-action btn-fs-card" 
-                onclick="triggerPopup('1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', 'Quantum Mechanics: Wave Mechanics, Operators & Spin Formalism (Part 2)', 'Quantum Mechanics', true)"
-                title="Open in Full Screen"
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
-                Full Screen
-              </button>
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1LRQArHGnps-PDt16YmN94E_NAMkik2lW', '2. Planck\'s Hypothesis and Energy Quantization', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1LRQArHGnps-PDt16YmN94E_NAMkik2lW', '2. Planck\'s Hypothesis and Energy Quantization', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Photoelectric Effect Experimental Evidence -->
+        <article class="item-card" data-type="qm" data-search="3 photoelectric effect experimental evidence work function stopping potential einstein photon threshold frequency">
+          <div class="thumb-column" onclick="triggerPopup('1t4vfAbLQ9ka-xspKDTmkQ2PDsEQYXz-T', '3. Photoelectric Effect: Experimental Evidence', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1t4vfAbLQ9ka-xspKDTmkQ2PDsEQYXz-T&sz=w800" alt="Photoelectric Effect Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <span class="fb-badge">QM Lecture 3</span>
+                <span class="fb-title">Photoelectric Effect</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 3 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">3_PPT_Photoelectric Effect Experimental Evidence</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Experimental phenomenology of photoemission: instantaneous emission, stopping potential independence of intensity, and Einstein's photoelectric equation KE_max = hν - Φ.</p>
+              <ul class="key-points">
+                <li><strong>Wave Theory Failure:</strong> Inability of classical wave theory to explain threshold frequency ν₀ and lack of time delay.</li>
+                <li><strong>Millikan's Verification:</strong> Experimental precision verification and determination of Planck's constant h.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1t4vfAbLQ9ka-xspKDTmkQ2PDsEQYXz-T', '3. Photoelectric Effect: Experimental Evidence', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1t4vfAbLQ9ka-xspKDTmkQ2PDsEQYXz-T', '3. Photoelectric Effect: Experimental Evidence', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Compton Effect Scattering of Radiation as Particles -->
+        <article class="item-card" data-type="qm" data-search="4 compton effect scattering of radiation as particles relativistic collision compton shift wavelength">
+          <div class="thumb-column" onclick="triggerPopup('1-mR-6fiSUgGT3jxk6psEg2NYW41yjKFc', '4. Compton Effect: Scattering of Radiation as Particles', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1-mR-6fiSUgGT3jxk6psEg2NYW41yjKFc&sz=w800" alt="Compton Effect Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"></circle><line x1="3" y1="3" x2="9" y2="9"></line><line x1="15" y1="15" x2="21" y2="21"></line></svg>
+                <span class="fb-badge">QM Lecture 4</span>
+                <span class="fb-title">Compton Effect</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 4 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">4_PPT_Compton Effect Scattering of Radiation as Particles</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Relativistic kinematics of photon-electron elastic scattering, Compton wavelength derivation Δλ = (h/m₀c)(1 - cosθ), and proof of photon localized momentum.</p>
+              <ul class="key-points">
+                <li><strong>Modified vs. Unmodified Lines:</strong> Scattering from tightly bound core electrons versus quasi-free valence electrons.</li>
+                <li><strong>Compton Wavelength:</strong> Numerical evaluation λ_c = h/m₀c ≈ 0.0243 Å.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1-mR-6fiSUgGT3jxk6psEg2NYW41yjKFc', '4. Compton Effect: Scattering of Radiation as Particles', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1-mR-6fiSUgGT3jxk6psEg2NYW41yjKFc', '4. Compton Effect: Scattering of Radiation as Particles', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Wave-Particle Duality de Broglie Hypothesis -->
+        <article class="item-card" data-type="qm" data-search="8 wave particle duality de broglie hypothesis matter waves phase group velocity wave packets">
+          <div class="thumb-column" onclick="triggerPopup('1gSBIIxAQIRuHUfF-SL03RVQvL410Zs-X', '8. Wave-Particle Duality & de Broglie Hypothesis', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1gSBIIxAQIRuHUfF-SL03RVQvL410Zs-X&sz=w800" alt="de Broglie Hypothesis Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12c4-8 8 8 12 0s8 8 8 0"></path></svg>
+                <span class="fb-badge">QM Lecture 8</span>
+                <span class="fb-title">de Broglie Hypothesis</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 8 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">8_PPT_Wave-Particle Duality de Broglie Hypothesis</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Louis de Broglie's symmetry hypothesis attributing wave characteristics to material particles: λ = h/p, relation between phase and group velocity, and wavepacket dispersion.</p>
+              <ul class="key-points">
+                <li><strong>Group Velocity Identity:</strong> Equivalence of packet envelope speed v_g = dω/dk with physical particle velocity v.</li>
+                <li><strong>Bohr's Orbit Justification:</strong> Standing matter wave condition 2πr = nλ explaining angular momentum quantization.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1gSBIIxAQIRuHUfF-SL03RVQvL410Zs-X', '8. Wave-Particle Duality & de Broglie Hypothesis', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1gSBIIxAQIRuHUfF-SL03RVQvL410Zs-X', '8. Wave-Particle Duality & de Broglie Hypothesis', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Diffraction of Particles Davisson-Germer Experiment -->
+        <article class="item-card" data-type="qm" data-search="9 diffraction of particles davisson germer experiment nickel crystal electron scattering bragg law">
+          <div class="thumb-column" onclick="triggerPopup('1A5ms_-C0LvYrIufW3lxV6oXwJ3UWpi6h', '9. Diffraction of Particles: Davisson-Germer Experiment', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1A5ms_-C0LvYrIufW3lxV6oXwJ3UWpi6h&sz=w800" alt="Davisson-Germer Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                <span class="fb-badge">QM Lecture 9</span>
+                <span class="fb-title">Davisson-Germer</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 9 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">9_PPT_Diffraction of Particles Davisson-Germer Experiment</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Direct experimental verification of matter waves through electron diffraction from single-crystal nickel targets, Bragg reflection matching de Broglie's theoretical wavelength λ = 1.66 Å at 54 V.</p>
+              <ul class="key-points">
+                <li><strong>Constructive Interference Peak:</strong> 50° scattering angle peak matching 54 eV electron kinetic energy.</li>
+                <li><strong>G.P. Thomson Confirmation:</strong> High-energy electron transmission through thin metallic foils.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1A5ms_-C0LvYrIufW3lxV6oXwJ3UWpi6h', '9. Diffraction of Particles: Davisson-Germer Experiment', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1A5ms_-C0LvYrIufW3lxV6oXwJ3UWpi6h', '9. Diffraction of Particles: Davisson-Germer Experiment', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Linear Harmonic Oscillator in QM (Part 1) -->
+        <article class="item-card" data-type="qm" data-search="9 linear harmonic oscillator in quantum mechanics part 1 hermite polynomials asymptotic behavior schrodinger equation">
+          <div class="thumb-column" onclick="triggerPopup('1wwlHR93vpwBsYAXoxG3-uEuVlsvfkB4d', '9. Linear Harmonic Oscillator in Quantum Mechanics (Part 1)', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1wwlHR93vpwBsYAXoxG3-uEuVlsvfkB4d&sz=w800" alt="Harmonic Oscillator Part 1 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg>
+                <span class="fb-badge">QM Lecture 9</span>
+                <span class="fb-title">Harmonic Oscillator (Part 1)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 9 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Analytical formulation of the 1D quantum harmonic oscillator with parabolic potential V(x) = ½mω²x², asymptotic wave function solution, dimensionless coordinate scaling, and power-series method.</p>
+              <ul class="key-points">
+                <li><strong>Differential Equation:</strong> d²ψ/dξ² + (λ - ξ²)ψ = 0 using dimensionless variable ξ = √(mω/ħ)x.</li>
+                <li><strong>Hermite Series Termination:</strong> Quantization condition requiring polynomial truncation for square-integrable wavefunctions.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1wwlHR93vpwBsYAXoxG3-uEuVlsvfkB4d', '9. Linear Harmonic Oscillator in Quantum Mechanics (Part 1)', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1wwlHR93vpwBsYAXoxG3-uEuVlsvfkB4d', '9. Linear Harmonic Oscillator in Quantum Mechanics (Part 1)', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Heisenberg Uncertainty Principle Conceptual Basis -->
+        <article class="item-card" data-type="qm" data-search="10 heisenberg uncertainty principle conceptual basis wave packet conjugate observables energy time angular momentum delta x delta p">
+          <div class="thumb-column" onclick="triggerPopup('1I9_dfdxjZKFtHRS_U6FKYidaPDLe-CDK', '10. Heisenberg Uncertainty Principle: Conceptual Basis', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1I9_dfdxjZKFtHRS_U6FKYidaPDLe-CDK&sz=w800" alt="Uncertainty Principle Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                <span class="fb-badge">QM Lecture 10</span>
+                <span class="fb-title">Uncertainty Principle</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 10 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">10_PPT_Heisenberg Uncertainty Principle Conceptual Basis</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Fundamental breakdown of determinism in quantum mechanics, wave packet localization trade-offs, formal bounds Δx·Δp ≥ ħ/2, canonically conjugate variables, and energy-time relations.</p>
+              <ul class="key-points">
+                <li><strong>Wave Packet Spread:</strong> Fourier analysis showing position narrowing creates broad momentum spread.</li>
+                <li><strong>Conjugate Variables:</strong> Generalized uncertainty relations for energy-time (ΔE·Δt ≈ ħ) and angle-angular momentum (ΔJ·Δθ ≈ ħ).</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1I9_dfdxjZKFtHRS_U6FKYidaPDLe-CDK', '10. Heisenberg Uncertainty Principle: Conceptual Basis', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1I9_dfdxjZKFtHRS_U6FKYidaPDLe-CDK', '10. Heisenberg Uncertainty Principle: Conceptual Basis', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Linear Harmonic Oscillator in QM (Part 2) -->
+        <article class="item-card" data-type="qm" data-search="10 linear harmonic oscillator in quantum mechanics part 2 energy eigenvalues zero point energy wavefunctions parity">
+          <div class="thumb-column" onclick="triggerPopup('1imWEb83-ZvI4zKkTjSvV5_tbk5rxc0nH', '10. Linear Harmonic Oscillator in Quantum Mechanics (Part 2)', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1imWEb83-ZvI4zKkTjSvV5_tbk5rxc0nH&sz=w800" alt="Harmonic Oscillator Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg>
+                <span class="fb-badge">QM Lecture 10</span>
+                <span class="fb-title">Harmonic Oscillator (Part 2)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 10 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">10_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Energy spectrum E_n = (n + ½)ħω, zero-point energy E₀ = ½ħω as a manifestation of the uncertainty principle, orthonormal Hermite wavefunctions, and classical turning point penetration.</p>
+              <ul class="key-points">
+                <li><strong>Zero-Point Energy:</strong> Proof that particle cannot be at rest at potential minimum (x=0, p=0).</li>
+                <li><strong>Parity & Orthogonality:</strong> Alternating even and odd parity states with n nodes in the n-th excited state.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1imWEb83-ZvI4zKkTjSvV5_tbk5rxc0nH', '10. Linear Harmonic Oscillator in Quantum Mechanics (Part 2)', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1imWEb83-ZvI4zKkTjSvV5_tbk5rxc0nH', '10. Linear Harmonic Oscillator in Quantum Mechanics (Part 2)', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18. H-Atom -->
+        <article class="item-card" data-type="qm" data-search="18 h atom hydrogen atom central coulomb potential spherical polar separation radial angular">
+          <div class="thumb-column" onclick="triggerPopup('1eAXyHR9XgWl5JBQ_-wNhu9I7Ha4PWyuJ', '18. The Hydrogen Atom: Coulomb Potential & Schrödinger Equation', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1eAXyHR9XgWl5JBQ_-wNhu9I7Ha4PWyuJ&sz=w800" alt="H-Atom Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><circle cx="12" cy="12" r="2"></circle></svg>
+                <span class="fb-badge">QM Lecture 18</span>
+                <span class="fb-title">H-Atom Formulation</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 18 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">18_PPT_H-Atom</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Complete three-dimensional Schrödinger formulation for the hydrogen atom in central Coulomb field V(r) = -e²/(4πε₀r), coordinate separation ψ(r,θ,φ) = R(r)Y(θ,φ).</p>
+              <ul class="key-points">
+                <li><strong>Separation of Variables:</strong> Splitting into independent radial R(r), polar Θ(θ), and azimuthal Φ(φ) differential equations.</li>
+                <li><strong>Angular Solution:</strong> Spherical harmonics Y_l^m(θ,φ) and angular momentum eigenvalues L² = l(l+1)ħ².</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1eAXyHR9XgWl5JBQ_-wNhu9I7Ha4PWyuJ', '18. The Hydrogen Atom: Coulomb Potential & Schrödinger Equation', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1eAXyHR9XgWl5JBQ_-wNhu9I7Ha4PWyuJ', '18. The Hydrogen Atom: Coulomb Potential & Schrödinger Equation', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18. H-Atom ground-state-wf -->
+        <article class="item-card" data-type="qm" data-search="18 h atom ground state wf wavefunction 1s radial probability density bohr radius a0 expectation value">
+          <div class="thumb-column" onclick="triggerPopup('16CI6aEzwGM1VX1uLYwBdsqLP3l-oX17z', '18. Hydrogen Atom: Ground State Wavefunction & Radial Distribution', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=16CI6aEzwGM1VX1uLYwBdsqLP3l-oX17z&sz=w800" alt="H-Atom Ground State Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+                <span class="fb-badge">QM Lecture 18</span>
+                <span class="fb-title">Ground State Wavefunction</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 18 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">18_PPT_H-Atom-ground-state-wf</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Exact mathematical evaluation of the 1s ground state wavefunction ψ₁₀₀(r) = (1/√πa₀³)e^(-r/a₀), radial probability distribution P(r)dr = 4πr²|ψ|²dr, and Bohr radius derivation.</p>
+              <ul class="key-points">
+                <li><strong>Most Probable Distance:</strong> Maximum of P(r) located exactly at r = a₀ = 0.529 Å.</li>
+                <li><strong>Expectation Value:</strong> Rigorous integration giving mean orbital distance ⟨r⟩ = (3/2)a₀.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('16CI6aEzwGM1VX1uLYwBdsqLP3l-oX17z', '18. Hydrogen Atom: Ground State Wavefunction & Radial Distribution', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('16CI6aEzwGM1VX1uLYwBdsqLP3l-oX17z', '18. Hydrogen Atom: Ground State Wavefunction & Radial Distribution', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18. H-Atom part-2 -->
+        <article class="item-card" data-type="qm" data-search="18 h atom part 2 radial differential equation laguerre polynomials effective potential centrifugal barrier">
+          <div class="thumb-column" onclick="triggerPopup('1TqvAMcJ7R7pdtMTj2P-ZXbE7JIMWxF3g', '18. The Hydrogen Atom (Part 2): Radial Differential Equation & Solutions', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1TqvAMcJ7R7pdtMTj2P-ZXbE7JIMWxF3g&sz=w800" alt="H-Atom Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span class="fb-badge">QM Lecture 18</span>
+                <span class="fb-title">Radial Solutions (Part 2)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 18 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">18_PPT_H-Atom-part-2</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">In-depth mathematical solution of the radial wave equation, effective potential V_eff(r) including centrifugal potential barrier, and Associated Laguerre polynomial expansions.</p>
+              <ul class="key-points">
+                <li><strong>Radial Quantization:</strong> Series termination condition defining principal quantum number n = n_r + l + 1.</li>
+                <li><strong>Radial Nodes:</strong> Structure of radial nodes (n - l - 1) across 2s, 2p, 3s, 3p, and 3d wavefunctions.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1TqvAMcJ7R7pdtMTj2P-ZXbE7JIMWxF3g', '18. The Hydrogen Atom (Part 2): Radial Differential Equation & Solutions', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1TqvAMcJ7R7pdtMTj2P-ZXbE7JIMWxF3g', '18. The Hydrogen Atom (Part 2): Radial Differential Equation & Solutions', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18. H-Atom part-3_V1 -->
+        <article class="item-card" data-type="qm" data-search="18 h atom part 3 v1 energy spectra degeneracy selection rules spectroscopic transitions lyman balmer">
+          <div class="thumb-column" onclick="triggerPopup('1ABv_qApnxCkqQvWzHTfWUee9ikCUPtnT', '18. The Hydrogen Atom (Part 3): Energy Spectra, Degeneracy & Selection Rules', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1ABv_qApnxCkqQvWzHTfWUee9ikCUPtnT&sz=w800" alt="H-Atom Part 3 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                <span class="fb-badge">QM Lecture 18</span>
+                <span class="fb-title">Spectra & Degeneracy</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 18 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">18_PPT_H-Atom-part-3_V1</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Energy spectrum E_n = -13.6 eV / n², total state degeneracy of n² (excluding spin) and 2n² (with spin), electric dipole transition selection rules Δl = ±1, Δm = 0, ±1.</p>
+              <ul class="key-points">
+                <li><strong>Accidental Degeneracy:</strong> SO(4) symmetry and Runge-Lenz vector in Kepler Coulomb potentials.</li>
+                <li><strong>Hydrogen Emission Series:</strong> Transitions for Lyman (UV), Balmer (Visible), Paschen, and Brackett series.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1ABv_qApnxCkqQvWzHTfWUee9ikCUPtnT', '18. The Hydrogen Atom (Part 3): Energy Spectra, Degeneracy & Selection Rules', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1ABv_qApnxCkqQvWzHTfWUee9ikCUPtnT', '18. The Hydrogen Atom (Part 3): Energy Spectra, Degeneracy & Selection Rules', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18. H-Atom Problems -->
+        <article class="item-card" data-type="qm" data-search="18 h atom problems numericals solved questions transition probabilities expectation values">
+          <div class="thumb-column" onclick="triggerPopup('1PyMF8tirHZp-1bhekjleAFpL_5LlYxY0', '18. The Hydrogen Atom: Solved Numerical Problems & Quantum Transitions', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1PyMF8tirHZp-1bhekjleAFpL_5LlYxY0&sz=w800" alt="H-Atom Problems Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                <span class="fb-badge">QM Lecture 18</span>
+                <span class="fb-title">Solved Problems</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 18 • Problem Set</span>
+              </div>
+              <h3 class="item-title">18_PPT_H-Atom-Problems</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Step-by-step solved analytical problems: calculating expectation values ⟨r⟩, ⟨r²⟩, ⟨1/r⟩, probability of finding the electron inside the nucleus, and transition matrix elements.</p>
+              <ul class="key-points">
+                <li><strong>Radial Integrals:</strong> Utilizing standard gamma functions and Kramers' recursion relations.</li>
+                <li><strong>Exam-Style Numericals:</strong> Typical CSIR-NET & GATE problems with worked mathematical steps.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1PyMF8tirHZp-1bhekjleAFpL_5LlYxY0', '18. The Hydrogen Atom: Solved Numerical Problems & Quantum Transitions', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1PyMF8tirHZp-1bhekjleAFpL_5LlYxY0', '18. The Hydrogen Atom: Solved Numerical Problems & Quantum Transitions', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18. H-Atom Summary -->
+        <article class="item-card" data-type="qm" data-search="18 h atom summary theory overview formula sheet quantum numbers radial functions">
+          <div class="thumb-column" onclick="triggerPopup('1a_Vecx1YrL7Vsrwktm-VXbZKkM9QK28c', '18. The Hydrogen Atom: Comprehensive Theory Summary & Review', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1a_Vecx1YrL7Vsrwktm-VXbZKkM9QK28c&sz=w800" alt="H-Atom Summary Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span class="fb-badge">QM Lecture 18</span>
+                <span class="fb-title">H-Atom Summary</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 18 • Review Sheet</span>
+              </div>
+              <h3 class="item-title">18_PPT_H-Atom-Summary</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Consolidated reference compendium of quantum numbers (n, l, m, s), spherical harmonics tables, radial wavefunctions R_nl(r), and vital normalization constants.</p>
+              <ul class="key-points">
+                <li><strong>Rapid Formula Sheet:</strong> Quick reference for expectation values and selection rules.</li>
+                <li><strong>Visual Orbital Geometries:</strong> s, p, d probability distribution contour summaries.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1a_Vecx1YrL7Vsrwktm-VXbZKkM9QK28c', '18. The Hydrogen Atom: Comprehensive Theory Summary & Review', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1a_Vecx1YrL7Vsrwktm-VXbZKkM9QK28c', '18. The Hydrogen Atom: Comprehensive Theory Summary & Review', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 1a. Classical Physics Limitations and Failure -->
+        <article class="item-card" data-type="qm" data-search="1a classical physics limitations and failure breakdown of classical mechanics specific heat dulong petit rutherford atom">
+          <div class="thumb-column" onclick="triggerPopup('1tY1taeC2EA9ZjoU53OWLoQnUURzrikXL', '1a. Limitations and Failures of Classical Physics', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1tY1taeC2EA9ZjoU53OWLoQnUURzrikXL&sz=w800" alt="Classical Failures Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+                <span class="fb-badge">QM Lecture 1a</span>
+                <span class="fb-title">Classical Limitations</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 1a • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">1a_PPT_Classical Physics Limitations and Failure</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Critical analysis of classical mechanics breakdowns: specific heat capacity deviations at low temperatures, planetary Rutherford atom instability via Larmor radiation, and discrete atomic spectra.</p>
+              <ul class="key-points">
+                <li><strong>Electrodynamic Collapse:</strong> Predicted orbital decay of radiating electrons in ~10⁻¹¹ seconds.</li>
+                <li><strong>Empirical Inconsistencies:</strong> The inescapable necessity for quantization postulates.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1tY1taeC2EA9ZjoU53OWLoQnUURzrikXL', '1a. Limitations and Failures of Classical Physics', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1tY1taeC2EA9ZjoU53OWLoQnUURzrikXL', '1a. Limitations and Failures of Classical Physics', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 20. Probability Current Density and Continuity Equation -->
+        <article class="item-card" data-type="qm" data-search="20 probability current density and continuity equation conservation of probability j flux hermitian schrodinger">
+          <div class="thumb-column" onclick="triggerPopup('1oIQ84cy-bXy3EaNnEqACZJxsE52TNp9s', '20. Probability Current Density & Continuity Equation', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1oIQ84cy-bXy3EaNnEqACZJxsE52TNp9s&sz=w800" alt="Probability Current Density Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                <span class="fb-badge">QM Lecture 20</span>
+                <span class="fb-title">Probability Current</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 20 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">20_PPT_Probability Current Density and Continuity Equation</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Conservation of quantum probability, derivation of the continuity equation ∂P/∂t + ∇·J = 0, and explicit vector formulation of probability flux density J = (ħ/2mi)(ψ*∇ψ - ψ∇ψ*).</p>
+              <ul class="key-points">
+                <li><strong>Real vs. Complex Wavefunctions:</strong> Proof that purely real wavefunctions exhibit zero probability current density.</li>
+                <li><strong>Stationary States:</strong> Demonstration that bound stationary states have divergence-free flux distributions.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1oIQ84cy-bXy3EaNnEqACZJxsE52TNp9s', '20. Probability Current Density & Continuity Equation', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1oIQ84cy-bXy3EaNnEqACZJxsE52TNp9s', '20. Probability Current Density & Continuity Equation', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 21. Ehrenfests Theorem Derivation and Physical Meaning (Part 1) -->
+        <article class="item-card" data-type="qm" data-search="21 ehrenfests theorem derivation and physical meaning part 1 expectation values classical correspondence time derivative newtons second law">
+          <div class="thumb-column" onclick="triggerPopup('1dHeFsTINNIrZIMdBq0OiLqTsN8i2M8BM', '21. Ehrenfest\'s Theorem (Part 1): Derivation & Physical Meaning', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1dHeFsTINNIrZIMdBq0OiLqTsN8i2M8BM&sz=w800" alt="Ehrenfest Theorem Part 1 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                <span class="fb-badge">QM Lecture 21</span>
+                <span class="fb-title">Ehrenfest (Part 1)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 21 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">21_PPT_Ehrenfests Theorem Derivation and Physical Meaning</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Bridging quantum mechanics and Newtonian mechanics: derivation of d⟨x⟩/dt = ⟨p⟩/m and d⟨p⟩/dt = -⟨∂V/∂x⟩ through Schrödinger operator commutator relations.</p>
+              <ul class="key-points">
+                <li><strong>Operator Equation of Motion:</strong> d⟨A⟩/dt = (1/iħ)⟨[A, H]⟩ + ⟨∂A/∂t⟩.</li>
+                <li><strong>Newton's Second Law:</strong> Demonstrating how average quantum trajectories mirror classical mechanics.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1dHeFsTINNIrZIMdBq0OiLqTsN8i2M8BM', '21. Ehrenfest\'s Theorem (Part 1): Derivation & Physical Meaning', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1dHeFsTINNIrZIMdBq0OiLqTsN8i2M8BM', '21. Ehrenfest\'s Theorem (Part 1): Derivation & Physical Meaning', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 21. Ehrenfests Theorem Derivation and Physical Meaning_PART2 -->
+        <article class="item-card" data-type="qm" data-search="21 ehrenfests theorem derivation and physical meaning part 2 wave packet spreading macroscopic limit classical limit">
+          <div class="thumb-column" onclick="triggerPopup('1QC7PIqsNaNWJWLdLxWdMfspuULmufGIz', '21. Ehrenfest\'s Theorem (Part 2): Classical Correspondence & Expectation Dynamics', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1QC7PIqsNaNWJWLdLxWdMfspuULmufGIz&sz=w800" alt="Ehrenfest Theorem Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                <span class="fb-badge">QM Lecture 21</span>
+                <span class="fb-title">Ehrenfest (Part 2)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 21 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">21_PPT_Ehrenfests Theorem Derivation and Physical Meaning_PART2</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Advanced analysis of Ehrenfest's theorem validity limits: non-linear force potentials where ⟨F(x)⟩ ≠ F(⟨x⟩), wavepacket spreading timescales, and macroscopic correspondence criteria.</p>
+              <ul class="key-points">
+                <li><strong>Potential Taylor Expansion:</strong> Condition for validity: potential curvature over wavepacket width must be negligible.</li>
+                <li><strong>Quantum-Classical Boundary:</strong> Rigorous examination of quantum fluctuations in macroscopic systems.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1QC7PIqsNaNWJWLdLxWdMfspuULmufGIz', '21. Ehrenfest\'s Theorem (Part 2): Classical Correspondence & Expectation Dynamics', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1QC7PIqsNaNWJWLdLxWdMfspuULmufGIz', '21. Ehrenfest\'s Theorem (Part 2): Classical Correspondence & Expectation Dynamics', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 22. Particle in a Box Applications and Limitations -->
+        <article class="item-card" data-type="qm" data-search="22 particle in a box applications and limitations infinite potential well standing waves energy eigenvalues zero point">
+          <div class="thumb-column" onclick="triggerPopup('1GgEmEygTistrWgq2N-VRm9OsKagxj98m', '22. Particle in a Box: Applications, Eigenenergies and Limitations', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1GgEmEygTistrWgq2N-VRm9OsKagxj98m&sz=w800" alt="Particle in a Box Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="12" x2="21" y2="12"></line></svg>
+                <span class="fb-badge">QM Lecture 22</span>
+                <span class="fb-title">Particle in a Box</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 22 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">22_PPT_Particle in a Box Applications and Limitations</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">1D infinite square well potential: boundary matching conditions, standing wave solutions ψ_n(x) = √(2/L)sin(nπx/L), quantized energy spectrum E_n = n²h²/(8mL²), and quantum confinement.</p>
+              <ul class="key-points">
+                <li><strong>Zero-Point Energy:</strong> E₁ = h²/(8mL²) as a non-zero minimum kinetic state mandated by uncertainty.</li>
+                <li><strong>Nanoscale Applications:</strong> Semiconductor quantum dots, conjugated dye molecules, and conduction electron models.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1GgEmEygTistrWgq2N-VRm9OsKagxj98m', '22. Particle in a Box: Applications, Eigenenergies and Limitations', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1GgEmEygTistrWgq2N-VRm9OsKagxj98m', '22. Particle in a Box: Applications, Eigenenergies and Limitations', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 23. Potential Barrier (Part 1) -->
+        <article class="item-card" data-type="qm" data-search="23 potential barrier part 1 quantum tunneling reflection coefficient boundary matching transmission evanescent decay">
+          <div class="thumb-column" onclick="triggerPopup('1Ld5Dtdhx7KPYQfBkD4tGLJHx2-XlDkw_', '23. Potential Barrier (Part 1): Quantum Tunneling & Boundary Conditions', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1Ld5Dtdhx7KPYQfBkD4tGLJHx2-XlDkw_&sz=w800" alt="Potential Barrier Part 1 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="3" width="6" height="18"></rect><path d="M3 12h6m6 0h6"></path></svg>
+                <span class="fb-badge">QM Lecture 23</span>
+                <span class="fb-title">Potential Barrier (Part 1)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 23 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">23_PPT_POTENTIAL BARRIER</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Quantum mechanics of rectangular potential barriers: boundary condition matching across three regions, evanescent wave decay in classically forbidden zones (E < V₀), and reflection coefficient derivation.</p>
+              <ul class="key-points">
+                <li><strong>Boundary Matching:</strong> Continuous wavefunctions and derivatives at x = 0 and x = a interfaces.</li>
+                <li><strong>Conservation of Flux:</strong> Exact proof of probability conservation R + T = 1.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1Ld5Dtdhx7KPYQfBkD4tGLJHx2-XlDkw_', '23. Potential Barrier (Part 1): Quantum Tunneling & Boundary Conditions', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1Ld5Dtdhx7KPYQfBkD4tGLJHx2-XlDkw_', '23. Potential Barrier (Part 1): Quantum Tunneling & Boundary Conditions', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 23. Potential Barrier (Part 2) -->
+        <article class="item-card" data-type="qm" data-search="23 potential barrier part 2 v1 transmission probability penetration depth tunneling alpha decay stm microscope">
+          <div class="thumb-column" onclick="triggerPopup('1a8P1O_Fz6oXM7Oyu3LGfNYWmYTIPdllJ', '23. Potential Barrier (Part 2): Transmission Coefficient & Penetration Depth', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1a8P1O_Fz6oXM7Oyu3LGfNYWmYTIPdllJ&sz=w800" alt="Potential Barrier Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="3" width="6" height="18"></rect><path d="M3 12h6m6 0h6"></path></svg>
+                <span class="fb-badge">QM Lecture 23</span>
+                <span class="fb-title">Potential Barrier (Part 2)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 23 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">23_PPT_POTENTIAL BARRIER-PART_2_V1</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Quantitative derivation of transmission probability T, barrier penetration depth δ = 1/κ, transmission resonances for E > V₀, and physical applications to alpha decay and Scanning Tunneling Microscopy (STM).</p>
+              <ul class="key-points">
+                <li><strong>Tunneling Formula:</strong> T ≈ 16(E/V₀)(1 - E/V₀)e^(-2κa) for broad or high potential barriers.</li>
+                <li><strong>Ramsauer-Townsend Effect:</strong> Resonance transmission phenomenon where T = 1 at discrete barrier wavelengths.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1a8P1O_Fz6oXM7Oyu3LGfNYWmYTIPdllJ', '23. Potential Barrier (Part 2): Transmission Coefficient & Penetration Depth', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1a8P1O_Fz6oXM7Oyu3LGfNYWmYTIPdllJ', '23. Potential Barrier (Part 2): Transmission Coefficient & Penetration Depth', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 24. Schrödinger's Equation in Spherical Polar Coordinates -->
+        <article class="item-card" data-type="qm" data-search="24 schrodingers equation in spherical polar coordinates separation laplacian angular momentum spherical harmonics legendre">
+          <div class="thumb-column" onclick="triggerPopup('1SspwKLl2HbiS6zOrJzbqB4tGkLgL1cSz', '24. Schrödinger\'s Equation in Spherical Polar Coordinates', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1SspwKLl2HbiS6zOrJzbqB4tGkLgL1cSz&sz=w800" alt="Spherical Coordinates Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 3a9 9 0 0 1 9 9m-9 9a9 9 0 0 1-9-9"></path><line x1="3" y1="12" x2="21" y2="12"></line></svg>
+                <span class="fb-badge">QM Lecture 24</span>
+                <span class="fb-title">Spherical Coordinates</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 24 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">24_PPT_SCHRODINGER’S EQUATION IN SPHERICAL POLAR COORDIN</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Transformation of the 3D Laplacian into spherical polar coordinates (r, θ, φ), angular momentum eigenvalue problems L²Y = l(l+1)ħ²Y and L_zY = mħY, and Associated Legendre equations.</p>
+              <ul class="key-points">
+                <li><strong>Coordinate Transformation:</strong> Rigorous differential operator derivation for central potential Hamiltonians.</li>
+                <li><strong>Spherical Harmonics:</strong> Orthonormality relations and parity properties (-1)^l under spatial inversion.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1SspwKLl2HbiS6zOrJzbqB4tGkLgL1cSz', '24. Schrödinger\'s Equation in Spherical Polar Coordinates', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1SspwKLl2HbiS6zOrJzbqB4tGkLgL1cSz', '24. Schrödinger\'s Equation in Spherical Polar Coordinates', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 25. Stern-Gerlach Experiment (Part 1) -->
+        <article class="item-card" data-type="qm" data-search="25 stern gerlach experiment atomic magnetic moments inhomogeneous magnetic fields spatial quantization silver atoms">
+          <div class="thumb-column" onclick="triggerPopup('1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB', '25. The Stern-Gerlach Experiment (Part 1): Atomic Magnetic Moments & Inhomogeneous Fields', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB&sz=w800" alt="Stern-Gerlach Part 1 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"></circle><path d="M3 12h3m12 0h3M12 3v3m0 12v3"></path><circle cx="12" cy="12" r="9"></circle></svg>
+                <span class="fb-badge">QM Lecture 25</span>
+                <span class="fb-title">Stern-Gerlach (Part 1)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 25 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">25_PPT_SternGerlach experiment</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Otto Stern and Walther Gerlach's landmark 1922 experiment using silver atomic beams in an inhomogeneous magnetic field, demonstrating spatial quantization and deflection force F_z = μ_z(∂B_z/∂z).</p>
+              <ul class="key-points">
+                <li><strong>Knife-Edge Pole Geometry:</strong> Engineering uniform field gradients ∂B_z/∂z to exert translational deflecting forces on neutral atoms.</li>
+                <li><strong>Classical Smear Rebuttal:</strong> Quantum spatial splitting into discrete lines instead of a continuous classical smear.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB', '25. The Stern-Gerlach Experiment (Part 1): Atomic Magnetic Moments & Inhomogeneous Fields', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB', '25. The Stern-Gerlach Experiment (Part 1): Atomic Magnetic Moments & Inhomogeneous Fields', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 25. Stern-Gerlach Experiment (Part 2) -->
+        <article class="item-card" data-type="qm" data-search="25 stern gerlach experiment part 2 electron spin space quantization uhlenbeck goudsmit pauli matrices bohr magneton">
+          <div class="thumb-column" onclick="triggerPopup('1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', '25. The Stern-Gerlach Experiment (Part 2): Space Quantization & Electron Spin Verification', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj&sz=w800" alt="Stern-Gerlach Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"></circle><path d="M3 12h3m12 0h3M12 3v3m0 12v3"></path><circle cx="12" cy="12" r="9"></circle></svg>
+                <span class="fb-badge">QM Lecture 25</span>
+                <span class="fb-title">Stern-Gerlach (Part 2)</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 25 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">25_PPT_SternGerlach experiment-PART-2</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Theoretical implications: Uhlenbeck-Goudsmit hypothesis of electron intrinsic spin s = ½, gyromagnetic ratio g_s ≈ 2, Bohr magneton μ_B, and sequential Stern-Gerlach quantum state measurements.</p>
+              <ul class="key-points">
+                <li><strong>Spin Formalism:</strong> Pauli spin matrices σ_x, σ_y, σ_z and spinor representations in 2D Hilbert space.</li>
+                <li><strong>Sequential Filters:</strong> Measurement collapse demonstration through SGz → SGx → SGz cascading analyzers.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', '25. The Stern-Gerlach Experiment (Part 2): Space Quantization & Electron Spin Verification', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', '25. The Stern-Gerlach Experiment (Part 2): Space Quantization & Electron Spin Verification', 'Quantum Mechanics', true)">Full Screen</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 26. Bohr Corresponding Principle -->
+        <article class="item-card" data-type="qm" data-search="26 bohr corresponding principle classical limit large quantum numbers orbital frequency radiation transition planck h to zero">
+          <div class="thumb-column" onclick="triggerPopup('1SJom_sV3fuEAYpsh71t3UL5Pf2KCrdBP', '26. Bohr\'s Correspondence Principle: Classical Limit of Quantum Mechanics', 'Quantum Mechanics')" title="Click to pop up slide preview">
+            <div class="slide-frame">
+              <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1SJom_sV3fuEAYpsh71t3UL5Pf2KCrdBP&sz=w800" alt="Bohr Correspondence Principle Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span class="fb-badge">QM Lecture 26</span>
+                <span class="fb-title">Bohr Correspondence</span>
+              </div>
+            </div>
+            <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          </div>
+          <div class="desc-column">
+            <div class="desc-top">
+              <div class="badge-row">
+                <span class="mini-badge badge-qm">Quantum Mechanics</span>
+                <span class="mini-badge badge-type">Lecture 26 • Slide Presentation</span>
+              </div>
+              <h3 class="item-title">26_PPT_BOHR CORRESPONDING PRINCIPLE</h3>
+              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+              <p class="item-summary">Niels Bohr's correspondence principle establishing the seamless asymptotic transition from quantum descriptions to classical electrodynamics in the limit of high quantum numbers n ≫ 1 or ħ → 0.</p>
+              <ul class="key-points">
+                <li><strong>Frequency Convergence:</strong> Mathematical proof that quantum transition frequencies ν = (E_n - E_{n-1})/h converge to the classical orbital revolution frequency f_orb at large n.</li>
+                <li><strong>Universal Boundary Principle:</strong> Applying the correspondence principle across harmonic oscillators, potential wells, and atomic spectroscopy.</li>
+              </ul>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-action btn-preview" onclick="triggerPopup('1SJom_sV3fuEAYpsh71t3UL5Pf2KCrdBP', '26. Bohr\'s Correspondence Principle: Classical Limit of Quantum Mechanics', 'Quantum Mechanics')">View Slide</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1SJom_sV3fuEAYpsh71t3UL5Pf2KCrdBP', '26. Bohr\'s Correspondence Principle: Classical Limit of Quantum Mechanics', 'Quantum Mechanics', true)">Full Screen</button>
             </div>
           </div>
         </article>
