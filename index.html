@@ -1607,7 +1607,7 @@
         <button class="top-tab-btn active" id="tabBtn-presentations" onclick="switchCategoryTab('presentations')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
           <span>Presentations</span>
-          <span class="tab-badge-count">29</span>
+          <span class="tab-badge-count">44</span>
         </button>
 
         <button class="top-tab-btn" id="tabBtn-notes" onclick="switchCategoryTab('notes')">
@@ -1630,10 +1630,10 @@
     <div id="viewport-presentations" class="tab-viewport active">
       <div class="sub-controls-bar">
         <div class="subject-chips">
-          <button class="sub-chip active" onclick="filterPresSubject('all', this)">All Presentations (29)</button>
+          <button class="sub-chip active" onclick="filterPresSubject('all', this)">All Presentations (44)</button>
+          <button class="sub-chip" onclick="filterPresSubject('bsc-qm-pres', this)">B.Sc. Quantum Mechanics (15)</button>
           <button class="sub-chip" onclick="filterPresSubject('msc-qm', this)">M.Sc. Quantum Mechanics (26)</button>
           <button class="sub-chip" onclick="filterPresSubject('csir-gate-pres', this)">CSIR-NET & GATE (3)</button>
-          <button class="sub-chip" onclick="filterPresSubject('bsc-qm-pres', this)">B.Sc. Quantum Mechanics (Upcoming)</button>
         </div>
         <div class="search-box">
           <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -2653,45 +2653,526 @@
         </div>
       </section>
 
-      <!-- SECTION 3: B.Sc. Quantum Mechanics (Designated Slot) -->
+      <!-- SECTION 3: B.Sc. Quantum Mechanics (Complete 15 Lecture Sequence) -->
       <section class="subject-section" data-pres-sec="bsc-qm-pres">
         <div class="subject-header">
           <div class="subject-title-wrap">
-            <h2>B.Sc. Quantum Mechanics (Undergraduate Presentations)</h2>
-            <span class="section-counter">Upcoming / To Be Added</span>
+            <h2>B.Sc. Quantum Mechanics (Undergraduate Lecture Series)</h2>
+            <span class="section-counter">15 Presentations</span>
           </div>
         </div>
         <div class="cards-list">
-          <article class="item-card" data-search="bsc quantum mechanics undergraduate presentations upcoming syllabus foundations wave mechanics">
-            <div class="thumb-column" onclick="switchCategoryTab('notes')" title="Click to view available B.Sc. notes">
+
+          <!-- 9. Linear Harmonic Oscillator -->
+          <article class="item-card" data-search="9 linear harmonic oscillator in quantum mechanics bsc parabolic potential dimensionless variable schrodinger equation">
+            <div class="thumb-column" onclick="triggerPopup('1XVeA0mcUGOKoDgD0BFSWw1kVLVdzZStS', '9. Linear Harmonic Oscillator in Quantum Mechanics (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
               <div class="slide-frame">
-                <div class="fallback-slide" style="background: linear-gradient(145deg, #131d36 0%, #0a1122 100%); border-color: rgba(0, 210, 255, 0.3);">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                  <span class="fb-badge">B.Sc. Presentations</span>
-                  <span class="fb-title">Curriculum in Preparation</span>
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1XVeA0mcUGOKoDgD0BFSWw1kVLVdzZStS&sz=w800" alt="B.Sc. Harmonic Oscillator Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 9</span>
+                  <span class="fb-title">Harmonic Oscillator</span>
                 </div>
               </div>
-              <div class="thumb-curtain"><span class="click-pill">Open Notes Tab</span></div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
             </div>
             <div class="desc-column">
               <div class="desc-top">
                 <div class="badge-row">
                   <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
-                  <span class="mini-badge badge-upcoming">Presentations in Prep</span>
+                  <span class="mini-badge">Presentation • Lecture 9</span>
                 </div>
-                <h3 class="item-title">B.Sc. Quantum Mechanics Slide Decks: Foundations & Early Wave Mechanics</h3>
-                <div class="author-line">Dr. Sachin Pathak • Undergraduate Physics Program</div>
-                <p class="item-summary">Specific B.Sc. lecture slide modules are currently being prepared for direct upload. In the interim, comprehensive handwritten lecture notes and derivation compendiums covering the full B.Sc. syllabus are available in the <strong>Class Notes</strong> tab.</p>
+                <h3 class="item-title">9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Undergraduate formulation of the 1D quantum harmonic oscillator: parabolic potential well V(x) = ½mω²x², dimensionless coordinate scaling, asymptotic wave behavior, and setup of the differential equation.</p>
                 <ul class="key-points">
-                  <li><strong>Upcoming Slides:</strong> Introductory wave packets, 1D box boundary conditions, and matter-wave phenomenology.</li>
-                  <li><strong>Current Materials:</strong> Access complete derivation compendiums directly in the Class Notes section.</li>
+                  <li><strong>Coordinate Transformation:</strong> Dimensionless variable substitution ξ = √(mω/ħ)x.</li>
+                  <li><strong>Power Series Method:</strong> Polynomial formulation and boundary requirements for square-integrability.</li>
                 </ul>
               </div>
               <div class="action-row">
-                <button type="button" class="btn-action btn-presentation" onclick="switchCategoryTab('notes')">Go to Class Notes</button>
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1XVeA0mcUGOKoDgD0BFSWw1kVLVdzZStS', '9. Linear Harmonic Oscillator in Quantum Mechanics (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1XVeA0mcUGOKoDgD0BFSWw1kVLVdzZStS', '9. Linear Harmonic Oscillator in Quantum Mechanics (B.Sc.)', 'Presentation', true)">Full Screen</button>
               </div>
             </div>
           </article>
+
+          <!-- 10. Linear Harmonic Oscillator Part 2 -->
+          <article class="item-card" data-search="10 linear harmonic oscillator in quantum mechanics part 2 bsc zero point energy hermite polynomials wavefunctions parity">
+            <div class="thumb-column" onclick="triggerPopup('1fH6cmbZU35xBrb4ujOR3JnVoqjc7Qw1U', '10. Linear Harmonic Oscillator in Quantum Mechanics (Part 2 - B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1fH6cmbZU35xBrb4ujOR3JnVoqjc7Qw1U&sz=w800" alt="B.Sc. Harmonic Oscillator Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 10</span>
+                  <span class="fb-title">Harmonic Oscillator (Part 2)</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 10</span>
+                </div>
+                <h3 class="item-title">10_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Quantized energy levels E_n = (n + ½)ħω, physical interpretation of zero-point energy E₀ = ½ħω, orthonormal Hermite polynomials H_n(ξ), and parity symmetries of stationary wave states.</p>
+                <ul class="key-points">
+                  <li><strong>Zero-Point Confinement:</strong> Non-vanishing ground state energy mandated by the Heisenberg uncertainty principle.</li>
+                  <li><strong>Wavefunction Topology:</strong> Alternating even and odd parity states with n nodes in the n-th energy eigenstate.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1fH6cmbZU35xBrb4ujOR3JnVoqjc7Qw1U', '10. Linear Harmonic Oscillator in Quantum Mechanics (Part 2 - B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1fH6cmbZU35xBrb4ujOR3JnVoqjc7Qw1U', '10. Linear Harmonic Oscillator in Quantum Mechanics (Part 2 - B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Hermitian Operator -->
+          <article class="item-card" data-search="12 hermitian operator bsc quantum observables self adjoint real eigenvalues orthogonality expectation values">
+            <div class="thumb-column" onclick="triggerPopup('1IrmtTmBCE8_psBQl-X0J3cLZ33dr5zYD', '12. Hermitian Operator & Observables (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1IrmtTmBCE8_psBQl-X0J3cLZ33dr5zYD&sz=w800" alt="B.Sc. Hermitian Operator Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 12</span>
+                  <span class="fb-title">Hermitian Operator</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 12</span>
+                </div>
+                <h3 class="item-title">12_PPT_HERMITIAN OPERATOR</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Foundational quantum operator theory: mathematical definition of Hermitian (self-adjoint) operators ⟨ψ|Âφ⟩ = ⟨Âψ|φ⟩, rigorous proof of real eigenvalues for physical observables, and mutual orthogonality.</p>
+                <ul class="key-points">
+                  <li><strong>Real Eigenvalues:</strong> Proof that measurement outcomes of physical observables must always yield real numbers.</li>
+                  <li><strong>Orthogonality:</strong> Demonstrating that eigenfunctions corresponding to distinct eigenvalues are mutually orthogonal.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1IrmtTmBCE8_psBQl-X0J3cLZ33dr5zYD', '12. Hermitian Operator & Observables (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1IrmtTmBCE8_psBQl-X0J3cLZ33dr5zYD', '12. Hermitian Operator & Observables (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 17. Spherical Polar Coordinates -->
+          <article class="item-card" data-search="17 schrodingers equation in spherical polar coordinates bsc central force laplacian angular momentum spherical harmonics">
+            <div class="thumb-column" onclick="triggerPopup('1L_GWCzX-mx9r3InbuH6-JTA_2fM81r2M', '17. Schrödinger\'s Equation in Spherical Polar Coordinates (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1L_GWCzX-mx9r3InbuH6-JTA_2fM81r2M&sz=w800" alt="B.Sc. Spherical Coordinates Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><line x1="3" y1="12" x2="21" y2="12"></line></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 17</span>
+                  <span class="fb-title">Spherical Coordinates</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 17</span>
+                </div>
+                <h3 class="item-title">17_PPT_SCHRODINGER'S EQUATION IN SPHERICAL POLAR COORDINATES</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Separation of variables in spherical coordinates (r, θ, φ) for central force problems: Laplacian operator transformation, derivation of angular momentum operators L² and L_z, and Legendre solutions.</p>
+                <ul class="key-points">
+                  <li><strong>Separation Method:</strong> Factoring ψ(r, θ, φ) = R(r)Θ(θ)Φ(φ) into radial and spherical harmonics.</li>
+                  <li><strong>Angular Eigenvalues:</strong> Quantization rules L²Y = l(l+1)ħ²Y and L_zY = mħY.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1L_GWCzX-mx9r3InbuH6-JTA_2fM81r2M', '17. Schrödinger\'s Equation in Spherical Polar Coordinates (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1L_GWCzX-mx9r3InbuH6-JTA_2fM81r2M', '17. Schrödinger\'s Equation in Spherical Polar Coordinates (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom -->
+          <article class="item-card" data-search="18 h atom hydrogen atom central coulomb potential effective potential bsc">
+            <div class="thumb-column" onclick="triggerPopup('1lNqoDbnvb-fpZHPqsZH-IgUX9L_CwNGO', '18. The Hydrogen Atom: Coulomb Potential & Central Field (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1lNqoDbnvb-fpZHPqsZH-IgUX9L_CwNGO&sz=w800" alt="B.Sc. H-Atom Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 18</span>
+                  <span class="fb-title">H-Atom Introduction</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 18</span>
+                </div>
+                <h3 class="item-title">18_PPT_H-Atom</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">3D Schrödinger equation formulation for the one-electron hydrogen atom: attractive Coulomb potential V(r) = -e²/(4πε₀r), effective radial potential V_eff(r), and centrifugal barrier analysis.</p>
+                <ul class="key-points">
+                  <li><strong>Center-of-Mass Reduction:</strong> Two-body problem simplified to equivalent one-body motion with reduced mass μ.</li>
+                  <li><strong>Radial Equilibrium:</strong> Competition between attractive Coulomb pull and centrifugal repulsion l(l+1)ħ²/(2μr²).</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1lNqoDbnvb-fpZHPqsZH-IgUX9L_CwNGO', '18. The Hydrogen Atom: Coulomb Potential & Central Field (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1lNqoDbnvb-fpZHPqsZH-IgUX9L_CwNGO', '18. The Hydrogen Atom: Coulomb Potential & Central Field (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom ground state wf -->
+          <article class="item-card" data-search="18 h atom ground state wf wavefunction 1s radial probability bohr radius a0 expectation value bsc">
+            <div class="thumb-column" onclick="triggerPopup('16zauRbcyOdwqMDPp4XtumovoPBuydTSz', '18. Hydrogen Atom: Ground State Wavefunction & Radial Distribution (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=16zauRbcyOdwqMDPp4XtumovoPBuydTSz&sz=w800" alt="B.Sc. H-Atom Ground State Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 18b</span>
+                  <span class="fb-title">Ground State Wavefunction</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 18b</span>
+                </div>
+                <h3 class="item-title">18_PPT_H-Atom-ground-state-wf</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Exact mathematical formulation of the 1s ground state wavefunction ψ₁₀₀(r) = (1/√πa₀³)e^(-r/a₀), radial probability density P(r)dr = 4πr²|ψ|²dr, Bohr radius a₀, and calculation of ⟨r⟩.</p>
+                <ul class="key-points">
+                  <li><strong>Most Probable Distance:</strong> Maximum of radial probability distribution located precisely at r = a₀ = 0.529 Å.</li>
+                  <li><strong>Expectation Value:</strong> Analytical integration demonstrating mean orbital distance ⟨r⟩ = (3/2)a₀.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('16zauRbcyOdwqMDPp4XtumovoPBuydTSz', '18. Hydrogen Atom: Ground State Wavefunction & Radial Distribution (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('16zauRbcyOdwqMDPp4XtumovoPBuydTSz', '18. Hydrogen Atom: Ground State Wavefunction & Radial Distribution (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom part 2 -->
+          <article class="item-card" data-search="18 h atom part 2 radial differential equation laguerre polynomials series termination bsc">
+            <div class="thumb-column" onclick="triggerPopup('1b_lvVfL0OuH3KaJj0usNC9r4DW-nGQrC', '18. The Hydrogen Atom (Part 2): Radial Equation & Polynomial Solutions (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1b_lvVfL0OuH3KaJj0usNC9r4DW-nGQrC&sz=w800" alt="B.Sc. H-Atom Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 18c</span>
+                  <span class="fb-title">Radial Solutions (Part 2)</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 18c</span>
+                </div>
+                <h3 class="item-title">18_PPT_H-Atom-part-2</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Step-by-step solution of the radial Schrödinger equation: power series expansion, recurrence relations, polynomial termination condition defining principal quantum number n, and Laguerre polynomials.</p>
+                <ul class="key-points">
+                  <li><strong>Quantization Condition:</strong> Series termination enforcing normalizable radial solutions with integer n.</li>
+                  <li><strong>Radial Nodes:</strong> Nodal topology proving exactly (n - l - 1) radial nodes for any (n, l) orbital state.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1b_lvVfL0OuH3KaJj0usNC9r4DW-nGQrC', '18. The Hydrogen Atom (Part 2): Radial Equation & Polynomial Solutions (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1b_lvVfL0OuH3KaJj0usNC9r4DW-nGQrC', '18. The Hydrogen Atom (Part 2): Radial Equation & Polynomial Solutions (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom part 3 V1 -->
+          <article class="item-card" data-search="18 h atom part 3 v1 energy spectra degeneracy selection rules lyman balmer bsc">
+            <div class="thumb-column" onclick="triggerPopup('1Q6jCCkYdt_dpkTCdJiQtFsJLD7wuT3iO', '18. The Hydrogen Atom (Part 3): Energy Spectra & Selection Rules (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1Q6jCCkYdt_dpkTCdJiQtFsJLD7wuT3iO&sz=w800" alt="B.Sc. H-Atom Part 3 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 18d</span>
+                  <span class="fb-title">Spectra & Degeneracy</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 18d</span>
+                </div>
+                <h3 class="item-title">18_PPT_H-Atom-part-3_V1</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Quantized energy formula E_n = -13.6 eV / n², n² orbital degeneracy (excluding spin), spectroscopic term symbols, electric dipole transition selection rules (Δl = ±1, Δm = 0, ±1), and emission series.</p>
+                <ul class="key-points">
+                  <li><strong>Orbital Degeneracy:</strong> Explaining n² degeneracy through central force symmetry in Coulomb potentials.</li>
+                  <li><strong>Spectral Series:</strong> Transitions for Lyman (UV), Balmer (Visible), Paschen, and Brackett series.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1Q6jCCkYdt_dpkTCdJiQtFsJLD7wuT3iO', '18. The Hydrogen Atom (Part 3): Energy Spectra & Selection Rules (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1Q6jCCkYdt_dpkTCdJiQtFsJLD7wuT3iO', '18. The Hydrogen Atom (Part 3): Energy Spectra & Selection Rules (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom Problems -->
+          <article class="item-card" data-search="18 h atom problems solved questions numericals expectation values bsc">
+            <div class="thumb-column" onclick="triggerPopup('1cNK3smZeXVTyYyUO2db6tpsBv2hvMVr9', '18. The Hydrogen Atom: Solved Problems & Numericals (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1cNK3smZeXVTyYyUO2db6tpsBv2hvMVr9&sz=w800" alt="B.Sc. H-Atom Problems Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 18e</span>
+                  <span class="fb-title">Solved Problems</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 18e</span>
+                </div>
+                <h3 class="item-title">18_PPT_H-Atom-Problems</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Step-by-step solved undergraduate examination numericals: computing expectation values ⟨r⟩, ⟨r²⟩, ⟨1/r⟩, probability of finding the electron inside nuclear radius, and transition matrix elements.</p>
+                <ul class="key-points">
+                  <li><strong>Standard Integrals:</strong> Utilizing Gamma functions and standard radial definite integrals.</li>
+                  <li><strong>Exam Numericals:</strong> Typical university exam problems solved with clear mathematical working.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1cNK3smZeXVTyYyUO2db6tpsBv2hvMVr9', '18. The Hydrogen Atom: Solved Problems & Numericals (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1cNK3smZeXVTyYyUO2db6tpsBv2hvMVr9', '18. The Hydrogen Atom: Solved Problems & Numericals (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom Summary -->
+          <article class="item-card" data-search="18 h atom summary quick reference formula sheet quantum numbers wavefunctions bsc">
+            <div class="thumb-column" onclick="triggerPopup('1RJQWagMbF1Yi_hQ-oARpEMAyxIxFyrOk', '18. The Hydrogen Atom: Theory Summary & Rapid Review (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1RJQWagMbF1Yi_hQ-oARpEMAyxIxFyrOk&sz=w800" alt="B.Sc. H-Atom Summary Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="9 11 12 14 22 4"></polyline></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 18f</span>
+                  <span class="fb-title">H-Atom Summary</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 18f</span>
+                </div>
+                <h3 class="item-title">18_PPT_H-Atom-Summary</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Complete undergraduate reference compendium: full tables of quantum numbers (n, l, m), radial functions R_nl(r), spherical harmonics, normalization constants, and orbital spatial shapes.</p>
+                <ul class="key-points">
+                  <li><strong>Formula Sheet:</strong> Fast-recall reference for expectation values and dipole transition rules.</li>
+                  <li><strong>Orbital Visuals:</strong> 3D probability density contour geometry for s, p, and d electron shells.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1RJQWagMbF1Yi_hQ-oARpEMAyxIxFyrOk', '18. The Hydrogen Atom: Theory Summary & Rapid Review (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1RJQWagMbF1Yi_hQ-oARpEMAyxIxFyrOk', '18. The Hydrogen Atom: Theory Summary & Rapid Review (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 20. Commutator Relation Notes -->
+          <article class="item-card" data-search="20 commutator relation notes bsc operators heisenberg uncertainty canonical commutation simultaneous observables">
+            <div class="thumb-column" onclick="triggerPopup('1RPUwY8zMci5vIkCQzm2_u9XAoxfp6UzG', '20. Commutator Relations & Operator Algebra (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1RPUwY8zMci5vIkCQzm2_u9XAoxfp6UzG&sz=w800" alt="B.Sc. Commutator Relations Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 20</span>
+                  <span class="fb-title">Commutator Relations</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 20</span>
+                </div>
+                <h3 class="item-title">20_PPT_commutator_relation_Notes</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Algebra of quantum commutators [Â, B̂] = ÂB̂ - B̂Â, canonical position-momentum relation [x, p_x] = iħ, commutator identities, and direct link to compatible observables and the uncertainty principle.</p>
+                <ul class="key-points">
+                  <li><strong>Algebraic Properties:</strong> Linearity, anti-symmetry, product rule, and Jacobi identity proofs.</li>
+                  <li><strong>Compatibility:</strong> Theorem on commuting operators possessing simultaneous sets of eigenfunctions.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1RPUwY8zMci5vIkCQzm2_u9XAoxfp6UzG', '20. Commutator Relations & Operator Algebra (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1RPUwY8zMci5vIkCQzm2_u9XAoxfp6UzG', '20. Commutator Relations & Operator Algebra (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 25. Stern-Gerlach Experiment -->
+          <article class="item-card" data-search="25 stern gerlach experiment atomic magnetic moments inhomogeneous magnetic fields spatial quantization bsc">
+            <div class="thumb-column" onclick="triggerPopup('1U53wLJP7T8WuZOi9MOKy9tgdn0hbJDW5', '25. The Stern-Gerlach Experiment: Space Quantization (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1U53wLJP7T8WuZOi9MOKy9tgdn0hbJDW5&sz=w800" alt="B.Sc. Stern-Gerlach Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"></circle><path d="M3 12h3m12 0h3"></path></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 25</span>
+                  <span class="fb-title">Stern-Gerlach Experiment</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 25</span>
+                </div>
+                <h3 class="item-title">25_PPT_SternGerlach experiment</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">The landmark 1922 Stern-Gerlach experiment with neutral silver beams in an inhomogeneous magnetic field: derivation of deflecting force F_z = μ_z(∂B_z/∂z) and empirical confirmation of spatial quantization.</p>
+                <ul class="key-points">
+                  <li><strong>Pole Piece Profiling:</strong> Knife-edge pole piece creating a uniform field gradient ∂B_z/∂z.</li>
+                  <li><strong>Classical vs. Quantum:</strong> Discrete line splitting observed on the plate versus classical continuous spread.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1U53wLJP7T8WuZOi9MOKy9tgdn0hbJDW5', '25. The Stern-Gerlach Experiment: Space Quantization (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1U53wLJP7T8WuZOi9MOKy9tgdn0hbJDW5', '25. The Stern-Gerlach Experiment: Space Quantization (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 25. Stern-Gerlach Experiment Part 2 -->
+          <article class="item-card" data-search="25 stern gerlach experiment part 2 electron spin uhlenbeck goudsmit pauli matrices bsc">
+            <div class="thumb-column" onclick="triggerPopup('1DfJNjt1kIRtKEp7B_dSWcCZujurw9Pr0', '25. The Stern-Gerlach Experiment (Part 2): Electron Spin Verification (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1DfJNjt1kIRtKEp7B_dSWcCZujurw9Pr0&sz=w800" alt="B.Sc. Stern-Gerlach Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"></circle><path d="M3 12h3m12 0h3"></path></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 25b</span>
+                  <span class="fb-title">Stern-Gerlach (Part 2)</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 25b</span>
+                </div>
+                <h3 class="item-title">25_PPT_SternGerlach experiment-PART-2</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Theoretical implications: Goudsmit-Uhlenbeck hypothesis of intrinsic electron spin s = ½, gyromagnetic ratio g_s ≈ 2, Bohr magneton μ_B, and sequential Stern-Gerlach quantum measurement projections.</p>
+                <ul class="key-points">
+                  <li><strong>Spin-1/2 Formalism:</strong> Spinor representation and action of Pauli spin matrices σ_x, σ_y, σ_z.</li>
+                  <li><strong>Quantum Measurement:</strong> State vector collapse in cascaded Stern-Gerlach SGz → SGx analyzers.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1DfJNjt1kIRtKEp7B_dSWcCZujurw9Pr0', '25. The Stern-Gerlach Experiment (Part 2): Electron Spin Verification (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1DfJNjt1kIRtKEp7B_dSWcCZujurw9Pr0', '25. The Stern-Gerlach Experiment (Part 2): Electron Spin Verification (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 26. Bohr Correspondence Principle -->
+          <article class="item-card" data-search="26 bohr corresponding correspondence principle classical limit large quantum numbers transition frequency bsc">
+            <div class="thumb-column" onclick="triggerPopup('1IAbcPZ-bUmFxPe5nb-gWtCLdmC-n6m95', '26. Bohr\'s Correspondence Principle: Classical Limit of Quantum Theory (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1IAbcPZ-bUmFxPe5nb-gWtCLdmC-n6m95&sz=w800" alt="B.Sc. Bohr Correspondence Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 26</span>
+                  <span class="fb-title">Bohr Correspondence</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 26</span>
+                </div>
+                <h3 class="item-title">PPT_26_BOHR CORRESPONDING PRINCIPLE</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Asymptotic convergence between quantum mechanics and classical dynamics in the limit of high quantum numbers n ≫ 1 or ħ → 0, with mathematical demonstrations in orbital revolution and radiation.</p>
+                <ul class="key-points">
+                  <li><strong>Frequency Identity:</strong> Analytical proof that quantum photon emission frequency matches classical orbital frequency f_orb.</li>
+                  <li><strong>Classical Boundary:</strong> Universal principle demonstrating Newtonian mechanics as a natural limiting case of quantum law.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1IAbcPZ-bUmFxPe5nb-gWtCLdmC-n6m95', '26. Bohr\'s Correspondence Principle: Classical Limit of Quantum Theory (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1IAbcPZ-bUmFxPe5nb-gWtCLdmC-n6m95', '26. Bohr\'s Correspondence Principle: Classical Limit of Quantum Theory (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 27. Nuclear Spin and Angular Momentum -->
+          <article class="item-card" data-search="27 nuclear spin and angular momentum total nuclear spin magnetic moment nmr hyperfine splitting bsc">
+            <div class="thumb-column" onclick="triggerPopup('1syElfK1T7-V6FWAZzz5yxSTvcORMI0i8', '27. Nuclear Spin & Angular Momentum (B.Sc.)', 'Presentation')" title="Click to pop up slide preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1syElfK1T7-V6FWAZzz5yxSTvcORMI0i8&sz=w800" alt="B.Sc. Nuclear Spin Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"></circle><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line></svg>
+                  <span class="fb-badge">B.Sc. QM • Lecture 27</span>
+                  <span class="fb-title">Nuclear Spin</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge">Presentation • Lecture 27</span>
+                </div>
+                <h3 class="item-title">PPT_27_Nuclear Spin and Angular Momentum</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Total nuclear angular momentum vector I, nuclear magnetic dipole moments μ_N, nuclear g-factors, hyperfine interaction coupling with atomic electrons, and introductory physical principles of NMR.</p>
+                <ul class="key-points">
+                  <li><strong>Nuclear Vector Model:</strong> Coupling of intrinsic nucleon spins and orbital angular momenta within the nucleus.</li>
+                  <li><strong>Hyperfine Splitting:</strong> Energy shifts resulting from interaction between nuclear spin I and total electronic angular momentum J.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-presentation" onclick="triggerPopup('1syElfK1T7-V6FWAZzz5yxSTvcORMI0i8', '27. Nuclear Spin & Angular Momentum (B.Sc.)', 'Presentation')">View Slide</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1syElfK1T7-V6FWAZzz5yxSTvcORMI0i8', '27. Nuclear Spin & Angular Momentum (B.Sc.)', 'Presentation', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
         </div>
       </section>
     </div>
