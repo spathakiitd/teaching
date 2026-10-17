@@ -1619,7 +1619,7 @@
         <button class="top-tab-btn" id="tabBtn-videos" onclick="switchCategoryTab('videos')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
           <span>Video Lectures</span>
-          <span class="tab-badge-count">6</span>
+          <span class="tab-badge-count">2</span>
         </button>
       </div>
     </div>
@@ -4086,7 +4086,7 @@
     <div id="viewport-videos" class="tab-viewport">
       <div class="sub-controls-bar">
         <div style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">
-          Recorded Masterclasses & Demonstrations
+          Recorded Masterclasses & Demonstrations (2)
         </div>
         <div class="search-box">
           <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -4096,16 +4096,17 @@
 
       <div class="cards-list">
 
-        <!-- Video 1: Foundations of Quantum Physics -->
-        <article class="item-card" data-search="foundations of quantum physics wave particle duality video lecture black body planck photoelectric davisson germer">
-          <div class="thumb-column" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'Foundations of Quantum Physics: Black Body Radiation to de Broglie Matter Waves', 'Video Lecture', false, 'video')" title="Click to pop up video lecture">
+        <!-- Video 1: Introduction to Quantum Mechanics -->
+        <article class="item-card" data-search="introduction to quantum mechanics video lecture spinstech dr sachin pathak wave mechanics foundations operators schrodinger">
+          <div class="thumb-column" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/a8-ZmH0TSI4', 'Introduction to Quantum Mechanics', 'Video Lecture', false, 'video')" title="Click to pop up video lecture">
             <div class="slide-frame">
-              <div class="fallback-slide" style="background: linear-gradient(145deg, #2b0b14 0%, #15091a 100%); border-color: rgba(244, 63, 94, 0.4);">
+              <img class="thumb-photo" src="https://img.youtube.com/vi/a8-ZmH0TSI4/hqdefault.jpg" alt="Introduction to Quantum Mechanics Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #2b0b14 0%, #15091a 100%); border-color: rgba(244, 63, 94, 0.4);">
                 <div class="video-play-disc">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
                 </div>
                 <span class="fb-badge" style="color: #fb7185; margin-top: 0.5rem;">Video Lecture</span>
-                <span class="fb-title">Foundations Masterclass</span>
+                <span class="fb-title">Introduction to Quantum Mechanics</span>
               </div>
             </div>
             <div class="thumb-curtain"><span class="click-pill" style="background: #f43f5e; color: #fff;">Play Video</span></div>
@@ -4114,33 +4115,35 @@
             <div class="desc-top">
               <div class="badge-row">
                 <span class="mini-badge badge-video">Video Lecture</span>
-                <span class="mini-badge">Duration: 48 Mins</span>
+                <span class="mini-badge">Duration: ~11 Mins</span>
+                <span class="mini-badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.3);">Spinstech India</span>
               </div>
-              <h3 class="item-title">Foundations of Quantum Physics: Black Body Radiation to de Broglie Matter Waves</h3>
-              <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
-              <p class="item-summary">In-depth recorded masterclass detailing the historical transition from classical electrodynamics failure to Planck energy quantization, experimental photoelectric verification, and electron diffraction phenomena.</p>
+              <h3 class="item-title">Introduction to Quantum Mechanics</h3>
+              <div class="author-line">Dr. Sachin Pathak • Spinstech India • Department of Physics</div>
+              <p class="item-summary">Foundational video masterclass exploring the origin, fundamental postulates, and mathematical structure of quantum mechanics. Contrasts the failures of classical physics with the emergence of wave-particle duality and state vectors.</p>
               <ul class="key-points">
-                <li><strong>Interactive Visualizations:</strong> Graphical blackbody curves, Davisson-Germer electron scattering apparatus, and wavepacket dispersion.</li>
-                <li><strong>Conceptual Clarification:</strong> Resolving common student misunderstandings regarding wave functions and conjugate uncertainty.</li>
+                <li><strong>Core Foundations:</strong> Breakdown of classical determinism and transition to probability amplitudes and state wavefunctions.</li>
+                <li><strong>Pedagogical Walkthrough:</strong> Essential quantum concepts explained with clear mathematical formulation and intuitive physical insight.</li>
               </ul>
             </div>
             <div class="action-row">
-              <button type="button" class="btn-action btn-video" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'Foundations of Quantum Physics: Black Body Radiation to de Broglie Matter Waves', 'Video Lecture', false, 'video')">Watch Lecture</button>
-              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'Foundations of Quantum Physics: Black Body Radiation to de Broglie Matter Waves', 'Video Lecture', true, 'video')">Full Screen</button>
+              <button type="button" class="btn-action btn-video" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/a8-ZmH0TSI4', 'Introduction to Quantum Mechanics', 'Video Lecture', false, 'video')">Watch Lecture</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/a8-ZmH0TSI4', 'Introduction to Quantum Mechanics', 'Video Lecture', true, 'video')">Full Screen</button>
             </div>
           </div>
         </article>
 
-        <!-- Video 2: The Stern-Gerlach Experiment -->
-        <article class="item-card" data-search="stern gerlach experiment inhomogeneous magnetic fields space quantization electron spin video lecture">
-          <div class="thumb-column" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Stern-Gerlach Experiment: Inhomogeneous Fields, Spatial Quantization & Spin-1/2', 'Video Lecture', false, 'video')" title="Click to pop up video lecture">
+        <!-- Video 2: Eigen Value Problems -->
+        <article class="item-card" data-search="eigen value problems in quantum mechanics video lecture spinstech dr sachin pathak operators hermitian observables measurement">
+          <div class="thumb-column" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/2Ia1G55QpEQ', 'Eigen Value Problems in Quantum Mechanics', 'Video Lecture', false, 'video')" title="Click to pop up video lecture">
             <div class="slide-frame">
-              <div class="fallback-slide" style="background: linear-gradient(145deg, #2b0b14 0%, #15091a 100%); border-color: rgba(244, 63, 94, 0.4);">
+              <img class="thumb-photo" src="https://img.youtube.com/vi/2Ia1G55QpEQ/hqdefault.jpg" alt="Eigen Value Problems Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #2b0b14 0%, #15091a 100%); border-color: rgba(244, 63, 94, 0.4);">
                 <div class="video-play-disc">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
                 </div>
                 <span class="fb-badge" style="color: #fb7185; margin-top: 0.5rem;">Video Lecture</span>
-                <span class="fb-title">Stern-Gerlach Masterclass</span>
+                <span class="fb-title">Eigen Value Problems</span>
               </div>
             </div>
             <div class="thumb-curtain"><span class="click-pill" style="background: #f43f5e; color: #fff;">Play Video</span></div>
@@ -4149,159 +4152,20 @@
             <div class="desc-top">
               <div class="badge-row">
                 <span class="mini-badge badge-video">Video Lecture</span>
-                <span class="mini-badge">Duration: 54 Mins</span>
+                <span class="mini-badge">Duration: ~4 Mins</span>
+                <span class="mini-badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.3);">Spinstech India</span>
               </div>
-              <h3 class="item-title">The Stern-Gerlach Experiment: Inhomogeneous Fields, Spatial Quantization & Spin-1/2</h3>
-              <div class="author-line">Dr. Sachin Pathak • Virtual Classroom & Video Lab</div>
-              <p class="item-summary">Advanced lecture dissecting the physical apparatus of the 1922 Stern-Gerlach experiment, mathematical derivation of the inhomogeneous deflecting force F_z = μ_z(∂B_z/∂z), and Pauli spinor transformations.</p>
+              <h3 class="item-title">Eigen Value Problems in Quantum Mechanics</h3>
+              <div class="author-line">Dr. Sachin Pathak • Spinstech India • Department of Physics</div>
+              <p class="item-summary">Focused analytical tutorial on operator eigenvalue equations in quantum mechanics: Âψ = λψ. Details the extraction of measurable physical observables, Hermitian conditions for real eigenvalues, and stationary states.</p>
               <ul class="key-points">
-                <li><strong>Apparatus Physics:</strong> Knife-edge pole piece magnetic contouring, field gradient uniformity, and silver beam collimation.</li>
-                <li><strong>Sequential Measurements:</strong> Matrix projection walkthrough of consecutive Sx, Sy, Sz quantum measurement state collapses.</li>
+                <li><strong>Operator Formalism:</strong> Setting up and solving eigenvalue problems for quantum position, momentum, and Hamiltonian operators.</li>
+                <li><strong>Physical Measurement:</strong> Connecting discrete eigenvalues to experimental measurement outcomes in laboratory physics.</li>
               </ul>
             </div>
             <div class="action-row">
-              <button type="button" class="btn-action btn-video" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Stern-Gerlach Experiment: Inhomogeneous Fields, Spatial Quantization & Spin-1/2', 'Video Lecture', false, 'video')">Watch Lecture</button>
-              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Stern-Gerlach Experiment: Inhomogeneous Fields, Spatial Quantization & Spin-1/2', 'Video Lecture', true, 'video')">Full Screen</button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Video 3: 1D Quantum Potentials & Tunneling -->
-        <article class="item-card" data-search="1d quantum potentials infinite well finite barrier quantum tunneling transmission video lecture">
-          <div class="thumb-column" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', '1D Quantum Potentials: Infinite Well, Finite Barrier Tunneling & Resonances', 'Video Lecture', false, 'video')" title="Click to pop up video lecture">
-            <div class="slide-frame">
-              <div class="fallback-slide" style="background: linear-gradient(145deg, #2b0b14 0%, #15091a 100%); border-color: rgba(244, 63, 94, 0.4);">
-                <div class="video-play-disc">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-                </div>
-                <span class="fb-badge" style="color: #fb7185; margin-top: 0.5rem;">Video Lecture</span>
-                <span class="fb-title">Tunneling Masterclass</span>
-              </div>
-            </div>
-            <div class="thumb-curtain"><span class="click-pill" style="background: #f43f5e; color: #fff;">Play Video</span></div>
-          </div>
-          <div class="desc-column">
-            <div class="desc-top">
-              <div class="badge-row">
-                <span class="mini-badge badge-video">Video Lecture</span>
-                <span class="mini-badge">Duration: 42 Mins</span>
-              </div>
-              <h3 class="item-title">1D Quantum Potentials: Infinite Well, Finite Barrier Tunneling & Resonances</h3>
-              <div class="author-line">Dr. Sachin Pathak • Virtual Classroom & Video Lab</div>
-              <p class="item-summary">Step-by-step visual demonstration of boundary matching conditions, probability current conservation across barriers, evanescent exponential decay, and resonant tunneling phenomena.</p>
-              <ul class="key-points">
-                <li><strong>Step-by-Step Derivations:</strong> Setting up piecewise boundary conditions across multiple coordinate domains.</li>
-                <li><strong>Modern Applications:</strong> Physical mechanism behind Scanning Tunneling Microscopy (STM) and nuclear alpha decay.</li>
-              </ul>
-            </div>
-            <div class="action-row">
-              <button type="button" class="btn-action btn-video" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', '1D Quantum Potentials: Infinite Well, Finite Barrier Tunneling & Resonances', 'Video Lecture', false, 'video')">Watch Lecture</button>
-              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', '1D Quantum Potentials: Infinite Well, Finite Barrier Tunneling & Resonances', 'Video Lecture', true, 'video')">Full Screen</button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Video 4: The Quantum Harmonic Oscillator -->
-        <article class="item-card" data-search="quantum harmonic oscillator hermite polynomials ladder operators zero point energy video lecture">
-          <div class="thumb-column" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Quantum Harmonic Oscillator: Hermite Polynomials & Ladder Operators', 'Video Lecture', false, 'video')" title="Click to pop up video lecture">
-            <div class="slide-frame">
-              <div class="fallback-slide" style="background: linear-gradient(145deg, #2b0b14 0%, #15091a 100%); border-color: rgba(244, 63, 94, 0.4);">
-                <div class="video-play-disc">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-                </div>
-                <span class="fb-badge" style="color: #fb7185; margin-top: 0.5rem;">Video Lecture</span>
-                <span class="fb-title">Harmonic Oscillator</span>
-              </div>
-            </div>
-            <div class="thumb-curtain"><span class="click-pill" style="background: #f43f5e; color: #fff;">Play Video</span></div>
-          </div>
-          <div class="desc-column">
-            <div class="desc-top">
-              <div class="badge-row">
-                <span class="mini-badge badge-video">Video Lecture</span>
-                <span class="mini-badge">Duration: 50 Mins</span>
-              </div>
-              <h3 class="item-title">The Quantum Harmonic Oscillator: Hermite Polynomials & Ladder Operators</h3>
-              <div class="author-line">Dr. Sachin Pathak • Virtual Classroom & Video Lab</div>
-              <p class="item-summary">Complete video tutorial comparing the power series method (Hermite polynomials) with Dirac's elegant algebraic creation and annihilation operator formalism (a, a†).</p>
-              <ul class="key-points">
-                <li><strong>Algebraic Symmetry:</strong> Constructing energy eigenstates via ladder operations on ground state |0⟩.</li>
-                <li><strong>Classical Turning Points:</strong> Visualizing wave function penetration into classically forbidden domains.</li>
-              </ul>
-            </div>
-            <div class="action-row">
-              <button type="button" class="btn-action btn-video" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Quantum Harmonic Oscillator: Hermite Polynomials & Ladder Operators', 'Video Lecture', false, 'video')">Watch Lecture</button>
-              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Quantum Harmonic Oscillator: Hermite Polynomials & Ladder Operators', 'Video Lecture', true, 'video')">Full Screen</button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Video 5: The Hydrogen Atom in 3D -->
-        <article class="item-card" data-search="hydrogen atom 3d spherical harmonics coulomb potential degeneracy orbital geometry video lecture">
-          <div class="thumb-column" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Hydrogen Atom in 3D: Spherical Harmonics & Orbital Geometries', 'Video Lecture', false, 'video')" title="Click to pop up video lecture">
-            <div class="slide-frame">
-              <div class="fallback-slide" style="background: linear-gradient(145deg, #2b0b14 0%, #15091a 100%); border-color: rgba(244, 63, 94, 0.4);">
-                <div class="video-play-disc">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-                </div>
-                <span class="fb-badge" style="color: #fb7185; margin-top: 0.5rem;">Video Lecture</span>
-                <span class="fb-title">Hydrogen Atom 3D</span>
-              </div>
-            </div>
-            <div class="thumb-curtain"><span class="click-pill" style="background: #f43f5e; color: #fff;">Play Video</span></div>
-          </div>
-          <div class="desc-column">
-            <div class="desc-top">
-              <div class="badge-row">
-                <span class="mini-badge badge-video">Video Lecture</span>
-                <span class="mini-badge">Duration: 58 Mins</span>
-              </div>
-              <h3 class="item-title">The Hydrogen Atom in 3D: Spherical Harmonics & Orbital Geometries</h3>
-              <div class="author-line">Dr. Sachin Pathak • Virtual Classroom & Video Lab</div>
-              <p class="item-summary">3D coordinate transformation into spherical polars, solving angular and radial equations, understanding n² degeneracy, and rendering s, p, d orbital probability density clouds.</p>
-              <ul class="key-points">
-                <li><strong>Radial & Angular Separation:</strong> Physical meaning of principal, orbital, and magnetic quantum numbers.</li>
-                <li><strong>Transition Selection Rules:</strong> Electric dipole transition integrals and atomic emission line series.</li>
-              </ul>
-            </div>
-            <div class="action-row">
-              <button type="button" class="btn-action btn-video" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Hydrogen Atom in 3D: Spherical Harmonics & Orbital Geometries', 'Video Lecture', false, 'video')">Watch Lecture</button>
-              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'The Hydrogen Atom in 3D: Spherical Harmonics & Orbital Geometries', 'Video Lecture', true, 'video')">Full Screen</button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Video 6: CSIR-NET & GATE Masterclass -->
-        <article class="item-card" data-search="csir net gate physical sciences high yield problem solving exam strategy pyq video lecture">
-          <div class="thumb-column" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'CSIR-NET & GATE Physical Sciences: High-Yield Problem Solving & Exam Strategy', 'Video Lecture', false, 'video')" title="Click to pop up video lecture">
-            <div class="slide-frame">
-              <div class="fallback-slide" style="background: linear-gradient(145deg, #2b0b14 0%, #15091a 100%); border-color: rgba(244, 63, 94, 0.4);">
-                <div class="video-play-disc">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-                </div>
-                <span class="fb-badge" style="color: #fb7185; margin-top: 0.5rem;">National Exam</span>
-                <span class="fb-title">Exam Strategy Masterclass</span>
-              </div>
-            </div>
-            <div class="thumb-curtain"><span class="click-pill" style="background: #f43f5e; color: #fff;">Play Video</span></div>
-          </div>
-          <div class="desc-column">
-            <div class="desc-top">
-              <div class="badge-row">
-                <span class="mini-badge badge-video">Video Lecture</span>
-                <span class="mini-badge">Duration: 62 Mins</span>
-              </div>
-              <h3 class="item-title">CSIR-NET & GATE Physical Sciences: High-Yield Problem Solving & Exam Strategy</h3>
-              <div class="author-line">Dr. Sachin Pathak • National Exam Mentorship Program</div>
-              <p class="item-summary">Comprehensive video strategy masterclass analyzing past CSIR-UGC NET Part C multi-concept questions, time-saving dimensional reduction techniques, and optimal question selection methodology.</p>
-              <ul class="key-points">
-                <li><strong>Shortcut Algorithms:</strong> Fast boundary condition evaluations and symmetry inspection for 1D/3D quantum wells.</li>
-                <li><strong>PYQ Deep-Dive:</strong> Rigorous breakdown of recurrent questions in quantum, electromagnetic, and thermodynamic physics.</li>
-              </ul>
-            </div>
-            <div class="action-row">
-              <button type="button" class="btn-action btn-video" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'CSIR-NET & GATE Physical Sciences: High-Yield Problem Solving & Exam Strategy', 'Video Lecture', false, 'video')">Watch Lecture</button>
-              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ', 'CSIR-NET & GATE Physical Sciences: High-Yield Problem Solving & Exam Strategy', 'Video Lecture', true, 'video')">Full Screen</button>
+              <button type="button" class="btn-action btn-video" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/2Ia1G55QpEQ', 'Eigen Value Problems in Quantum Mechanics', 'Video Lecture', false, 'video')">Watch Lecture</button>
+              <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('https://www.youtube-nocookie.com/embed/2Ia1G55QpEQ', 'Eigen Value Problems in Quantum Mechanics', 'Video Lecture', true, 'video')">Full Screen</button>
             </div>
           </div>
         </article>
