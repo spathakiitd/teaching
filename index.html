@@ -1604,7 +1604,7 @@
     <!-- Top Three Category Tabs -->
     <div class="top-category-tabs-container">
       <div class="top-category-tabs">
-        <button class="top-tab-btn active" id="tabBtn-presentations" onclick="switchCategoryTab('presentations')">
+        <button class="top-tab-btn" id="tabBtn-presentations" onclick="switchCategoryTab('presentations')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
           <span>Presentations</span>
           <span class="tab-badge-count">44</span>
@@ -1613,7 +1613,7 @@
         <button class="top-tab-btn" id="tabBtn-notes" onclick="switchCategoryTab('notes')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
           <span>Class Notes</span>
-          <span class="tab-badge-count">5</span>
+          <span class="tab-badge-count">25</span>
         </button>
 
         <button class="top-tab-btn" id="tabBtn-videos" onclick="switchCategoryTab('videos')">
@@ -3183,8 +3183,8 @@
     <div id="viewport-notes" class="tab-viewport">
       <div class="sub-controls-bar">
         <div class="subject-chips">
-          <button class="sub-chip active" onclick="filterNotesSubject('all', this)">All Notes (5)</button>
-          <button class="sub-chip" onclick="filterNotesSubject('bsc-notes', this)">B.Sc. Quantum Mechanics (1)</button>
+          <button class="sub-chip active" onclick="filterNotesSubject('all', this)">All Notes (25)</button>
+          <button class="sub-chip" onclick="filterNotesSubject('bsc-notes', this)">B.Sc. Quantum Mechanics (21)</button>
           <button class="sub-chip" onclick="filterNotesSubject('msc-notes', this)">M.Sc. Quantum Mechanics (1)</button>
           <button class="sub-chip" onclick="filterNotesSubject('gate-notes', this)">CSIR-NET & GATE (3)</button>
         </div>
@@ -3199,17 +3199,20 @@
         <div class="subject-header">
           <div class="subject-title-wrap">
             <h2>B.Sc. Quantum Mechanics Class Notes</h2>
-            <span class="section-counter">1 Compendium + Separate Notes Slot</span>
+            <span class="section-counter">21 Lecture Notes & Derivations</span>
           </div>
         </div>
         <div class="cards-list">
-          <article class="item-card" data-search="bsc quantum mechanics class notes handwritten derivations black body planck photoelectric compton de broglie uncertainty schrodinger wave mechanics">
-            <div class="thumb-column" onclick="triggerPopup('1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', 'B.Sc. Quantum Mechanics: Comprehensive Class Notes & Derivation Compendium', 'Class Notes')" title="Click to pop up class notes preview">
+
+          <!-- 1. Wave Function in Quantum Mechanics -->
+          <article class="item-card" data-search="1 wave function in quantum mechanics wave function with exam notes bsc probability amplitude superposition born interpretation">
+            <div class="thumb-column" onclick="triggerPopup('1rQQWgOY-i1-7wtGaIDWKYHU0UZjopEYH', '1_WAVE FUNCTION IN QUANTUM MECHANICS - WAVE FUNCTION - WITH EXAM NOTES', 'Class Notes')" title="Click to pop up class notes preview">
               <div class="slide-frame">
-                <div class="fallback-slide" style="background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1rQQWgOY-i1-7wtGaIDWKYHU0UZjopEYH&sz=w800" alt="Wave Function Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
                   <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes</span>
-                  <span class="fb-title">Full Theory & Derivations</span>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 1</span>
+                  <span class="fb-title">Wave Function Notes</span>
                 </div>
               </div>
               <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
@@ -3218,22 +3221,703 @@
               <div class="desc-top">
                 <div class="badge-row">
                   <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
-                  <span class="mini-badge badge-notes">Class Notes</span>
+                  <span class="mini-badge badge-notes">Class Notes • 1</span>
                 </div>
-                <h3 class="item-title">B.Sc. Quantum Mechanics: Comprehensive Class Notes & Derivation Compendium</h3>
+                <h3 class="item-title">1_WAVE FUNCTION IN QUANTUM MECHANICS - WAVE FUNCTION - WITH EXAM NOTES</h3>
                 <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
-                <p class="item-summary">Complete structured class lecture notes spanning the entire B.Sc. Quantum Mechanics syllabus: historical origins, matter waves, wave packet mathematical properties, and time-dependent Schrödinger equation.</p>
+                <p class="item-summary">Comprehensive introductory lecture notes on the mathematical definition of the quantum wavefunction Ψ(x,t), complex probability amplitudes, superposition principle, boundary conditions, and exam-oriented problem solutions.</p>
                 <ul class="key-points">
-                  <li><strong>Core Formulations:</strong> Step-by-step evaluations of wave equation operators, probability density, and normalisation.</li>
-                  <li><strong>Classroom Derivations:</strong> Full analytical proofs for Wien's displacement, Stefan's law from Planck's formula, and Compton shift.</li>
+                  <li><strong>Born Interpretation:</strong> Statistical interpretation of probability density and single-valued continuous wavefunction requirements.</li>
+                  <li><strong>Exam Solutions:</strong> Step-by-step solved university questions with clear analytical derivations.</li>
                 </ul>
               </div>
               <div class="action-row">
-                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', 'B.Sc. Quantum Mechanics: Comprehensive Class Notes & Derivation Compendium', 'Class Notes')">View Notes</button>
-                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', 'B.Sc. Quantum Mechanics: Comprehensive Class Notes & Derivation Compendium', 'Class Notes', true)">Full Screen</button>
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1rQQWgOY-i1-7wtGaIDWKYHU0UZjopEYH', '1_WAVE FUNCTION IN QUANTUM MECHANICS - WAVE FUNCTION - WITH EXAM NOTES', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1rQQWgOY-i1-7wtGaIDWKYHU0UZjopEYH', '1_WAVE FUNCTION IN QUANTUM MECHANICS - WAVE FUNCTION - WITH EXAM NOTES', 'Class Notes', true)">Full Screen</button>
               </div>
             </div>
           </article>
+
+          <!-- 2. Physical-significance of Wavefunction -->
+          <article class="item-card" data-search="2 physical significance of wavefunction bsc born interpretation probability density phase statistical ensemble">
+            <div class="thumb-column" onclick="triggerPopup('1D2xu35uzSlWm2TpBwMq90mh8Tl36gdLI', '2_Physical-significans of Wavefunction', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1D2xu35uzSlWm2TpBwMq90mh8Tl36gdLI&sz=w800" alt="Physical Significance Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 2</span>
+                  <span class="fb-title">Physical Significance</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 2</span>
+                </div>
+                <h3 class="item-title">2_Physical-significans of Wavefunction</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Physical interpretation of Max Born's probability density P(x) = |Ψ(x,t)|², phase significance, non-observability of bare phase, and statistical ensemble concepts in quantum mechanics.</p>
+                <ul class="key-points">
+                  <li><strong>Volume Probability Element:</strong> Evaluating dP = |Ψ|² dV across 1D and 3D coordinate geometries.</li>
+                  <li><strong>Admissibility Criteria:</strong> Finiteness, continuity, and single-valued criteria required for physical state vectors.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1D2xu35uzSlWm2TpBwMq90mh8Tl36gdLI', '2_Physical-significans of Wavefunction', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1D2xu35uzSlWm2TpBwMq90mh8Tl36gdLI', '2_Physical-significans of Wavefunction', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Normalization of Wave Function -->
+          <article class="item-card" data-search="3 normalization of wave function bsc integral probability certainty normalization constant gaussian packet">
+            <div class="thumb-column" onclick="triggerPopup('1g4fOqC86JpR13FYeKymeDZnio2o14Akn', '3_NORMALIZATION OF WAVE FUNCTION', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1g4fOqC86JpR13FYeKymeDZnio2o14Akn&sz=w800" alt="Normalization Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 3</span>
+                  <span class="fb-title">Normalization</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 3</span>
+                </div>
+                <h3 class="item-title">3_NORMALIZATION OF WAVE FUNCTION</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Conservation of total certainty: condition ∫|Ψ|² dx = 1 over all space, finding normalization constants A for exponential, Gaussian, and trigonometric wavepackets.</p>
+                <ul class="key-points">
+                  <li><strong>Standard Integrals:</strong> Definite integral evaluations using Gamma functions and Gaussian distribution identities.</li>
+                  <li><strong>Time Invariance:</strong> Preservation of normalization in time via unitary Schrödinger time evolution.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1g4fOqC86JpR13FYeKymeDZnio2o14Akn', '3_NORMALIZATION OF WAVE FUNCTION', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1g4fOqC86JpR13FYeKymeDZnio2o14Akn', '3_NORMALIZATION OF WAVE FUNCTION', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Orthogonality of Wave Functions -->
+          <article class="item-card" data-search="4 orthogonality of wave functions bsc hilbert space kronecker delta orthonormal basis stationary states">
+            <div class="thumb-column" onclick="triggerPopup('1JNntSDAJY4Hr3dzjh5LtEipC0zcc2pjy', '4_ORTHOGONALITY OF WAVE FUNCTIONS', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1JNntSDAJY4Hr3dzjh5LtEipC0zcc2pjy&sz=w800" alt="Orthogonality Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><line x1="12" y1="2" x2="12" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 4</span>
+                  <span class="fb-title">Orthogonality</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 4</span>
+                </div>
+                <h3 class="item-title">4_ORTHOGONALITY OF WAVE FUNCTIONS</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Mutual orthogonality condition ∫Ψₘ*(x)Ψₙ(x) dx = δₘₙ for distinct stationary states, geometric Hilbert space representation, and expansion of arbitrary quantum states.</p>
+                <ul class="key-points">
+                  <li><strong>Non-Degenerate Proof:</strong> Mathematical proof of orthogonality for non-degenerate eigenstates of Hermitian operators.</li>
+                  <li><strong>Basis Completeness:</strong> Kronecker delta formalism and expansion theorem for arbitrary wavepackets.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1JNntSDAJY4Hr3dzjh5LtEipC0zcc2pjy', '4_ORTHOGONALITY OF WAVE FUNCTIONS', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1JNntSDAJY4Hr3dzjh5LtEipC0zcc2pjy', '4_ORTHOGONALITY OF WAVE FUNCTIONS', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Time-dependent Schrodinger Equation -->
+          <article class="item-card" data-search="6 time dependent schroding equation bsc tdse differential operators hamiltonian causality">
+            <div class="thumb-column" onclick="triggerPopup('1vyOx1aBUGXf0BJjomxmjE7Ot3TWzvK0q', '6_Time-dependent Schroding Equation', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1vyOx1aBUGXf0BJjomxmjE7Ot3TWzvK0q&sz=w800" alt="TDSE Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 6</span>
+                  <span class="fb-title">Time-Dependent SE</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 6</span>
+                </div>
+                <h3 class="item-title">6_Time-dependent Schroding Equation</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Postulation and derivation of the 1D and 3D Time-Dependent Schrödinger Equation (TDSE) iħ ∂Ψ/∂t = ĤΨ, differential operator correspondence, and dispersive matter wave dynamics.</p>
+                <ul class="key-points">
+                  <li><strong>Operator Correspondence:</strong> Total energy operator E → iħ ∂/∂t and momentum operator p → -iħ ∇.</li>
+                  <li><strong>Causality & Determinism:</strong> First-order time derivative establishing deterministic evolution of quantum states.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1vyOx1aBUGXf0BJjomxmjE7Ot3TWzvK0q', '6_Time-dependent Schroding Equation', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1vyOx1aBUGXf0BJjomxmjE7Ot3TWzvK0q', '6_Time-dependent Schroding Equation', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Time-independent Schrodinger Equation -->
+          <article class="item-card" data-search="7 time independent schroding equation bsc tise separation of variables stationary states energy eigenvalues">
+            <div class="thumb-column" onclick="triggerPopup('11cl85Ew0fJLFXLXLGOslB_JMoDOxb9XD', '7_Time-ibdependent Schroding Equation', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=11cl85Ew0fJLFXLXLGOslB_JMoDOxb9XD&sz=w800" alt="TISE Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="12" x2="21" y2="12"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 7</span>
+                  <span class="fb-title">Time-Independent SE</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 7</span>
+                </div>
+                <h3 class="item-title">7_Time-ibdependent Schroding Equation</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Separation of variables technique Ψ(x,t) = ψ(x)e^(-iEt/ħ), derivation of the Time-Independent Schrödinger Equation (TISE) Ĥψ = Eψ, and properties of stationary states.</p>
+                <ul class="key-points">
+                  <li><strong>Stationary Probability:</strong> Proof that ∂P/∂t = 0 for stationary states, making probability densities time-independent.</li>
+                  <li><strong>Boundary Quantization:</strong> Emergence of discrete energy eigenvalues from spatial boundary requirements.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('11cl85Ew0fJLFXLXLGOslB_JMoDOxb9XD', '7_Time-ibdependent Schroding Equation', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('11cl85Ew0fJLFXLXLGOslB_JMoDOxb9XD', '7_Time-ibdependent Schroding Equation', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Particle in One Dimensional Box -->
+          <article class="item-card" data-search="8 particle in one dimensional box infinite potential well bsc standing waves zero point energy nodal topology">
+            <div class="thumb-column" onclick="triggerPopup('1c28Zzkq9n-Y9Pf2lnxeOfXptf5CU41rJ', '8_PARTICLE IN ONE DIMENSIONAL BOX-INFINITE POTENTIAL WELL', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1c28Zzkq9n-Y9Pf2lnxeOfXptf5CU41rJ&sz=w800" alt="1D Box Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="8" y1="4" x2="8" y2="20"></line><line x1="16" y1="4" x2="16" y2="20"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 8</span>
+                  <span class="fb-title">Particle in 1D Box</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 8</span>
+                </div>
+                <h3 class="item-title">8_PARTICLE IN ONE DIMENSIONAL BOX-INFINITE POTENTIAL WELL</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Solution of TISE for 1D infinite potential box of width L: boundary conditions ψ(0)=ψ(L)=0, standing wave states ψₙ(x) = √(2/L)sin(nπx/L), and quantized energies Eₙ = n²h²/(8mL²).</p>
+                <ul class="key-points">
+                  <li><strong>Zero-Point Energy:</strong> Non-vanishing ground state E₁ > 0 enforced by uncertainty principle confinement.</li>
+                  <li><strong>Nodal Structure:</strong> Exactly (n - 1) nodes for the n-th state, with alternating parity symmetries.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1c28Zzkq9n-Y9Pf2lnxeOfXptf5CU41rJ', '8_PARTICLE IN ONE DIMENSIONAL BOX-INFINITE POTENTIAL WELL', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1c28Zzkq9n-Y9Pf2lnxeOfXptf5CU41rJ', '8_PARTICLE IN ONE DIMENSIONAL BOX-INFINITE POTENTIAL WELL', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Linear Harmonic Oscillator in Quantum Mechanics (Notes) -->
+          <article class="item-card" data-search="9 linear harmonic oscillator in quantum mechanics bsc parabolic well series solution dimensionless coordinates">
+            <div class="thumb-column" onclick="triggerPopup('1AN5uu4jwnMULDNgirUjdDAPRDMPh9_jL', '9_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1AN5uu4jwnMULDNgirUjdDAPRDMPh9_jL&sz=w800" alt="LHO Notes Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 9</span>
+                  <span class="fb-title">Harmonic Oscillator (Notes)</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 9</span>
+                </div>
+                <h3 class="item-title">9_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Setup and analytical formulation of the 1D quantum harmonic oscillator with quadratic potential V(x) = ½mω²x², asymptotic wave function behavior, and coordinate scaling.</p>
+                <ul class="key-points">
+                  <li><strong>Dimensionless Substitution:</strong> Transformation using ξ = √(mω/ħ)x and extraction of asymptotic Gaussian decay e^(-ξ²/2).</li>
+                  <li><strong>Power Series Method:</strong> Recurrence relations and boundary conditions ensuring normalizability.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1AN5uu4jwnMULDNgirUjdDAPRDMPh9_jL', '9_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1AN5uu4jwnMULDNgirUjdDAPRDMPh9_jL', '9_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9_PPT. Linear Harmonic Oscillator (Slides) -->
+          <article class="item-card" data-search="9 ppt linear harmonic oscillator in quantum mechanics bsc hermite polynomials presentation recursion">
+            <div class="thumb-column" onclick="triggerPopup('1qyTRsZiNeE4jDWSYmimUR76cDqTpj8sK', '9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1qyTRsZiNeE4jDWSYmimUR76cDqTpj8sK&sz=w800" alt="LHO PPT Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 9_PPT</span>
+                  <span class="fb-title">Harmonic Oscillator (Slides)</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 9_PPT</span>
+                </div>
+                <h3 class="item-title">9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Lecture presentation companion detailing the 1D harmonic oscillator potential, mathematical derivation steps, Hermite polynomial recursion, and diagrammatic notes.</p>
+                <ul class="key-points">
+                  <li><strong>Visual Derivations:</strong> Restructuring the differential equation into standard Hermite form.</li>
+                  <li><strong>Boundary Proof:</strong> Asymptotic requirements at infinity (ξ → ±∞) for square-integrability.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1qyTRsZiNeE4jDWSYmimUR76cDqTpj8sK', '9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1qyTRsZiNeE4jDWSYmimUR76cDqTpj8sK', '9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Linear Harmonic Oscillator Part 2 -->
+          <article class="item-card" data-search="10 linear harmonic oscillator in quantum mechanics part 2 bsc eigenvalues zero point energy hermite parity">
+            <div class="thumb-column" onclick="triggerPopup('1N2BL0UPS5ZBQB9gPekYYQtkj-1AM_ApL', '10_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1N2BL0UPS5ZBQB9gPekYYQtkj-1AM_ApL&sz=w800" alt="LHO Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"></path></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 10</span>
+                  <span class="fb-title">Harmonic Oscillator (Part 2)</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 10</span>
+                </div>
+                <h3 class="item-title">10_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Energy eigenvalues Eₙ = (n + ½)ħω, Hermite polynomial solutions Hₙ(ξ), zero-point energy E₀ = ½ħω, parity alternating wavefunctions, and classical turning point tunneling.</p>
+                <ul class="key-points">
+                  <li><strong>Series Termination:</strong> Hermite polynomial termination condition defining discrete quantum numbers n = 0, 1, 2...</li>
+                  <li><strong>Wavefunction Normalization:</strong> Normalization factor Aₙ = (mω/πħ)^(1/4) / √(2ⁿ n!) and parity rules.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1N2BL0UPS5ZBQB9gPekYYQtkj-1AM_ApL', '10_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1N2BL0UPS5ZBQB9gPekYYQtkj-1AM_ApL', '10_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. Probability Current Density -->
+          <article class="item-card" data-search="11 probability current density in quantum mechanics bsc continuity equation flux vector conservation">
+            <div class="thumb-column" onclick="triggerPopup('1Wg5uD_fYo7zTaU7mKjYf5lebwomJnH_g', '11_PROBABILITY CURRENT DENSITY IN QUANTUM MECHANICS', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1Wg5uD_fYo7zTaU7mKjYf5lebwomJnH_g&sz=w800" alt="Current Density Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 11</span>
+                  <span class="fb-title">Probability Current</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 11</span>
+                </div>
+                <h3 class="item-title">11_PROBABILITY CURRENT DENSITY IN QUANTUM MECHANICS</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Derivation of the continuity equation ∂P/∂t + ∇·J = 0 from Schrödinger's equation, vector probability flux density J = (ħ/2mi)(ψ*∇ψ - ψ∇ψ*), and physical interpretation.</p>
+                <ul class="key-points">
+                  <li><strong>Purely Real Waves:</strong> Rigorous proof that purely real spatial wavefunctions have zero probability current density (J = 0).</li>
+                  <li><strong>Scattering Flux:</strong> Calculating incident, reflected, and transmitted probability fluxes at potential barriers.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1Wg5uD_fYo7zTaU7mKjYf5lebwomJnH_g', '11_PROBABILITY CURRENT DENSITY IN QUANTUM MECHANICS', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1Wg5uD_fYo7zTaU7mKjYf5lebwomJnH_g', '11_PROBABILITY CURRENT DENSITY IN QUANTUM MECHANICS', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Hermitian Operator -->
+          <article class="item-card" data-search="12 hermitian operator bsc self adjoint observables expectation values hilbert space">
+            <div class="thumb-column" onclick="triggerPopup('19PMDi-u74CrrEkj5-4XVEd3T0tVo482U', '12_HERMITIAN OPERATOR', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=19PMDi-u74CrrEkj5-4XVEd3T0tVo482U&sz=w800" alt="Hermitian Operator Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 12</span>
+                  <span class="fb-title">Hermitian Operator</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 12</span>
+                </div>
+                <h3 class="item-title">12_HERMITIAN OPERATOR</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Mathematical definition of Hermitian (self-adjoint) operators ⟨ψ|Âφ⟩ = ⟨Âψ|φ⟩ in Hilbert space, conjugate transpose, and their role representing physical observables.</p>
+                <ul class="key-points">
+                  <li><strong>Proof of Hermiticity:</strong> Explicit proofs for momentum p = -iħ d/dx, position x, and Hamiltonian Ĥ.</li>
+                  <li><strong>Measurement Postulate:</strong> Connecting expectation values ⟨Â⟩ to experimental measurement averages.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('19PMDi-u74CrrEkj5-4XVEd3T0tVo482U', '12_HERMITIAN OPERATOR', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('19PMDi-u74CrrEkj5-4XVEd3T0tVo482U', '12_HERMITIAN OPERATOR', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. Hermitian Operators Have Real Eigenvalues -->
+          <article class="item-card" data-search="13 hermition operators have real eigen values bsc proof real eigenvalues quantum observables">
+            <div class="thumb-column" onclick="triggerPopup('1jv2dv8jjBQ75KQW88tjD0kd6dMegsonT', '13_HERMITION OPERATORS HAVE REAL EIGEN VALUES', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1jv2dv8jjBQ75KQW88tjD0kd6dMegsonT&sz=w800" alt="Real Eigenvalues Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 13</span>
+                  <span class="fb-title">Real Eigenvalues</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 13</span>
+                </div>
+                <h3 class="item-title">13_HERMITION OPERATORS HAVE REAL EIGEN VALUES</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Rigorous analytical proof that all eigenvalues of a Hermitian operator are strictly real: Âψ = λψ implies λ* = λ, establishing real measurement outcomes in quantum physics.</p>
+                <ul class="key-points">
+                  <li><strong>Algebraic Proof:</strong> Step-by-step inner product conjugation proving (λ - λ*)⟨ψ|ψ⟩ = 0.</li>
+                  <li><strong>Physical Requirement:</strong> Ensuring observable quantities like energy, position, and momentum yield real numbers.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1jv2dv8jjBQ75KQW88tjD0kd6dMegsonT', '13_HERMITION OPERATORS HAVE REAL EIGEN VALUES', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1jv2dv8jjBQ75KQW88tjD0kd6dMegsonT', '13_HERMITION OPERATORS HAVE REAL EIGEN VALUES', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14. Eigen Functions of Hermitian Operator are Orthogonal -->
+          <article class="item-card" data-search="14 eigen functions of hermitian operator corresponding to different eigen values are orthogonal bsc proof">
+            <div class="thumb-column" onclick="triggerPopup('19qTTQ54OIHcbLc4m9V-mgw0rgnfXzMM8', '14_EIGEN FUNCTIONS OF HERMITIAN OPERATOR CORRESPONDING TO DIFFERENT EIGEN VALUES ARE ORTHOGONAL', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=19qTTQ54OIHcbLc4m9V-mgw0rgnfXzMM8&sz=w800" alt="Orthogonal Eigenfunctions Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><line x1="12" y1="2" x2="12" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 14</span>
+                  <span class="fb-title">Orthogonal Eigenfunctions</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 14</span>
+                </div>
+                <h3 class="item-title">14_EIGEN FUNCTIONS OF HERMITIAN OPERATOR CORRESPONDING TO DIFFERENT EIGEN VALUES ARE ORTHOGONAL</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Mathematical theorem and step-by-step proof that eigenfunctions of a Hermitian operator belonging to distinct eigenvalues (λ₁ ≠ λ₂) are mutually orthogonal ⟨ψ₁|ψ₂⟩ = 0.</p>
+                <ul class="key-points">
+                  <li><strong>Theorem Proof:</strong> Evaluation showing (λ₁ - λ₂)⟨ψ₁|ψ₂⟩ = 0, mandating orthogonality for non-equal eigenvalues.</li>
+                  <li><strong>Degeneracy Case:</strong> Application of Gram-Schmidt orthogonalization when eigenvalues coincide.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('19qTTQ54OIHcbLc4m9V-mgw0rgnfXzMM8', '14_EIGEN FUNCTIONS OF HERMITIAN OPERATOR CORRESPONDING TO DIFFERENT EIGEN VALUES ARE ORTHOGONAL', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('19qTTQ54OIHcbLc4m9V-mgw0rgnfXzMM8', '14_EIGEN FUNCTIONS OF HERMITIAN OPERATOR CORRESPONDING TO DIFFERENT EIGEN VALUES ARE ORTHOGONAL', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 15. Product of Two Hermitian Operators is Hermitian if They Commute -->
+          <article class="item-card" data-search="15 product of two hermitian operators is hermitian if they commute bsc commutation compatibility">
+            <div class="thumb-column" onclick="triggerPopup('1w9Td1mwSdekUDMolDM-jegQqzfYTLrt1', '15_PRODUCT OF TWO HERMITIAN OPERATORS IS HERMITIAN IF THEY COMMUTE', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1w9Td1mwSdekUDMolDM-jegQqzfYTLrt1&sz=w800" alt="Product Hermitian Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M8 12h8m-4-4v8"></path></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 15</span>
+                  <span class="fb-title">Operator Product Theorem</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 15</span>
+                </div>
+                <h3 class="item-title">15_PRODUCT OF TWO HERMITIAN OPERATORS IS HERMITIAN IF THEY COMMUTE</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Proof that the operator product ÂB̂ is Hermitian if and only if Â and B̂ commute ([Â, B̂] = 0): (ÂB̂)† = B̂†Â† = B̂Â = ÂB̂, linking commutativity to physical joint observables.</p>
+                <ul class="key-points">
+                  <li><strong>Commutation Condition:</strong> Proof of necessity and sufficiency for Hermiticity of operator products.</li>
+                  <li><strong>Symmetrized Operator:</strong> Construction of physical observables via ½(ÂB̂ + B̂Â) when operators do not commute.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1w9Td1mwSdekUDMolDM-jegQqzfYTLrt1', '15_PRODUCT OF TWO HERMITIAN OPERATORS IS HERMITIAN IF THEY COMMUTE', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1w9Td1mwSdekUDMolDM-jegQqzfYTLrt1', '15_PRODUCT OF TWO HERMITIAN OPERATORS IS HERMITIAN IF THEY COMMUTE', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom -->
+          <article class="item-card" data-search="18 h atom hydrogen atom central coulomb potential spherical polar separation bsc">
+            <div class="thumb-column" onclick="triggerPopup('1DISahMxBiGuPhgOyjDENS8bH6W4jelPc', '18_H-Atom', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1DISahMxBiGuPhgOyjDENS8bH6W4jelPc&sz=w800" alt="H-Atom Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><ellipse cx="12" cy="12" rx="9" ry="4"></ellipse><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 18</span>
+                  <span class="fb-title">Hydrogen Atom</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 18</span>
+                </div>
+                <h3 class="item-title">18_H-Atom</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">3D spherical polar coordinate formulation of the Hydrogen atom under central Coulomb potential V(r) = -e²/(4πε₀r), separation of variables into radial R(r) and angular parts Y_l^m(θ,φ).</p>
+                <ul class="key-points">
+                  <li><strong>Coordinate Separation:</strong> Factoring ψ(r,θ,φ) = R(r)Y_l^m(θ,φ) using the 3D Laplacian in spherical polars.</li>
+                  <li><strong>Effective Potential:</strong> Interplay between Coulomb attraction and the repulsive centrifugal barrier l(l+1)ħ²/(2mr²).</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1DISahMxBiGuPhgOyjDENS8bH6W4jelPc', '18_H-Atom', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1DISahMxBiGuPhgOyjDENS8bH6W4jelPc', '18_H-Atom', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom part 2 -->
+          <article class="item-card" data-search="18 h atom part 2 radial differential equation laguerre polynomials series termination bsc">
+            <div class="thumb-column" onclick="triggerPopup('1otzg3LMdo5ExxhwjdLWlbKnMv_RoSOeT', '18_H-Atom_part 2', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1otzg3LMdo5ExxhwjdLWlbKnMv_RoSOeT&sz=w800" alt="H-Atom Part 2 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 18_p2</span>
+                  <span class="fb-title">H-Atom Radial Solutions</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 18_p2</span>
+                </div>
+                <h3 class="item-title">18_H-Atom_part 2</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Solution of the radial differential equation: asymptotic behavior, power series expansion, recurrence relations, and termination condition yielding the principal quantum number n.</p>
+                <ul class="key-points">
+                  <li><strong>Associated Laguerre Polynomials:</strong> Radial functions R_nl(r) and normalization constants.</li>
+                  <li><strong>Radial Nodes:</strong> Nodal topology proving exactly (n - l - 1) radial nodes for any orbital state.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1otzg3LMdo5ExxhwjdLWlbKnMv_RoSOeT', '18_H-Atom_part 2', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1otzg3LMdo5ExxhwjdLWlbKnMv_RoSOeT', '18_H-Atom_part 2', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. H-Atom part 3 V1 -->
+          <article class="item-card" data-search="18 h atom part 3 v1 energy spectra degeneracy selection rules lyman balmer bsc">
+            <div class="thumb-column" onclick="triggerPopup('1ihCABxIB9oVUpJ8NtAOPAoxSB4uYKPp5', '18_H-Atom_part 3_V1', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1ihCABxIB9oVUpJ8NtAOPAoxSB4uYKPp5&sz=w800" alt="H-Atom Part 3 Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 18_p3</span>
+                  <span class="fb-title">H-Atom Spectra</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 18_p3</span>
+                </div>
+                <h3 class="item-title">18_H-Atom_part 3_V1</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Quantized energy levels E_n = -13.6 eV / n², n² orbital degeneracy (2n² with electron spin), electric dipole selection rules (Δl = ±1, Δm = 0, ±1), and spectral series emission.</p>
+                <ul class="key-points">
+                  <li><strong>Spectroscopic Series:</strong> Optical transitions for Lyman (UV), Balmer (Visible), Paschen, and Brackett lines.</li>
+                  <li><strong>Dipole Selection Rules:</strong> Angular momentum conservation during photon absorption and emission.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1ihCABxIB9oVUpJ8NtAOPAoxSB4uYKPp5', '18_H-Atom_part 3_V1', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1ihCABxIB9oVUpJ8NtAOPAoxSB4uYKPp5', '18_H-Atom_part 3_V1', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 20. Commutator Relation -->
+          <article class="item-card" data-search="20 commutator relation bsc operators canonical position momentum algebra uncertainty">
+            <div class="thumb-column" onclick="triggerPopup('1hPcmLa5ESmeCYdhRRjNtsTPsQptOLQSp', '20_commutator_relation', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1hPcmLa5ESmeCYdhRRjNtsTPsQptOLQSp&sz=w800" alt="Commutator Relation Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 20</span>
+                  <span class="fb-title">Commutator Algebra</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 20</span>
+                </div>
+                <h3 class="item-title">20_commutator_relation</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Foundational commutator algebra: definition [Â, B̂] = ÂB̂ - B̂Â, canonical position-momentum relation [x, p_x] = iħ, commutator expansion identities, and operator kinematics.</p>
+                <ul class="key-points">
+                  <li><strong>Commutator Properties:</strong> Linearity, anti-symmetry, product rules [A, BC] = [A, B]C + B[A, C], and Jacobi identity.</li>
+                  <li><strong>Angular Commutators:</strong> Fundamental relations for orbital angular momentum [L_x, L_y] = iħL_z.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1hPcmLa5ESmeCYdhRRjNtsTPsQptOLQSp', '20_commutator_relation', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1hPcmLa5ESmeCYdhRRjNtsTPsQptOLQSp', '20_commutator_relation', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 20. Commutator Relation Notes -->
+          <article class="item-card" data-search="20 commutator relation notes bsc exam revision simultaneous eigenstates operator identities">
+            <div class="thumb-column" onclick="triggerPopup('1mXCg68bNEUElwxRA5JpwvuRptXj0oYJf', '20_commutator_relation_Notes', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1mXCg68bNEUElwxRA5JpwvuRptXj0oYJf&sz=w800" alt="Commutator Notes Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 20_Notes</span>
+                  <span class="fb-title">Commutator Exam Notes</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 20_Notes</span>
+                </div>
+                <h3 class="item-title">20_commutator_relation_Notes</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Detailed student exam revision notes on commutator relations, worked operator proofs, evaluating commutators with arbitrary functions [x, F(p)] = iħ dF/dp, and simultaneous eigenstates.</p>
+                <ul class="key-points">
+                  <li><strong>Generalized Uncertainty:</strong> Mathematical proof of ΔA·ΔB ≥ ½|⟨[A, B]⟩| for any pair of observables.</li>
+                  <li><strong>Exam Solutions:</strong> Complete worked solutions for recurring university examination problems.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1mXCg68bNEUElwxRA5JpwvuRptXj0oYJf', '20_commutator_relation_Notes', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1mXCg68bNEUElwxRA5JpwvuRptXj0oYJf', '20_commutator_relation_Notes', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 21. Uncertainty Principle from de Broglie Hypothesis -->
+          <article class="item-card" data-search="21 uncertainty principle from de broglie hypothesis bsc wave packet bandwidth delta x delta p fourier superposition">
+            <div class="thumb-column" onclick="triggerPopup('1crVV4HPy4aWkQ0Ok_6iQs9qkW4VbG18c', '21_UNCERTAINTY PRINCIPLE FROM de Broglie HYPOTHESIS', 'Class Notes')" title="Click to pop up class notes preview">
+              <div class="slide-frame">
+                <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=1crVV4HPy4aWkQ0Ok_6iQs9qkW4VbG18c&sz=w800" alt="Uncertainty Principle Thumbnail" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="fallback-slide" style="display: none; background: linear-gradient(145deg, #062b1f 0%, #06151f 100%); border-color: rgba(16, 185, 129, 0.4);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path></svg>
+                  <span class="fb-badge" style="color: #34d399;">B.Sc. Notes • 21</span>
+                  <span class="fb-title">Uncertainty Principle</span>
+                </div>
+              </div>
+              <div class="thumb-curtain"><span class="click-pill" style="background: #10b981; color: #fff;">Pop Up Notes</span></div>
+            </div>
+            <div class="desc-column">
+              <div class="desc-top">
+                <div class="badge-row">
+                  <span class="mini-badge badge-bsc">B.Sc. Quantum Mechanics</span>
+                  <span class="mini-badge badge-notes">Class Notes • 21</span>
+                </div>
+                <h3 class="item-title">21_UNCERTAINTY PRINCIPLE FROM de Broglie HYPOTHESIS</h3>
+                <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+                <p class="item-summary">Derivation of Heisenberg's uncertainty principle Δx·Δp ≥ ħ/2 from de Broglie matter wave packets, Fourier superposition of sinusoidal components, and wavepacket spatial spreading.</p>
+                <ul class="key-points">
+                  <li><strong>Fourier Bandwidth:</strong> Spatial localization vs. wavenumber bandwidth relation Δx·Δk ≈ 1 leading directly to Δx·Δp ≥ ħ/2.</li>
+                  <li><strong>Physical Consequences:</strong> Confinement proof explaining why electrons cannot reside inside atomic nuclei.</li>
+                </ul>
+              </div>
+              <div class="action-row">
+                <button type="button" class="btn-action btn-notes" onclick="triggerPopup('1crVV4HPy4aWkQ0Ok_6iQs9qkW4VbG18c', '21_UNCERTAINTY PRINCIPLE FROM de Broglie HYPOTHESIS', 'Class Notes')">View Notes</button>
+                <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('1crVV4HPy4aWkQ0Ok_6iQs9qkW4VbG18c', '21_UNCERTAINTY PRINCIPLE FROM de Broglie HYPOTHESIS', 'Class Notes', true)">Full Screen</button>
+              </div>
+            </div>
+          </article>
+
         </div>
       </section>
 
