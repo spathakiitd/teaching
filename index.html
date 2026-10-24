@@ -1565,7 +1565,7 @@
       <h2 class="hero-heading">Physics Lecture Notes, Slides & Video Series</h2>
       <p class="hero-desc">
         Comprehensive academic curriculum curated by <strong>Dr. Sachin Pathak</strong>. 
-        Browse materials organized into core categories: <strong>Presentations</strong> (50 slides across M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, and Spintronics), <strong>Class Notes</strong> (66 comprehensive lecture notes across M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, and Spintronics), and <strong>Video Lectures</strong> (7 masterclasses). Click on any thumbnail for an instant on-page popup preview with Full Screen support.
+        Browse materials organized into core categories: <strong>Presentations</strong> (50 slides across M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, and Spintronics), <strong>Class Notes</strong> (71 comprehensive lecture notes across M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, and Spintronics), and <strong>Video Lectures</strong> (7 masterclasses). Click on any thumbnail for an instant on-page popup preview with Full Screen support.
       </p>
 
       <button 
@@ -1605,7 +1605,7 @@
         <button class="top-tab-btn" id="tabBtn-notes" onclick="switchCategoryTab('notes')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
           <span>Class Notes</span>
-          <span class="tab-badge-count">66</span>
+          <span class="tab-badge-count">71</span>
         </button>
 
         <button class="top-tab-btn" id="tabBtn-videos" onclick="switchCategoryTab('videos')">
@@ -1639,17 +1639,17 @@
     </div>
 
     <!-- ========================================================= -->
-    <!-- TAB 2: CLASS NOTES (66 Items across 5 Subject Sections)   -->
+    <!-- TAB 2: CLASS NOTES (71 Items across 5 Subject Sections)   -->
     <!-- Sub-Tabs: M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, Spintronics -->
     <!-- ========================================================= -->
     <div id="viewport-notes" class="tab-viewport">
       <div class="sub-controls-bar">
         <div class="subject-chips">
-          <button class="sub-chip active" onclick="filterNotesSubject('all', this)">All Notes (66)</button>
+          <button class="sub-chip active" onclick="filterNotesSubject('all', this)">All Notes (71)</button>
           <button class="sub-chip" onclick="filterNotesSubject('msc-notes', this)">M.Sc. Quantum Mechanics (33)</button>
           <button class="sub-chip" onclick="filterNotesSubject('bsc-notes', this)">B.Sc. Quantum Mechanics (21)</button>
           <button class="sub-chip" onclick="filterNotesSubject('gate-notes', this)">CSIR_NET & GATE (3)</button>
-          <button class="sub-chip sub-chip-mag" onclick="filterNotesSubject('mag-notes', this)">Magnetism (4)</button>
+          <button class="sub-chip sub-chip-mag" onclick="filterNotesSubject('mag-notes', this)">Magnetism (9)</button>
           <button class="sub-chip sub-chip-spin" onclick="filterNotesSubject('spin-notes', this)">Spintronics (5)</button>
         </div>
         <div class="search-box">
@@ -1881,7 +1881,7 @@
   <!-- ========================================================= -->
   <script>
     /* -------------------------------------------------------------
-       1. DATA SETS: Presentations (50 Total), Class Notes (66 Total),
+       1. DATA SETS: Presentations (50 Total), Class Notes (71 Total),
           and Video Lectures (7)
        ------------------------------------------------------------- */
 
@@ -1937,18 +1937,18 @@
       { id: '1PsSogtR4QDR5QxBCvyhmsaMt7VkpRqh-', num: 'M2', title: 'CSIR_NET & GATE Physical Sciences: Advanced Problem Sets & Derivations (Module 2)', sec: 'csir-gate-pres', cat: 'CSIR_NET & GATE', desc: 'Advanced problem-solving presentation addressing multi-step Part C numerical problems, partition function formulations, and band theory problems.', pts: ['Bose condensation and degenerate Fermi gas', 'Brillouin zones and effective mass tensors'] },
       { id: '1y3iQDobMqpeT9cO2O60wy-B510qEBlR9', num: 'M3', title: 'CSIR_NET & GATE Physical Sciences: Formula Compendium & Revision Guide (Module 3)', sec: 'csir-gate-pres', cat: 'CSIR_NET & GATE', desc: 'High-yield compendium presentation containing all essential formulas, standard constants, spectroscopic selection rules, and quick reference identities.', pts: ['Atomic term symbols & Zeeman effect splits', 'Delta functions and Cauchy residue methods'] },
 
-      // Magnetism Presentations (3) - Tab positioned immediately after CSIR_NET & GATE
+      // Magnetism Presentations (3)
       { id: '1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB', num: 'MAG-P1', title: 'Modern Magnetism: Atomic Magnetic Dipoles & Inhomogeneous Fields', sec: 'mag-pres', cat: 'Magnetism', desc: 'Origin of microscopic magnetic dipoles, Hund rules, orbital and spin contributions, and interactions with magnetic field gradients.', pts: ['Bohr magneton & Landé g-factor', 'Transverse deflecting force F = ∇(μ·B)'] },
       { id: '1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', num: 'MAG-P2', title: 'Magnetic Domains, Exchange Coupling & Hysteresis Phenomenon', sec: 'mag-pres', cat: 'Magnetism', desc: 'Heisenberg direct and indirect exchange Hamiltonian H = -2J S₁·S₂, ferromagnetic domain nucleation, Bloch/Néel walls, and M-H hysteresis loop dynamics.', pts: ['Curie-Weiss mean field model', 'Coercivity and remanence in thin film systems'] },
       { id: '1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', num: 'MAG-P3', title: 'Superparamagnetism & Nanomagnetism in Ultra-Thin Films', sec: 'mag-pres', cat: 'Magnetism', desc: 'Single-domain nanoparticles, Néel-Brown relaxation timescale, blocking temperature T_B, and superparamagnetic limits in ultra-dense storage media.', pts: ['Néel relaxation time τ = τ₀ exp(KV/k_B T)', 'Magnetic anisotropy energy barrier KV'] },
 
-      // Spintronics Presentations (3) - Tab positioned immediately after Magnetism
+      // Spintronics Presentations (3)
       { id: '1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', num: 'SPIN-P1', title: 'Spintronics Foundations: Spin-Dependent Transport & Giant Magnetoresistance', sec: 'spin-pres', cat: 'Spintronics', desc: 'From charge electronics to spin electronics: Mott two-current model in ferromagnets, spin valve architectures, and Giant Magnetoresistance (GMR).', pts: ['Parallel vs antiparallel magnetization resistance', 'Current-In-Plane (CIP) vs CPP device geometries'] },
       { id: '1PsSogtR4QDR5QxBCvyhmsaMt7VkpRqh-', num: 'SPIN-P2', title: 'Tunnel Magnetoresistance (TMR) & Magnetic Tunnel Junctions (MTJ)', sec: 'spin-pres', cat: 'Spintronics', desc: 'Spin-dependent tunneling across insulating barrier layers: Julliere two-band formulation, coherent tunneling via crystalline MgO(001), and giant TMR ratios.', pts: ['Julliere formula TMR = 2P₁P₂/(1 - P₁P₂)', 'Delta-1 symmetry band matching in Fe/MgO/Fe'] },
       { id: '1y3iQDobMqpeT9cO2O60wy-B510qEBlR9', num: 'SPIN-P3', title: 'Spin-Orbit Torque, Spin Hall Effect & Magnetic Memory (MRAM)', sec: 'spin-pres', cat: 'Spintronics', desc: 'Spin-orbit coupling physics: direct and inverse Spin Hall Effects (SHE/ISHE), Spin-Transfer Torque (STT), and non-volatile STT/SOT-MRAM architectures.', pts: ['Pure spin current generation without net charge flux', 'Spin mixing conductance and interfacial damping'] }
     ];
 
-    // 1B. CLASS NOTES (66 Total: M.Sc. [33], B.Sc. [21], CSIR_NET & GATE [3], Magnetism [4], Spintronics [5])
+    // 1B. CLASS NOTES (71 Total: M.Sc. [33], B.Sc. [21], CSIR_NET & GATE [3], Magnetism [9], Spintronics [5])
     const notesData = [
       // M.Sc. Notes (33)
       { id: '1u7BT6OHISglH07MoPlB5kBqC5XqTLOkq', num: '1', title: '1_BLACK BODY AND BLACK BODY RADIATIONS', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'In-depth derivation of Planck radiation formula, energy density distributions, cavity modes count, and Rayleigh-Jeans divergence.', pts: ['Spectral distribution functions & Wien displacement', 'Stefan-Boltzmann law derivation via integration'] },
@@ -2013,13 +2013,18 @@
       { id: '1PsSogtR4QDR5QxBCvyhmsaMt7VkpRqh-', num: 'M2', title: 'CSIR_NET & GATE Physical Sciences: Advanced Problem Sets & Solved PYQs (Module 2)', sec: 'gate-notes', cat: 'CSIR_NET & GATE', desc: 'Intensive problem bank with fully worked solutions for Part C advanced numerical questions: statistical mechanics, solid state physics, and optics.', pts: ['Partition functions, Bose-Einstein & Fermi-Dirac distributions', 'Reciprocal lattice, band theory, and Brillouin zones'] },
       { id: '1y3iQDobMqpeT9cO2O60wy-B510qEBlR9', num: 'M3', title: 'CSIR_NET & GATE Physical Sciences: Formula Compendium & Quick Revision Guide (Module 3)', sec: 'gate-notes', cat: 'CSIR_NET & GATE', desc: 'Consolidated reference handbook containing all critical physics formulas, standard values, selection rules, and quick substitution tricks.', pts: ['Spectroscopic term symbols and Landé g-factor formulas', 'Green functions, residue theorem, and Fourier transforms'] },
 
-      // Magnetism Notes (4) - Tab positioned immediately after CSIR_NET & GATE
-      { id: '1u7BT6OHISglH07MoPlB5kBqC5XqTLOkq', num: 'MAG-N1', title: 'Classification of Magnetic Materials: Diamagnetism & Paramagnetism', sec: 'mag-notes', cat: 'Magnetism', desc: 'Langevin classical theory of diamagnetism and paramagnetism, quantum theory of paramagnetism, Brillouin function, and Curie-Weiss law.', pts: ['Langevin susceptibility derivation χ_dia = -μ₀Ne²⟨r²⟩/(6m)', 'Curie law breakdown at low temperatures & Van Vleck paramagnetism'] },
-      { id: '1EHVcLjzSE_fjkOJZvP7uxtvs_TK2iB0Z', num: 'MAG-N2', title: 'Ferromagnetism, Weiss Molecular Field & Exchange Interaction', sec: 'mag-notes', cat: 'Magnetism', desc: 'Microscopic origin of spontaneous magnetization: Weiss molecular field theory, quantum mechanical exchange Hamiltonian H = -2J S₁·S₂, and Curie point.', pts: ['Direct exchange, super-exchange, and RKKY interactions', 'Derivation of Curie-Weiss law χ = C/(T - θ)'] },
-      { id: '1ki7W-5iXRHexwoNmcuEo5Z6lIx8tyohy', num: 'MAG-N3', title: 'Magnetic Domains, Domain Walls & Anisotropy Energies', sec: 'mag-notes', cat: 'Magnetism', desc: 'Energetics of ferromagnetic domains: magnetocrystalline anisotropy, magnetostriction, demagnetizing field energy, and Bloch vs Néel wall structure.', pts: ['Domain wall width calculation δ = π√(A/K)', 'Minimization of magnetostatic vs exchange energy'] },
-      { id: '10xJ06hQhW5TkSc1Ou2ppCBKk-l5lmmLz', num: 'MAG-N4', title: 'Magnetic Hysteresis, Soft & Hard Magnetic Materials & Nanomagnetism', sec: 'mag-notes', cat: 'Magnetism', desc: 'M-H hysteresis loop mechanisms: reversible and irreversible domain wall motion, coercivity H_c, remanence M_r, superparamagnetism in nanoparticles.', pts: ['Stoner-Wohlfarth coherent rotation model', 'Applications in permanent magnets and high-density recording media'] },
+      // Magnetism Notes (9 Real Lecture Modules in Sequence)
+      { id: '13NIU2c1LPcsA8YQf2mBczXGpWELGC5tv', num: 'MAG-N1', title: '1_Origin of Magnetism', sec: 'mag-notes', cat: 'Magnetism', desc: 'Microscopic origins of magnetic moments: electron orbital motion, spin dipole moment, nuclear magnetism, Bohr magneton μ_B = eħ/2m, and atomic current loop models.', pts: ['Orbital and spin magnetic dipole moment origins', 'Gyromagnetic ratio and Landé g-factor derivation', 'Bohr magneton calculation and atomic current loops'] },
+      { id: '1r4k98R3rhmGS0VPnTA4bqVDE-q5Fh11S', num: 'MAG-N2', title: '2_Magnetic Susceptibility', sec: 'mag-notes', cat: 'Magnetism', desc: 'Fundamental macroscopic parameters of magnetic media: field intensity H, magnetization vector M, flux density B, volume susceptibility χ = M/H, and permeability μ_r = 1 + χ.', pts: ['Constitutive relation B = μ₀(H + M)', 'Physical significance, units, and dimensions of χ', 'Linear vs non-linear magnetic response across regimes'] },
+      { id: '1JgdHZyKURclwaoHum6lugLY1Y25V0Fj1', num: 'MAG-N3', title: '3_Diamagnetic Material', sec: 'mag-notes', cat: 'Magnetism', desc: 'Physics of diamagnetism: paired electron configurations, Lenz law orbital perturbation, Larmor precession frequency, Langevin classical theory, negative χ, and temperature independence.', pts: ['Larmor precession frequency ω_L = eB/2m', 'Langevin classical derivation of diamagnetic susceptibility χ_dia', 'Temperature independence and perfect diamagnetism in superconductors'] },
+      { id: '1CyB6sdanCeBXJR13Hm2Rk_0JnjMm2gxC', num: 'MAG-N4', title: '4_Paramagnetic Material', sec: 'mag-notes', cat: 'Magnetism', desc: 'Paramagnetic response in matter: permanent atomic magnetic dipoles, thermal randomization competition, Langevin classical model, quantum Brillouin function, and Curie law χ ∝ 1/T.', pts: ['Permanent dipole moments from unpaired electron spins', 'Langevin derivation: χ_para = μ₀ N μ² / (3k_B T)', 'Curie law and quantum saturation at high B/T'] },
+      { id: '1cqIg4xk21gT9HAcLC1uyyizM8ARoH9BX', num: 'MAG-N5', title: '5_Domain Theory', sec: 'mag-notes', cat: 'Magnetism', desc: 'Weiss domain theory of ferromagnetism: spontaneous magnetization, balancing exchange vs demagnetizing field energy, magnetocrystalline anisotropy, magnetostriction, and Bloch/Néel walls.', pts: ['Total free energy minimization driving domain formation', 'Domain wall width derivation δ = π√(A/K)', 'Reversible vs irreversible domain wall motion'] },
+      { id: '1Q6H553siyGjf08_MrXVrHgEo4OOWoqqo', num: 'MAG-N6', title: '6_Ferromagnetic Material', sec: 'mag-notes', cat: 'Magnetism', desc: 'Ferromagnetism and quantum exchange interaction: Weiss molecular field concept B_mf = λM, Heisenberg Hamiltonian H = -2J S₁·S₂, Curie temperature T_C, and spontaneous alignment.', pts: ['Quantum exchange integral J > 0 enforcing parallel spins', 'Effective molecular field and spontaneous magnetization', 'Curie-Weiss law χ = C/(T - θ_p) above the Curie point'] },
+      { id: '171KxjYc67wRpCe3BmAHpFnEhNqiBL3Vm', num: 'MAG-N7', title: '7_Comparison of Magnetic Material', sec: 'mag-notes', cat: 'Magnetism', desc: 'Comprehensive comparative classification matrix contrasting Diamagnetic, Paramagnetic, Ferromagnetic, Antiferromagnetic, and Ferrimagnetic materials across atomic origin, χ, and M-H loops.', pts: ['Comparative matrix of χ, μ_r, and M behaviors', 'Temperature response curves (1/χ vs T across all phases)', 'Consolidated review for B.Sc., M.Sc., and CSIR-NET/GATE exams'] },
+      { id: '1x5cPzexBNh9U0758LzCR27zdfv6BXAqw', num: 'MAG-N8', title: '8_Anti-Ferromagnetic Material', sec: 'mag-notes', cat: 'Magnetism', desc: 'Antiferromagnetism fundamentals: antiparallel spin sublattices, negative exchange coupling (J < 0), superexchange mechanisms via oxygen anions, Néel temperature T_N, and susceptibility anisotropy.', pts: ['Two interpenetrating sublattices with equal opposing moments', 'Néel temperature T_N and susceptibility peak', 'Superexchange interaction in transition metal oxides'] },
+      { id: '1mDCOXzR_2LuHpZ2iViubUdo09SRXXSDJ', num: 'MAG-N9', title: '9_Ferrimagnetic Material', sec: 'mag-notes', cat: 'Magnetism', desc: 'Physics of ferrimagnets and ferrites: unequal antiparallel magnetic sublattices yielding net spontaneous magnetization, spinel/inverse-spinel lattices, high electrical resistivity, and microwave devices.', pts: ['Unequal sublattice moments producing net magnetization', 'Cation distribution in tetrahedral (A) and octahedral (B) sites', 'High electrical resistivity advantage over ferromagnetic metals'] },
 
-      // Spintronics Notes (5) - Tab positioned immediately after Magnetism
+      // Spintronics Notes (5)
       { id: '11Z62I2_fvjMMZvchblP4K1-muXcuPauE', num: 'SPIN-N1', title: 'Introduction to Spintronics & Spin-Dependent Conduction', sec: 'spin-notes', cat: 'Spintronics', desc: 'Foundations of spin transport: Mott two-current model in ferromagnets, spin polarization definition P, and spin-flip scattering mechanisms.', pts: ['Two-current model: conductivity ratio σ_↑/σ_↓ in 3d transition metals', 'Spin accumulation and spin chemical potential gradient'] },
       { id: '17L-TxAzPNen7lY0BiABR8skmOaRSwKO0', num: 'SPIN-N2', title: 'Giant Magnetoresistance (GMR) & Spin Valves', sec: 'spin-notes', cat: 'Spintronics', desc: 'Discovery of Giant Magnetoresistance in metallic multilayers: antiferromagnetic exchange coupling, CIP and CPP geometries, and spin valve sensors.', pts: ['Valet-Fert model for spin transport in magnetic multilayers', 'Application in hard disk drive read heads and magnetic sensors'] },
       { id: '1VDVT_MBHjo4Ot40bvX4wtS18M9iMkXln', num: 'SPIN-N3', title: 'Tunnel Magnetoresistance (TMR) & Magnetic Tunnel Junctions (MTJ)', sec: 'spin-notes', cat: 'Spintronics', desc: 'Spin-dependent tunneling across insulating barriers: Julliere model for TMR, coherent tunneling through crystalline MgO barriers, and giant TMR ratios.', pts: ['Julliere formula TMR = 2P₁P₂/(1 - P₁P₂)', 'Delta-1 symmetry filter effect in Fe/MgO/Fe junctions'] },
@@ -2313,7 +2318,7 @@
       secGate.id = 'sec-notes-gate';
       container.appendChild(secGate);
 
-      const secMag = buildSectionGroup('Magnetism Class Notes', '4 Modules', 'section-counter-mag', magCards);
+      const secMag = buildSectionGroup('Magnetism Class Notes', '9 Modules', 'section-counter-mag', magCards);
       secMag.id = 'sec-notes-mag';
       container.appendChild(secMag);
 
@@ -2638,4 +2643,4 @@
     });
   </script>
 </body>
-</html>
+</html>```````````````````````````````````````````````````
