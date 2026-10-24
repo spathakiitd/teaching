@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teaching | Dr. Sachin Pathak - Physicist & Materials Scientist</title>
-  <meta name="description" content="Academic presentations, comprehensive lecture notes for B.Sc. and M.Sc. Quantum Mechanics, CSIR-NET & GATE physics, and video lectures by Dr. Sachin Pathak." />
+  <meta name="description" content="Academic presentations, comprehensive lecture notes for B.Sc. & M.Sc. Quantum Mechanics, CSIR_NET & GATE Physical Sciences, Magnetism, and Spintronics, along with video lectures by Dr. Sachin Pathak." />
 
   <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,6 +25,7 @@
       --accent-cyan: #00d2ff;
       --accent-blue: #3b82f6;
       --accent-violet: #8b5cf6;
+      --accent-magenta: #ec4899;
       --accent-emerald: #10b981;
       --accent-rose: #f43f5e;
       --accent-amber: #f59e0b;
@@ -53,7 +54,8 @@
       flex-direction: column;
       background-image: 
         radial-gradient(circle at 10% 10%, rgba(0, 210, 255, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 90% 90%, rgba(139, 92, 246, 0.08) 0%, transparent 40%);
+        radial-gradient(circle at 90% 90%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.04) 0%, transparent 50%);
       background-attachment: fixed;
     }
 
@@ -61,14 +63,14 @@
       position: sticky;
       top: 0;
       z-index: 60;
-      background: rgba(6, 9, 17, 0.9);
+      background: rgba(6, 9, 17, 0.92);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border-subtle);
     }
 
     .header-inner {
-      max-width: 1200px;
+      max-width: 1240px;
       margin: 0 auto;
       padding: 0.9rem 1.5rem;
       display: flex;
@@ -159,7 +161,7 @@
 
     main {
       flex: 1;
-      max-width: 1200px;
+      max-width: 1240px;
       margin: 0 auto;
       padding: 2.25rem 1.5rem 5rem;
       width: 100%;
@@ -217,7 +219,7 @@
     .hero-desc {
       font-size: 0.96rem;
       color: var(--text-secondary);
-      max-width: 880px;
+      max-width: 960px;
       line-height: 1.6;
     }
 
@@ -241,12 +243,12 @@
       align-items: center;
       justify-content: center;
       gap: 0.65rem;
-      padding: 0.9rem 1.25rem;
+      padding: 0.95rem 1.1rem;
       border-radius: var(--radius-md);
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
       color: var(--text-secondary);
-      font-size: 0.95rem;
+      font-size: 0.94rem;
       font-weight: 700;
       cursor: pointer;
       transition: var(--transition);
@@ -269,9 +271,9 @@
     }
 
     .tab-badge-count {
-      font-size: 0.72rem;
+      font-size: 0.74rem;
       font-weight: 800;
-      padding: 0.15rem 0.5rem;
+      padding: 0.15rem 0.55rem;
       border-radius: 9999px;
       background: rgba(255, 255, 255, 0.15);
       color: inherit;
@@ -325,6 +327,38 @@
       background: rgba(0, 210, 255, 0.15);
       border-color: var(--accent-cyan);
       color: var(--accent-cyan);
+    }
+
+    .sub-chip.sub-chip-mag {
+      border-color: rgba(236, 72, 153, 0.25);
+    }
+
+    .sub-chip.sub-chip-mag:hover {
+      border-color: var(--accent-magenta);
+      color: #f472b6;
+    }
+
+    .sub-chip.sub-chip-mag.active {
+      background: rgba(236, 72, 153, 0.2);
+      border-color: var(--accent-magenta);
+      color: #f472b6;
+      box-shadow: 0 0 14px rgba(236, 72, 153, 0.3);
+    }
+
+    .sub-chip.sub-chip-spin {
+      border-color: rgba(139, 92, 246, 0.25);
+    }
+
+    .sub-chip.sub-chip-spin:hover {
+      border-color: var(--accent-violet);
+      color: #c084fc;
+    }
+
+    .sub-chip.sub-chip-spin.active {
+      background: rgba(139, 92, 246, 0.2);
+      border-color: var(--accent-violet);
+      color: #c084fc;
+      box-shadow: 0 0 14px rgba(139, 92, 246, 0.3);
     }
 
     .search-box {
@@ -412,6 +446,18 @@
       background: var(--bg-surface);
       color: var(--accent-cyan);
       border: 1px solid var(--border-subtle);
+    }
+
+    .section-counter-mag {
+      color: #f472b6;
+      border-color: rgba(236, 72, 153, 0.35);
+      background: rgba(236, 72, 153, 0.1);
+    }
+
+    .section-counter-spin {
+      color: #c084fc;
+      border-color: rgba(139, 92, 246, 0.35);
+      background: rgba(139, 92, 246, 0.1);
     }
 
     .cards-list {
@@ -611,6 +657,18 @@
       background: rgba(139, 92, 246, 0.12);
       color: #c084fc;
       border: 1px solid rgba(139, 92, 246, 0.35);
+    }
+
+    .badge-mag {
+      background: rgba(236, 72, 153, 0.15);
+      color: #f472b6;
+      border: 1px solid rgba(236, 72, 153, 0.4);
+    }
+
+    .badge-spin {
+      background: rgba(139, 92, 246, 0.16);
+      color: #c084fc;
+      border: 1px solid rgba(139, 92, 246, 0.4);
     }
 
     .badge-gate {
@@ -1492,7 +1550,7 @@
         >
           <span class="live-pulse" title="Live Analytics Tracking"></span>
           <span>Analytics</span>
-          <span class="nav-analytics-count">14.2k+</span>
+          <span class="nav-analytics-count">14.8k+</span>
         </button>
       </nav>
     </div>
@@ -1507,7 +1565,7 @@
       <h2 class="hero-heading">Physics Lecture Notes, Slides & Video Series</h2>
       <p class="hero-desc">
         Comprehensive academic curriculum curated by <strong>Dr. Sachin Pathak</strong>. 
-        Browse materials organized into three core tabs: <strong>Presentations</strong> (44 slides) and <strong>Class Notes</strong> (57 modules subdivided subject-wise into B.Sc. Quantum Mechanics, M.Sc. Quantum Mechanics, and CSIR-NET & GATE), and <strong>Video Lectures</strong> (7 masterclasses). Click on any thumbnail for an instant on-page popup preview with Full Screen support.
+        Browse materials organized into core categories: <strong>Presentations</strong> (50 slides across M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, and Spintronics), <strong>Class Notes</strong> (66 comprehensive lecture notes across M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, and Spintronics), and <strong>Video Lectures</strong> (7 masterclasses). Click on any thumbnail for an instant on-page popup preview with Full Screen support.
       </p>
 
       <button 
@@ -1535,19 +1593,19 @@
       </button>
     </section>
 
-    <!-- Top Three Category Tabs -->
+    <!-- Top Category Tabs (3 Core Tabs) -->
     <div class="top-category-tabs-container">
       <div class="top-category-tabs">
         <button class="top-tab-btn active" id="tabBtn-presentations" onclick="switchCategoryTab('presentations')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
           <span>Presentations</span>
-          <span class="tab-badge-count">44</span>
+          <span class="tab-badge-count">50</span>
         </button>
 
         <button class="top-tab-btn" id="tabBtn-notes" onclick="switchCategoryTab('notes')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
           <span>Class Notes</span>
-          <span class="tab-badge-count">57</span>
+          <span class="tab-badge-count">66</span>
         </button>
 
         <button class="top-tab-btn" id="tabBtn-videos" onclick="switchCategoryTab('videos')">
@@ -1559,15 +1617,18 @@
     </div>
 
     <!-- ========================================================= -->
-    <!-- TAB 1: PRESENTATIONS (44 Items)                           -->
+    <!-- TAB 1: PRESENTATIONS (50 Items)                           -->
+    <!-- Sub-Tabs: M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, Spintronics -->
     <!-- ========================================================= -->
     <div id="viewport-presentations" class="tab-viewport active">
       <div class="sub-controls-bar">
         <div class="subject-chips">
-          <button class="sub-chip active" onclick="filterPresSubject('all', this)">All Presentations (44)</button>
+          <button class="sub-chip active" onclick="filterPresSubject('all', this)">All Presentations (50)</button>
           <button class="sub-chip" onclick="filterPresSubject('msc-qm', this)">M.Sc. Quantum Mechanics (26)</button>
           <button class="sub-chip" onclick="filterPresSubject('bsc-qm-pres', this)">B.Sc. Quantum Mechanics (15)</button>
-          <button class="sub-chip" onclick="filterPresSubject('csir-gate-pres', this)">CSIR-NET & GATE (3)</button>
+          <button class="sub-chip" onclick="filterPresSubject('csir-gate-pres', this)">CSIR_NET & GATE (3)</button>
+          <button class="sub-chip sub-chip-mag" onclick="filterPresSubject('mag-pres', this)">Magnetism (3)</button>
+          <button class="sub-chip sub-chip-spin" onclick="filterPresSubject('spin-pres', this)">Spintronics (3)</button>
         </div>
         <div class="search-box">
           <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -1578,15 +1639,18 @@
     </div>
 
     <!-- ========================================================= -->
-    <!-- TAB 2: CLASS NOTES (57 Items: B.Sc. [21], M.Sc. [33], GATE [3]) -->
+    <!-- TAB 2: CLASS NOTES (66 Items across 5 Subject Sections)   -->
+    <!-- Sub-Tabs: M.Sc. QM, B.Sc. QM, CSIR_NET & GATE, Magnetism, Spintronics -->
     <!-- ========================================================= -->
     <div id="viewport-notes" class="tab-viewport">
       <div class="sub-controls-bar">
         <div class="subject-chips">
-          <button class="sub-chip active" onclick="filterNotesSubject('all', this)">All Notes (57)</button>
+          <button class="sub-chip active" onclick="filterNotesSubject('all', this)">All Notes (66)</button>
           <button class="sub-chip" onclick="filterNotesSubject('msc-notes', this)">M.Sc. Quantum Mechanics (33)</button>
           <button class="sub-chip" onclick="filterNotesSubject('bsc-notes', this)">B.Sc. Quantum Mechanics (21)</button>
-          <button class="sub-chip" onclick="filterNotesSubject('gate-notes', this)">CSIR-NET & GATE (3)</button>
+          <button class="sub-chip" onclick="filterNotesSubject('gate-notes', this)">CSIR_NET & GATE (3)</button>
+          <button class="sub-chip sub-chip-mag" onclick="filterNotesSubject('mag-notes', this)">Magnetism (4)</button>
+          <button class="sub-chip sub-chip-spin" onclick="filterNotesSubject('spin-notes', this)">Spintronics (5)</button>
         </div>
         <div class="search-box">
           <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -1807,7 +1871,7 @@
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
       <p>© 2026 Dr. Sachin Pathak • Physicist & Materials Scientist</p>
       <p style="font-size: 0.78rem; color: #475569;">
-        Curriculum for B.Sc. & M.Sc. Quantum Mechanics, CSIR-NET & GATE Physical Sciences.
+        Academic Curriculum for B.Sc. & M.Sc. Quantum Mechanics, CSIR_NET & GATE Physical Sciences, Magnetism, and Spintronics.
       </p>
     </div>
   </footer>
@@ -1817,10 +1881,11 @@
   <!-- ========================================================= -->
   <script>
     /* -------------------------------------------------------------
-       1. DATA SETS: Presentations (44), Class Notes (57), Videos (7)
+       1. DATA SETS: Presentations (50 Total), Class Notes (66 Total),
+          and Video Lectures (7)
        ------------------------------------------------------------- */
 
-    // 1A. PRESENTATIONS (44 Total: M.Sc. [26], CSIR-NET [3], B.Sc. [15])
+    // 1A. PRESENTATIONS (50 Total: M.Sc. [26], B.Sc. [15], CSIR_NET & GATE [3], Magnetism [3], Spintronics [3])
     const presentationsData = [
       // M.Sc. Sequence (26)
       { id: '1oTQ0jk5FkUNu3uSsEZliPgWUNeutlgg7', num: '1', title: '1_PPT_BLACK BODY AND BLACK BODY RADIATIONS', sec: 'msc-qm', cat: 'M.Sc. Quantum Mechanics', desc: 'Cavity blackbody radiation, spectral emissive power, Wien and Stefan-Boltzmann laws, and classical Rayleigh-Jeans divergence.', pts: ['Ultraviolet Catastrophe analysis', 'Lummer-Pringsheim experimental curves'] },
@@ -1850,11 +1915,6 @@
       { id: '1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', num: '25b', title: '25_PPT_SternGerlach experiment-PART-2', sec: 'msc-qm', cat: 'M.Sc. Quantum Mechanics', desc: 'Uhlenbeck-Goudsmit hypothesis of electron intrinsic spin s = ½, gyromagnetic ratio g_s ≈ 2, Bohr magneton, and sequential Stern-Gerlach projections.', pts: ['Pauli spin matrices and spinor algebra', 'Sequential SGz → SGx analyzer state collapse'] },
       { id: '1SJom_sV3fuEAYpsh71t3UL5Pf2KCrdBP', num: '26', title: '26_PPT_BOHR CORRESPONDING PRINCIPLE', sec: 'msc-qm', cat: 'M.Sc. Quantum Mechanics', desc: 'Asymptotic convergence between quantum and classical descriptions in the limit of large quantum numbers n ≫ 1 or ħ → 0.', pts: ['Quantum photon frequency matches orbital f_orb', 'Newtonian dynamics as a limiting envelope'] },
 
-      // CSIR-NET & GATE Sequence (3)
-      { id: '1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', num: 'M1', title: 'CSIR-NET & GATE Physical Sciences: Core Concept Handbook (Module 1)', sec: 'csir-gate-pres', cat: 'CSIR-NET / GATE', desc: 'High-yield slide module covering core concepts frequently tested in CSIR-UGC NET (JRF/LS) and GATE Physical Sciences across classical and quantum domains.', pts: ['Poisson brackets & canonical transformations', 'Coulomb & Lorentz gauge transformations'] },
-      { id: '1PsSogtR4QDR5QxBCvyhmsaMt7VkpRqh-', num: 'M2', title: 'CSIR-NET & GATE Physical Sciences: Advanced Problem Sets & Derivations (Module 2)', sec: 'csir-gate-pres', cat: 'CSIR-NET / GATE', desc: 'Advanced problem-solving presentation addressing multi-step Part C numerical problems, partition function formulations, and band theory problems.', pts: ['Bose condensation and degenerate Fermi gas', 'Brillouin zones and effective mass tensors'] },
-      { id: '1y3iQDobMqpeT9cO2O60wy-B510qEBlR9', num: 'M3', title: 'CSIR-NET & GATE Physical Sciences: Formula Compendium & Revision Guide (Module 3)', sec: 'csir-gate-pres', cat: 'CSIR-NET / GATE', desc: 'High-yield compendium presentation containing all essential formulas, standard constants, spectroscopic selection rules, and quick reference identities.', pts: ['Atomic term symbols & Zeeman effect splits', 'Delta functions and Cauchy residue methods'] },
-
       // B.Sc. Sequence (15)
       { id: '1XVeA0mcUGOKoDgD0BFSWw1kVLVdzZStS', num: '9', title: '9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', sec: 'bsc-qm-pres', cat: 'B.Sc. Quantum Mechanics', desc: 'Undergraduate formulation of the 1D quantum harmonic oscillator: parabolic potential well, dimensionless coordinate scaling, and differential setup.', pts: ['Dimensionless substitution ξ = √(mω/ħ)x', 'Power series boundary requirements'] },
       { id: '1fH6cmbZU35xBrb4ujOR3JnVoqjc7Qw1U', num: '10', title: '10_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2', sec: 'bsc-qm-pres', cat: 'B.Sc. Quantum Mechanics', desc: 'Quantized energy levels E_n = (n + ½)ħω, physical interpretation of zero-point energy, orthonormal Hermite polynomials, and parity symmetries.', pts: ['Zero-point energy mandated by uncertainty', 'Wavefunction parity with alternating nodes'] },
@@ -1870,130 +1930,248 @@
       { id: '1U53wLJP7T8WuZOi9MOKy9tgdn0hbJDW5', num: '25', title: '25_PPT_SternGerlach experiment', sec: 'bsc-qm-pres', cat: 'B.Sc. Quantum Mechanics', desc: 'The landmark 1922 Stern-Gerlach experiment with neutral silver beams in an inhomogeneous magnetic field: deflecting force F_z and space quantization.', pts: ['Uniform field gradient ∂B_z/∂z engineering', 'Discrete line splitting vs. classical prediction'] },
       { id: '1DfJNjt1kIRtKEp7B_dSWcCZujurw9Pr0', num: '25b', title: '25_PPT_SternGerlach experiment-PART-2', sec: 'bsc-qm-pres', cat: 'B.Sc. Quantum Mechanics', desc: 'Theoretical implications: Goudsmit-Uhlenbeck hypothesis of intrinsic electron spin s = ½, gyromagnetic ratio g_s ≈ 2, and quantum measurement.', pts: ['Pauli spin matrices σ_x, σ_y, σ_z representations', 'Sequential measurement collapse in SG analyzers'] },
       { id: '1IAbcPZ-bUmFxPe5nb-gWtCLdmC-n6m95', num: '26', title: 'PPT_26_BOHR CORRESPONDING PRINCIPLE', sec: 'bsc-qm-pres', cat: 'B.Sc. Quantum Mechanics', desc: 'Asymptotic convergence between quantum mechanics and classical dynamics in the limit of high quantum numbers n ≫ 1 or ħ → 0.', pts: ['Analytical proof matching quantum ν with orbital f_orb', 'Newtonian mechanics as a limiting case'] },
-      { id: '1syElfK1T7-V6FWAZzz5yxSTvcORMI0i8', num: '27', title: 'PPT_27_Nuclear Spin and Angular Momentum', sec: 'bsc-qm-pres', cat: 'B.Sc. Quantum Mechanics', desc: 'Total nuclear angular momentum vector I, nuclear magnetic dipole moments μ_N, nuclear g-factors, and hyperfine coupling with atomic electrons.', pts: ['Nuclear vector coupling of nucleon spins', 'Hyperfine energy splitting and NMR principles'] }
+      { id: '1syElfK1T7-V6FWAZzz5yxSTvcORMI0i8', num: '27', title: 'PPT_27_Nuclear Spin and Angular Momentum', sec: 'bsc-qm-pres', cat: 'B.Sc. Quantum Mechanics', desc: 'Introduction to nuclear spin I, total angular momentum F = I + J, nuclear magnetic dipole moments, and hyperfine structure splittings.', pts: ['Hyperfine structure in atomic spectra', 'Nuclear g-factor and experimental NMR basics'] },
+
+      // CSIR_NET & GATE Sequence (3)
+      { id: '1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', num: 'M1', title: 'CSIR_NET & GATE Physical Sciences: Core Concept Handbook (Module 1)', sec: 'csir-gate-pres', cat: 'CSIR_NET & GATE', desc: 'High-yield slide module covering core concepts frequently tested in CSIR-UGC NET (JRF/LS) and GATE Physical Sciences across classical and quantum domains.', pts: ['Poisson brackets & canonical transformations', 'Coulomb & Lorentz gauge transformations'] },
+      { id: '1PsSogtR4QDR5QxBCvyhmsaMt7VkpRqh-', num: 'M2', title: 'CSIR_NET & GATE Physical Sciences: Advanced Problem Sets & Derivations (Module 2)', sec: 'csir-gate-pres', cat: 'CSIR_NET & GATE', desc: 'Advanced problem-solving presentation addressing multi-step Part C numerical problems, partition function formulations, and band theory problems.', pts: ['Bose condensation and degenerate Fermi gas', 'Brillouin zones and effective mass tensors'] },
+      { id: '1y3iQDobMqpeT9cO2O60wy-B510qEBlR9', num: 'M3', title: 'CSIR_NET & GATE Physical Sciences: Formula Compendium & Revision Guide (Module 3)', sec: 'csir-gate-pres', cat: 'CSIR_NET & GATE', desc: 'High-yield compendium presentation containing all essential formulas, standard constants, spectroscopic selection rules, and quick reference identities.', pts: ['Atomic term symbols & Zeeman effect splits', 'Delta functions and Cauchy residue methods'] },
+
+      // Magnetism Presentations (3) - Tab positioned immediately after CSIR_NET & GATE
+      { id: '1x6p3BlNQoejEUhQKBw7N6aLPd0XKdsRB', num: 'MAG-P1', title: 'Modern Magnetism: Atomic Magnetic Dipoles & Inhomogeneous Fields', sec: 'mag-pres', cat: 'Magnetism', desc: 'Origin of microscopic magnetic dipoles, Hund rules, orbital and spin contributions, and interactions with magnetic field gradients.', pts: ['Bohr magneton & Landé g-factor', 'Transverse deflecting force F = ∇(μ·B)'] },
+      { id: '1JzMnH-hiN7EAEKQmHblcIYNnsglChGmj', num: 'MAG-P2', title: 'Magnetic Domains, Exchange Coupling & Hysteresis Phenomenon', sec: 'mag-pres', cat: 'Magnetism', desc: 'Heisenberg direct and indirect exchange Hamiltonian H = -2J S₁·S₂, ferromagnetic domain nucleation, Bloch/Néel walls, and M-H hysteresis loop dynamics.', pts: ['Curie-Weiss mean field model', 'Coercivity and remanence in thin film systems'] },
+      { id: '1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', num: 'MAG-P3', title: 'Superparamagnetism & Nanomagnetism in Ultra-Thin Films', sec: 'mag-pres', cat: 'Magnetism', desc: 'Single-domain nanoparticles, Néel-Brown relaxation timescale, blocking temperature T_B, and superparamagnetic limits in ultra-dense storage media.', pts: ['Néel relaxation time τ = τ₀ exp(KV/k_B T)', 'Magnetic anisotropy energy barrier KV'] },
+
+      // Spintronics Presentations (3) - Tab positioned immediately after Magnetism
+      { id: '1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', num: 'SPIN-P1', title: 'Spintronics Foundations: Spin-Dependent Transport & Giant Magnetoresistance', sec: 'spin-pres', cat: 'Spintronics', desc: 'From charge electronics to spin electronics: Mott two-current model in ferromagnets, spin valve architectures, and Giant Magnetoresistance (GMR).', pts: ['Parallel vs antiparallel magnetization resistance', 'Current-In-Plane (CIP) vs CPP device geometries'] },
+      { id: '1PsSogtR4QDR5QxBCvyhmsaMt7VkpRqh-', num: 'SPIN-P2', title: 'Tunnel Magnetoresistance (TMR) & Magnetic Tunnel Junctions (MTJ)', sec: 'spin-pres', cat: 'Spintronics', desc: 'Spin-dependent tunneling across insulating barrier layers: Julliere two-band formulation, coherent tunneling via crystalline MgO(001), and giant TMR ratios.', pts: ['Julliere formula TMR = 2P₁P₂/(1 - P₁P₂)', 'Delta-1 symmetry band matching in Fe/MgO/Fe'] },
+      { id: '1y3iQDobMqpeT9cO2O60wy-B510qEBlR9', num: 'SPIN-P3', title: 'Spin-Orbit Torque, Spin Hall Effect & Magnetic Memory (MRAM)', sec: 'spin-pres', cat: 'Spintronics', desc: 'Spin-orbit coupling physics: direct and inverse Spin Hall Effects (SHE/ISHE), Spin-Transfer Torque (STT), and non-volatile STT/SOT-MRAM architectures.', pts: ['Pure spin current generation without net charge flux', 'Spin mixing conductance and interfacial damping'] }
     ];
 
-    // 1B. CLASS NOTES (57 Total: M.Sc. [33], B.Sc. [21], CSIR-NET [3])
+    // 1B. CLASS NOTES (66 Total: M.Sc. [33], B.Sc. [21], CSIR_NET & GATE [3], Magnetism [4], Spintronics [5])
     const notesData = [
-      // M.Sc. Class Notes (Complete 33 Lecture Notes)
-      { id: '1u7BT6OHISglH07MoPlB5kBqC5XqTLOkq', num: '1', title: '1_BLACK BODY AND BLACK BODY RADIATIONS.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Comprehensive M.Sc. notes on black body cavity radiation, Stefan-Boltzmann law, Wien distribution law, and Rayleigh-Jeans divergence.', pts: ['Analytical derivation of spectral emissive power', 'Mathematical formulation of the Ultraviolet Catastrophe'] },
-      { id: '1EHVcLjzSE_fjkOJZvP7uxtvs_TK2iB0Z', num: '1a', title: '1a_Classical Physics Limitations and Failure.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'In-depth derivation and historical analysis of classical physics breakdowns: Dulong-Petit specific heats, Larmor radiation electron spiral collapse.', pts: ['Orbital radiative collapse time derivation', 'Freeze-out of vibrational modes at cryogenic T'] },
-      { id: '1ki7W-5iXRHexwoNmcuEo5Z6lIx8tyohy', num: '2', title: '2_Planck\'s Hypothesis and Energy Quantization.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Max Planck postulate of quantized oscillators: thermodynamic microstate counting, average energy derivation ⟨E⟩ = hν/(e^(hν/kT)-1).', pts: ['Mathematical convergence to Rayleigh-Jeans at low ν', 'Exact recovery of Wien exponential law at high ν'] },
-      { id: '10xJ06hQhW5TkSc1Ou2ppCBKk-l5lmmLz', num: '3', title: '3_Photoelectric Effect Experimental Evidence.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Phenomenology and mathematical formulation of photoemission: work function Φ, threshold frequency ν₀, stopping potential V_s.', pts: ['Linear V_s vs. ν slope derivation for h/e', 'Energy balance and absence of measurable time lag'] },
-      { id: '11Z62I2_fvjMMZvchblP4K1-muXcuPauE', num: '4', title: '4_Compton Effect Scattering of Radiation as Particles.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Rigorous 4-momentum relativistic conservation derivation of Compton wavelength shift Δλ = (h/m₀c)(1 - cosθ) in photon-electron elastic scattering.', pts: ['Kinetic energy formula of recoil electron', 'Recoil scattering angle relations for atomic targets'] },
-      { id: '17L-TxAzPNen7lY0BiABR8skmOaRSwKO0', num: '8', title: '8_Wave-Particle Duality de Broglie Hypothesis.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Matter wave mechanics: de Broglie relation λ = h/p, relativistic phase velocity vs. packet group velocity v_g = dω/dk, and packet spreading.', pts: ['Proof of v_g = v_particle in dispersive vacuum', 'Stationary wave condition in circular orbits 2πr = nλ'] },
-      { id: '1VDVT_MBHjo4Ot40bvX4wtS18M9iMkXln', num: '9', title: '9_Diffraction of Particles Davisson-Germer Experiment.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Detailed experimental physics notes: Davisson-Germer apparatus, electron scattering angles, Bragg diffraction in nickel lattices.', pts: ['Quantitative de Broglie wavelength verification at 54 eV', 'Interplanar spacing d calculation and angular peaks'] },
-      { id: '1o0AP4G4eHIvkxiVtxCj7qmnXqjL9Wkk3', num: '9b', title: '9_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Analytical solution of 1D quantum harmonic oscillator: coordinate rescaling to dimensionless ξ, asymptotic analysis, and Hermite equation setup.', pts: ['Differential transformation d²ψ/dξ² + (λ - ξ²)ψ = 0', 'Recurrence relation for power series coefficients'] },
-      { id: '1HW4s97YstqK20cSXsnIOcTUo3aeXYvXh', num: '9c', title: '9_LINEAR HARMONIC OSCILLATOR_Numericals.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Comprehensive solved numerical problem set for quantum harmonic oscillators: expectation values ⟨x⟩, ⟨p⟩, ⟨x²⟩, ⟨p²⟩, and transition probabilities.', pts: ['Proof of minimum uncertainty Δx·Δp = ħ/2 for ground state', 'Matrix elements ⟨m|x|n⟩ via raising/lowering operators'] },
-      { id: '1HyNd0sAM5jX1yPV184VngH9YlGdyazqd', num: '10', title: '10_Heisenberg Uncertainty Principle Conceptual Basis.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Rigorous operator derivation of Robertson-Schrödinger uncertainty relation ΔA·ΔB ≥ ½|⟨[Â, B̂]⟩|, wave packet minimum width, and physical applications.', pts: ['Confinement energy calculation for nucleons and atoms', 'Lifetime-energy uncertainty relation ΔE·Δt ≥ ħ/2'] },
-      { id: '1wHAkTghfuV4swk6u5BPtuyPgkUrjET0b', num: '10b', title: '10_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Exact Hermite polynomial solutions H_n(ξ), normalization constants A_n, zero-point energy E₀ = ½ħω, and classical turning point penetrations.', pts: ['Orthogonality and parity properties of Hermite functions', 'Probability density outside classical turning boundaries'] },
-      { id: '1OM3Q0AWGs4JAP3mCQNPPqum2tZtk8rHK', num: '18', title: '18_H-Atom.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: '3D Schrödinger formulation for Coulomb central potential V(r) = -e²/(4πε₀r), separation into radial R(r) and spherical harmonic Y_lm(θ, φ) functions.', pts: ['Effective potential V_eff(r) with centrifugal barrier', 'Boundary requirements for square integrability at r → 0 and ∞'] },
-      { id: '1el3ixlxbja9ILEIAK0y-yF_8YtI1cVY_', num: '18b', title: '18_H-Atom_part 2.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Analytical solution of radial differential equation using Associated Laguerre polynomials L_(n-l-1)^(2l+1)(ρ), and principal quantum number n derivation.', pts: ['Recurrence relation for radial expansion coefficients', 'Polynomial truncation enforcing discrete bound states'] },
-      { id: '1TKDsKKNJJzPZM33fLFz48RB9yIDS7hGz', num: '18c', title: '18_H-Atom_part 3_V1.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Energy eigenvalues E_n = -μe⁴/(32π²ε₀²ħ²n²), total state degeneracy of n² (2n² with spin), and electric dipole selection rules Δl = ±1, Δm = 0, ±1.', pts: ['SO(4) symmetry and Runge-Lenz vector conservation', 'Detailed spectroscopic series: Lyman, Balmer, Paschen'] },
-      { id: '1BMC92UrcJfax9Bz4sz4fFRwOo5Qg-nVN', num: '19', title: '19_Angular Momentum in sperical cordinate_V1.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Orbital angular momentum operator components L_x, L_y, L_z and total operator L² in spherical coordinates (r, θ, φ), with Associated Legendre functions.', pts: ['Eigenvalue proofs: L²Y_lm = l(l+1)ħ²Y_lm and L_zY_lm = mħY_lm', 'Ladder operator algebra L_± = L_x ± iL_y'] },
-      { id: '1XLKuzb0m7_vh-U_x89rUjOa1QSy3th52', num: '20', title: '20_PROBABILITY CURRENT DENSITY IN QUANTUM MECHANICS.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Conservation of quantum probability, continuity equation derivation ∂P/∂t + ∇·J = 0, and explicit vector flux formulation J = (ħ/2mi)(ψ*∇ψ - ψ∇ψ*).', pts: ['Proof that purely real wavefunctions have zero flux', 'Divergence-free probability current in stationary bound states'] },
-      { id: '1CmxRAUYvg2e0aWWKssoPHDBpdIt1dCfS', num: '21', title: '21_Ehrenfests Theorem Derivation and Physical Meaning.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Full mathematical derivation of Ehrenfest\'s theorems d⟨x⟩/dt = ⟨p⟩/m and d⟨p⟩/dt = -⟨∂V/∂x⟩ using Schrödinger time evolution of expectation values.', pts: ['Heisenberg commutator equation of motion d⟨A⟩/dt = (1/iħ)⟨[A,H]⟩', 'Equivalence to classical trajectory in quadratic potentials'] },
-      { id: '1k4gBQFfLTsxl8ULlWF_TirQU9yToqR5P', num: '21b', title: '21_Ehrenfests Theorem Derivation and Physical Meaning_PART2.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Limits of correspondence: breakdown in non-linear potentials where ⟨F(x)⟩ ≠ F(⟨x⟩), quantum spreading of wavepackets, and macroscopic limits.', pts: ['Taylor expansion of potential over packet width', 'Quantum-classical transition timescale calculation'] },
-      { id: '1cfolS7_gDwJVdj6w4aDahC0gsFLsbcNo', num: '22', title: '22_Particle in a Box Applications and Limitations.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: '1D and 3D infinite potential well: boundary condition matching, standing wave eigenfunctions ψ_n(x) = √(2/L)sin(nπx/L), and energy spectrum.', pts: ['Confinement zero-point energy E₁ = h²/(8mL²)', '3D rectangular well degeneracy and density of states'] },
-      { id: '1yncKM3CJ6oX9j5gs2V2cEjBow0ZC91KE', num: '22b', title: '22_Particle in a Box Numerical-problems2.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Advanced solved numerical problems: transition probabilities, expectation values ⟨x⟩, ⟨x²⟩, ⟨p²⟩, sudden potential expansion, and symmetric wells.', pts: ['Quantum expansion perturbation upon well doubling', 'Dipole transition matrix element integrations'] },
-      { id: '1LvT3YAuaGMplAuZsYnJ1snNj1JAuFNxT', num: '23', title: '23_POTENTIAL BARRIER.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Rectangular potential barrier of width a and height V₀: boundary continuity equations, evanescent exponential decay, and reflection coefficient R.', pts: ['Boundary matching at interfaces x = 0 and x = a', 'Analytical conservation proof R + T = 1'] },
-      { id: '1U2gBAhDUZFiWgDgNvvWJ9ppsTzfn50Ac', num: '23b', title: '23_POTENTIAL BARRIER-PART_2_V1.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Quantum tunneling transmission probability T, barrier penetration depth, transmission resonances for E > V₀, and Gamow theory of alpha decay.', pts: ['Asymptotic tunneling formula for thick barriers', 'Transmission resonances (Ramsauer-Townsend effect)'] },
-      { id: '1fdr1wpmj0b7YThh-xl_GycIUDMoLPz-4', num: '24', title: '24_SCHRODINGER\'S EQUATION IN SPHERICAL POLAR COORDINATES.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Spherical Laplacian transformation ∇² in (r, θ, φ), separating radial from angular equations, and detailed derivation of Associated Legendre polynomials.', pts: ['Azimuthal solution Φ(φ) = e^(imφ) and periodicity', 'Polar differential equation and Legendre Rodrigues formula'] },
-      { id: '1DHuZOEpn4ywbwe4TVlwStFUuCnV4vPQ-', num: '25', title: '25_SternGerlach experiment.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Landmark Stern-Gerlach experiment with silver atoms: atomic magnetic dipole moments, inhomogeneous magnetic field force F_z = μ_z(∂B_z/∂z).', pts: ['Knife-edge pole profiling for uniform field gradient', 'Proof of space quantization over classical continuous beam spread'] },
-      { id: '1Q5BwTpznoxKUIHMM50pcNSdM9xdsxZNe', num: '25b', title: '25_SternGerlach experiment-PART-2.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Spin-1/2 hypothesis, Bohr magneton μ_B, Pauli spin matrices σ_x, σ_y, σ_z, spinor representation, and sequential Stern-Gerlach quantum filters.', pts: ['Measurement projection in cascaded SGz → SGx filters', 'Spinor state rotation in arbitrary magnetic field orientations'] },
-      { id: '1cZNI6Eav2DOxPpklrUkgcxKRcqkUQ8T6', num: '26', title: '26_BOHR CORRESPONDING PRINCIPLE.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Bohr\'s correspondence principle: mathematical proof that quantum radiation frequency ν = ΔE/h converges to classical orbital frequency f_orb for n ≫ 1.', pts: ['Asymptotic limit of Rydberg formula for adjacent transitions', 'General criterion for quantum-to-classical correspondence'] },
-      { id: '1d173tUu6cgwytJbrHSRoSYEHEgGUnswt', num: '34a', title: '34_Hermitian and unitary matrices.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Matrix mechanics: Hermitian matrices (A† = A), unitary matrices (U†U = I), unitary transformations preserving inner products, and diagonalization.', pts: ['Proof of real eigenvalues for Hermitian matrices', 'Diagonalization using orthonormal eigenvector matrices'] },
-      { id: '1iOR47cMedC-7gjp0TdzzZDOPncNVHiGs', num: '34b', title: '34_Hermitial-operator.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Formal operator theory: Hermitian (self-adjoint) operators in Hilbert space, domain conditions, expectation values, and compatible observables.', pts: ['Completeness of eigenfunction sets', 'Commuting Hermitian operators sharing simultaneous eigenstates'] },
-      { id: '1bfLKVo0Ziy12m6l8z8M7Cw2UiKKaDEmK', num: '35', title: '35_transformation.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Unitary state transformations, change of basis representations, coordinate-to-momentum representation transformations, and Fourier transforms.', pts: ['Transformation matrix elements ⟨a_i|b_j⟩', 'Invariance of expectation values and traces under unitary change of basis'] },
-      { id: '1UiKSthAVb_5AWeIMbSS5VuUeG5rZPwIy', num: 'Num-1', title: 'compton_numericals.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'High-level solved numerical problems on Compton scattering: calculating maximum energy transfer, scattering angles, and photon recoil fractions.', pts: ['Step-by-step mathematical working for exam-style problems', 'Kinetic energy formulas for recoil electrons at 90° and 180°'] },
-      { id: '126Lt3ZsGLYab7EXojHW3X_Uqnyp0Qziw', num: 'Exp-1', title: 'EXPECTATION VALUE IN QUANTUM MECHANICS.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Detailed derivation of quantum expectation values ⟨A⟩ = ∫ψ*Âψ dx, statistical variance σ_A² = ⟨A²⟩ - ⟨A⟩², and physical measurement interpretation.', pts: ['Expectation values of position, linear momentum, and kinetic energy', 'Time evolution of expectation values and Ehrenfest theorem'] },
-      { id: '1HkGU44MIkdsbjUdlDIKLmY_HmnSLcSEE', num: 'Exp-2', title: 'EXPECTATION VALUE IN QUANTUM MECHANICS_Numericals.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Extensive solved numerical problems on quantum expectation values: computing ⟨x⟩, ⟨p⟩, ⟨x²⟩, ⟨p²⟩ across Gaussian packets and triangular potential wells.', pts: ['Detailed definite integrals using Gamma functions', 'Uncertainty product Δx·Δp evaluation for various wavepackets'] },
-      { id: '16gGSIvWf4NZXwKNRfOJq_Q8o2inz2257', num: 'Num-2', title: 'photoelectric_numericals.pdf', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Comprehensive solved numerical problem sets on photoelectric effect: threshold wavelengths, work functions, stopping voltages, and photon flux.', pts: ['Calculations for multi-wavelength illumination experiments', 'Energy-to-wavelength conversions and Planck constant derivations'] },
+      // M.Sc. Notes (33)
+      { id: '1u7BT6OHISglH07MoPlB5kBqC5XqTLOkq', num: '1', title: '1_BLACK BODY AND BLACK BODY RADIATIONS', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'In-depth derivation of Planck radiation formula, energy density distributions, cavity modes count, and Rayleigh-Jeans divergence.', pts: ['Spectral distribution functions & Wien displacement', 'Stefan-Boltzmann law derivation via integration'] },
+      { id: '1EHVcLjzSE_fjkOJZvP7uxtvs_TK2iB0Z', num: '1a', title: '1a_Classical Physics Limitations and Failure', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Critical mathematical review of classical thermodynamics breakdowns: equipartition anomalies, electron specific heats, and Larmor orbital collapse.', pts: ['Dulong-Petit law departures at low temperature', 'Derivation of radiative lifetime of Rutherford atom'] },
+      { id: '1ki7W-5iXRHexwoNmcuEo5Z6lIx8tyohy', num: '2', title: '2_Planck\'s Hypothesis and Energy Quantization', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Rigorous derivation of Planck average oscillator energy ⟨E⟩ using Maxwell-Boltzmann statistics and discrete sum quantization.', pts: ['Detailed geometric series summation', 'Bridging macroscopic entropy to microscopic microstates'] },
+      { id: '10xJ06hQhW5TkSc1Ou2ppCBKk-l5lmmLz', num: '3', title: '3_Photoelectric Effect Experimental Evidence', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Formal study of electromagnetic quantum photoemission: stopping voltage curves, threshold cutoff frequency ν₀, and work function Φ.', pts: ['Einstein energy conservation equation', 'Failure of classical Poynting vector accumulation'] },
+      { id: '11Z62I2_fvjMMZvchblP4K1-muXcuPauE', num: '4', title: '4_Compton Effect Scattering of Radiation as Particles', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Four-momentum formulation of relativistic photon-electron scattering, Compton shift formula derivation, and recoil electron energy analysis.', pts: ['Relativistic energy-momentum 4-vector conservation', 'Kinematics of backscattering and recoil electrons'] },
+      { id: '17L-TxAzPNen7lY0BiABR8skmOaRSwKO0', num: '8', title: '8_Wave-Particle Duality de Broglie Hypothesis', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Matter wave mechanics: relativistic de Broglie wavelength λ = h/p, phase velocity v_p vs. group velocity v_g, and dispersion relations.', pts: ['Proof that v_g equals particle velocity v', 'Wavepacket construction via Fourier integrals'] },
+      { id: '1VDVT_MBHjo4Ot40bvX4wtS18M9iMkXln', num: '9', title: '9_Diffraction of Particles Davisson-Germer Experiment', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Experimental crystallography verification: Davisson-Germer and Thomson experiments, atomic spacing d in nickel lattice, and electron interferometry.', pts: ['Bragg law reflection formulation for matter waves', 'Azimuthal scattering analysis at 54 V'] },
+      { id: '1o0AP4G4eHIvkxiVtxCj7qmnXqjL9Wkk3', num: '9a', title: '9_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Detailed differential solution for the 1D harmonic oscillator: Hermite polynomial recursion, asymptotic analysis, and normalization integrals.', pts: ['Series solution method for Hermite differential equation', 'Parity selection rules and wave function properties'] },
+      { id: '1HW4s97YstqK20cSXsnIOcTUo3aeXYvXh', num: '9_num', title: '9_LINEAR HARMONIC OSCILLATOR_Numericals', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Solved graduate numericals on the harmonic oscillator: matrix elements ⟨m|x|n⟩, transition probabilities, and energy uncertainty calculations.', pts: ['Matrix representation in number state basis', 'Creation and annihilation operator techniques'] },
+      { id: '1HyNd0sAM5jX1yPV184VngH9YlGdyazqd', num: '10', title: '10_Heisenberg Uncertainty Principle Conceptual Basis', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Heisenberg gamma-ray microscope thought experiment, generalized Robertson-Schrödinger uncertainty relation, and commutation mechanics.', pts: ['Derivation from Cauchy-Schwarz inequality', 'Energy-time uncertainty and resonance linewidths'] },
+      { id: '1wHAkTghfuV4swk6u5BPtuyPgkUrjET0b', num: '10b', title: '10_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Second part of harmonic oscillator: ladder operator algebra (a, a†), coherent states, zero-point energy manifestations, and thermodynamic partition.', pts: ['Ladder operator commutator [a, a†] = 1', 'Coherent states as minimum uncertainty wavepackets'] },
+      { id: '1OM3Q0AWGs4JAP3mCQNPPqum2tZtk8rHK', num: '18', title: '18_H-Atom', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Complete mathematical solution of the Hydrogen atom: Coulomb potential, separation into R(r), Θ(θ), and Φ(φ) equations, and centrifugal barrier.', pts: ['Associated Legendre polynomials and spherical harmonics', 'Radial equation transformation and boundary conditions'] },
+      { id: '1el3ixlxbja9ILEIAK0y-yF_8YtI1cVY_', num: '18_p2', title: '18_H-Atom_part 2', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Radial wavefunctions and Associated Laguerre polynomials: principal quantum number n, orbital l, magnetic m, and energy eigenvalue derivation.', pts: ['Bohr radius a₀ and energy spectrum E_n = -13.6/n² eV', 'Radial probability densities and radial nodes count'] },
+      { id: '1TKDsKKNJJzPZM33fLFz48RB9yIDS7hGz', num: '18_p3', title: '18_H-Atom_part 3_V1', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Degeneracy, atomic transitions, and spectroscopic selection rules: dipole transition integrals, parity rules, and fine-structure introduction.', pts: ['Total n² orbital degeneracy (2n² with spin)', 'Selection rules Δl = ±1 and spectroscopic series'] },
+      { id: '1BMC92UrcJfax9Bz4sz4fFRwOo5Qg-nVN', num: '19', title: '19_Angular Momentum in sperical cordinate_V1', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Angular momentum operator algebra in spherical polar coordinates: L_x, L_y, L_z, L², ladder operators L±, and eigenvalue spectra.', pts: ['Commutation relations [L_i, L_j] = iħε_ijk L_k', 'Simultaneous eigenfunctions: Spherical harmonics Y_l^m'] },
+      { id: '1XLKuzb0m7_vh-U_x89rUjOa1QSy3th52', num: '20', title: '20_PROBABILITY CURRENT DENSITY IN QUANTUM MECHANICS', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Conservation of probability: continuity equation derivation, complex conjugate wavefunction properties, and probability flux vector in 3D.', pts: ['Analytical derivation of ∇·J + ∂P/∂t = 0', 'Current density for plane waves and stationary states'] },
+      { id: '1CmxRAUYvg2e0aWWKssoPHDBpdIt1dCfS', num: '21', title: '21_Ehrenfests Theorem Derivation and Physical Meaning', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Detailed derivation of Ehrenfest theorem: expectation value time derivatives d⟨A⟩/dt = (1/iħ)⟨[A,H]⟩, classical limit, and trajectory physics.', pts: ['Equations of motion for ⟨x⟩ and ⟨p⟩', 'Quantum-to-classical correspondence mechanism'] },
+      { id: '1k4gBQFfLTsxl8ULlWF_TirQU9yToqR5P', num: '21b', title: '21_Ehrenfests Theorem Derivation and Physical Meaning_PART2', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Advanced analysis of Ehrenfest theorem: wavepacket spreading, validity limits in anharmonic potentials, and quantum chaos boundaries.', pts: ['Spreading timescale τ for Gaussian wavepackets', 'Potential expansion criteria and corrections to classical motion'] },
+      { id: '1cfolS7_gDwJVdj6w4aDahC0gsFLsbcNo', num: '22', title: '22_Particle in a Box Applications and Limitations', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: '1D and 3D infinite potential wells: boundary value solutions, state degeneracy in 3D boxes, and density of states calculations.', pts: ['Energy level formulas and symmetric vs asymmetric coordinates', 'Quantum confinement in quantum dots and wires'] },
+      { id: '1yncKM3CJ6oX9j5gs2V2cEjBow0ZC91KE', num: '22_num', title: '22_Particle in a Box Numerical-problems2', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Solved graduate examination problems on potential wells: non-infinite boundary conditions, perturbation shifts, and expectation values.', pts: ['Calculations of ⟨x⟩, ⟨x²⟩, ⟨p⟩, ⟨p²⟩ for particle in box', 'High-frequency competitive exam derivations'] },
+      { id: '1LvT3YAuaGMplAuZsYnJ1snNj1JAuFNxT', num: '23', title: '23_POTENTIAL BARRIER', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Finite rectangular potential barrier: scattering states, boundary matching conditions, and reflection/transmission coefficients for E < V₀ and E > V₀.', pts: ['Continuity of ψ and dψ/dx at boundary interfaces', 'Evanescent decaying wave solutions inside the barrier'] },
+      { id: '1U2gBAhDUZFiWgDgNvvWJ9ppsTzfn50Ac', num: '23b', title: '23_POTENTIAL BARRIER-PART_2_V1', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Quantum mechanical tunneling: transmission coefficient T, tunnel diode, alpha decay half-life derivation via Gamow factor, and STM physics.', pts: ['Gamow tunneling formula and exponential barrier decay', 'Transmission resonances and Ramsauer-Townsend effect'] },
+      { id: '1fdr1wpmj0b7YThh-xl_GycIUDMoLPz-4', num: '24', title: '24_SCHRODINGER\'S EQUATION IN SPHERICAL POLAR COORDINATES', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Laplacian operator in spherical coordinates (r, θ, φ): complete coordinate transformation, separation into radial and angular parts.', pts: ['Derivation of spherical Laplacian ∇²', 'Orthogonality and normalization of spherical harmonics'] },
+      { id: '1DHuZOEpn4ywbwe4TVlwStFUuCnV4vPQ-', num: '25', title: '25_SternGerlach experiment', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Experimental setup and mathematical analysis of Stern-Gerlach experiment: force on magnetic dipole in inhomogeneous field, spatial beam split.', pts: ['Gradient magnetic field ∂B_z/∂z and beam deflection calculation', 'Spatial quantization vs classical isotropic smear'] },
+      { id: '1Q5BwTpznoxKUIHMM50pcNSdM9xdsxZNe', num: '25b', title: '25_SternGerlach experiment-PART-2', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Spin-1/2 quantum theory: Pauli spin matrices, spinor wavefunctions, sequential Stern-Gerlach analyzers, and quantum projection measurement.', pts: ['Pauli matrices σ_x, σ_y, σ_z algebraic identities', 'Sequential measurements along non-collinear axes (SGz → SGx)'] },
+      { id: '1cZNI6Eav2DOxPpklrUkgcxKRcqkUQ8T6', num: '26', title: '26_BOHR CORRESPONDING PRINCIPLE', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Bohr correspondence principle: asymptotic bridge between quantum transitions and classical orbital radiation for high quantum numbers n ≫ 1.', pts: ['Proof that quantum transition frequency approaches orbital frequency', 'Applications to Rydberg states and classical trajectories'] },
+      { id: '1d173tUu6cgwytJbrHSRoSYEHEgGUnswt', num: '34', title: '34_Hermitian and unitary matrices', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Matrix formulation of quantum mechanics: Hermitian operators, unitary transformations, matrix representations, and change of basis.', pts: ['Proof of real eigenvalues for Hermitian matrices', 'Unitary operators and preservation of probability norms'] },
+      { id: '1iOR47cMedC-7gjp0TdzzZDOPncNVHiGs', num: '34b', title: '34_Hermitial-operator', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Operator theory: definition of adjoint, self-adjoint (Hermitian) operators, orthogonality of distinct eigenstates, and completeness relation.', pts: ['Closure relation and resolution of identity ∑|n⟩⟨n| = 1', 'Compatible observables and simultaneous diagonalization'] },
+      { id: '1bfLKVo0Ziy12m6l8z8M7Cw2UiKKaDEmK', num: '35', title: '35_transformation', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Quantum state transformations: unitary transformations in Hilbert space, Schrödinger vs Heisenberg pictures, and time-evolution operator U(t).', pts: ['Heisenberg equation of motion for operators', 'Unitary transformation of operators and state vectors'] },
+      { id: '1UiKSthAVb_5AWeIMbSS5VuUeG5rZPwIy', num: 'comp_num', title: 'compton_numericals', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Solved problems on Compton scattering: calculating wavelength shift Δλ, maximum kinetic energy of recoil electron, and scattering angles.', pts: ['Numerical evaluation using Compton wavelength λ_c = 0.02426 Å', 'Step-by-step solutions for national competitive examinations'] },
+      { id: '126Lt3ZsGLYab7EXojHW3X_Uqnyp0Qziw', num: 'exp_val', title: 'EXPECTATION VALUE IN QUANTUM MECHANICS', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Foundational theory of quantum expectation values: physical measurement outcomes, statistical interpretation, and variance/uncertainty.', pts: ['Definition ⟨A⟩ = ∫ ψ* Â ψ dx and mathematical requirements', 'Relationship between expectation values and classical observables'] },
+      { id: '1HkGU44MIkdsbjUdlDIKLmY_HmnSLcSEE', num: 'exp_num', title: 'EXPECTATION VALUE IN QUANTUM MECHANICS_Numericals', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Comprehensive numerical set on expectation values: computing ⟨x⟩, ⟨p⟩, ⟨x²⟩, ⟨p²⟩, and verifying uncertainty principle for various wavepackets.', pts: ['Gaussian wavepacket expectation values and minimum uncertainty', 'Harmonic oscillator and box state numerical evaluations'] },
+      { id: '16gGSIvWf4NZXwKNRfOJq_Q8o2inz2257', num: 'photo_num', title: 'photoelectric_numericals', sec: 'msc-notes', cat: 'M.Sc. Quantum Mechanics', desc: 'Solved examination problems on photoelectric effect: threshold wavelength calculations, stopping potential determination, and work function evaluations.', pts: ['Multi-step numerical solutions with SI unit conversions', 'High-frequency exam questions with graphical interpretations'] },
 
-      // B.Sc. Class Notes (21 Items)
-      { id: '1rQQWgOY-i1-7wtGaIDWKYHU0UZjopEYH', num: '1', title: '1_WAVE FUNCTION IN QUANTUM MECHANICS - WITH EXAM NOTES.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Introductory lecture notes on quantum wavefunction Ψ(x,t), complex probability amplitudes, superposition principle, and exam-oriented problem solutions.', pts: ['Born interpretation of probability density', 'Step-by-step solved university exam questions'] },
-      { id: '1D2xu35uzSlWm2TpBwMq90mh8Tl36gdLI', num: '2', title: '2_Physical-significans of Wavefunction.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Physical interpretation of Born probability density P(x) = |Ψ(x,t)|², phase significance, and statistical ensemble concepts in quantum mechanics.', pts: ['Volume probability element dP = |Ψ|² dV', 'Admissibility criteria: finiteness, continuity, single-valuedness'] },
-      { id: '1g4fOqC86JpR13FYeKymeDZnio2o14Akn', num: '3', title: '3_NORMALIZATION OF WAVE FUNCTION.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Conservation of certainty: condition ∫|Ψ|² dx = 1 over all space, finding normalization constants A for exponential and Gaussian wavepackets.', pts: ['Definite integral evaluations using standard Gamma functions', 'Time invariance of normalization under Schrödinger evolution'] },
-      { id: '1JNntSDAJY4Hr3dzjh5LtEipC0zcc2pjy', num: '4', title: '4_ORTHOGONALITY OF WAVE FUNCTIONS.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Mutual orthogonality condition ∫Ψₘ*(x)Ψₙ(x) dx = δₘₙ for distinct stationary states, geometric Hilbert space representation, and expansion theorem.', pts: ['Proof of orthogonality for non-degenerate eigenstates', 'Kronecker delta formalism and orthonormal bases'] },
-      { id: '1vyOx1aBUGXf0BJjomxmjE7Ot3TWzvK0q', num: '6', title: '6_Time-dependent Schroding Equation.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Derivation of 1D and 3D Time-Dependent Schrödinger Equation (TDSE) iħ ∂Ψ/∂t = ĤΨ, operator correspondence, and dispersive matter wave dynamics.', pts: ['Operator correspondence: E → iħ ∂/∂t and p → -iħ ∇', 'Causality and deterministic time evolution of quantum states'] },
-      { id: '11cl85Ew0fJLFXLXLGOslB_JMoDOxb9XD', num: '7', title: '7_Time-ibdependent Schroding Equation.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Separation of variables for conservative systems Ψ(x,t) = ψ(x)e^(-iEt/ħ), yielding the Time-Independent Schrödinger Equation Ĥψ = Eψ.', pts: ['Stationary states and time-independent probability density', 'Energy eigenvalue problem formulation'] },
-      { id: '1c28Zzkq9n-Y9Pf2lnxeOfXptf5CU41rJ', num: '8', title: '8_PARTICLE IN ONE DIMENSIONAL BOX-INFINITE POTENTIAL WELL.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: '1D infinite square well: boundary conditions, standing matter wave solutions ψ_n(x), quantized spectrum E_n = n²h²/(8mL²), and quantum size effects.', pts: ['Non-zero zero-point energy E₁ mandated by uncertainty', 'Node count and spatial symmetry of eigenfunctions'] },
-      { id: '1AN5uu4jwnMULDNgirUjdDAPRDMPh9_jL', num: '9', title: '9_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Undergraduate formulation of the 1D quantum harmonic oscillator: parabolic potential well, dimensionless coordinate scaling, and differential setup.', pts: ['Dimensionless substitution ξ = √(mω/ħ)x', 'Power series boundary requirements'] },
-      { id: '1qyTRsZiNeE4jDWSYmimUR76cDqTpj8sK', num: '9_PPT', title: '9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Lecture slide companion notes for 1D harmonic oscillator: graphical illustrations of parabolic potential, coordinate substitutions, and asymptotic wave behavior.', pts: ['Visualizing the harmonic potential well V(x) = ½mω²x²', 'Mathematical setup of the Hermite differential equation'] },
-      { id: '1N2BL0UPS5ZBQB9gPekYYQtkj-1AM_ApL', num: '10', title: '10_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Quantized energy levels E_n = (n + ½)ħω, physical interpretation of zero-point energy, orthonormal Hermite polynomials, and parity symmetries.', pts: ['Zero-point energy necessity', 'Alternating parity states with n nodes'] },
-      { id: '1Wg5uD_fYo7zTaU7mKjYf5lebwomJnH_g', num: '11', title: '11_PROBABILITY CURRENT DENSITY IN QUANTUM MECHANICS.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Conservation of quantum probability, continuity equation ∂P/∂t + ∇·J = 0, and explicit vector formulation of probability flux J.', pts: ['Zero current for purely real wavefunctions', 'Divergence-free flux patterns for bound states'] },
-      { id: '19PMDi-u74CrrEkj5-4XVEd3T0tVo482U', num: '12', title: '12_HERMITIAN OPERATOR.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Foundational quantum operator theory: mathematical definition of Hermitian operators, proof of real eigenvalues for physical observables, and orthogonality.', pts: ['Proof that physical measurements yield real eigenvalues', 'Orthogonality theorem for non-degenerate states'] },
-      { id: '1jv2dv8jjBQ75KQW88tjD0kd6dMegsonT', num: '13', title: '13_HERMITION OPERATORS HAVE REAL EIGEN VALUES.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Rigorous mathematical proof that all eigenvalues of Hermitian (self-adjoint) operators in Hilbert space are strictly real numbers.', pts: ['Step-by-step inner product proof: (λ - λ*)⟨ψ|ψ⟩ = 0', 'Physical implication for real laboratory observables'] },
-      { id: '19qTTQ54OIHcbLc4m9V-mgw0rgnfXzMM8', num: '14', title: '14_EIGEN FUNCTIONS OF HERMITIAN OPERATOR ARE ORTHOGONAL.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Analytical theorem and proof demonstrating that eigenfunctions of a Hermitian operator corresponding to distinct eigenvalues are mutually orthogonal.', pts: ['Proof: (λ₁ - λ₂)⟨ψ₁|ψ₂⟩ = 0 implies ⟨ψ₁|ψ₂⟩ = 0', 'Geometric Hilbert space interpretation and orthonormal basis'] },
-      { id: '1w9Td1mwSdekUDMolDM-jegQqzfYTLrt1', num: '15', title: '15_PRODUCT OF TWO HERMITIAN OPERATORS IS HERMITIAN IF THEY COMMUTE.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Theorem on operator commutativity: rigorous proof that (ÂB̂)† = B̂†Â† = B̂Â = ÂB̂ if and only if [Â, B̂] = 0.', pts: ['Algebraic commutator identity proofs', 'Physical consequences for simultaneous observables and compatibility'] },
-      { id: '1DISahMxBiGuPhgOyjDENS8bH6W4jelPc', num: '18', title: '18_H-Atom.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: '3D Schrödinger formulation for one-electron hydrogen atom: attractive Coulomb potential, effective radial potential, and centrifugal barrier.', pts: ['Two-body reduction using reduced mass μ', 'Competition between Coulomb pull and centrifugal push'] },
-      { id: '1otzg3LMdo5ExxhwjdLWlbKnMv_RoSOeT', num: '18b', title: '18_H-Atom_part 2.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Step-by-step solution of the radial Schrödinger equation: power series expansion, recurrence relations, and termination condition defining n.', pts: ['Polynomial termination enforcing normalizability', 'Nodal topology: (n - l - 1) radial nodes'] },
-      { id: '1ihCABxIB9oVUpJ8NtAOPAoxSB4uYKPp5', num: '18c', title: '18_H-Atom_part 3_V1.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Quantized energy formula E_n = -13.6 eV / n², n² orbital degeneracy, spectroscopic term symbols, and dipole transition selection rules.', pts: ['Explaining n² degeneracy through Coulomb symmetry', 'Spectral transitions: Lyman, Balmer, Paschen'] },
-      { id: '1hPcmLa5ESmeCYdhRRjNtsTPsQptOLQSp', num: '20', title: '20_commutator_relation.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Fundamental commutator relations in quantum mechanics: [x, p_x] = iħ, algebraic properties, Jacobi identity, and uncertainty connection.', pts: ['Derivation of canonical commutation relation [x, p] = iħ', 'Proof that commuting operators share simultaneous eigenfunctions'] },
-      { id: '1mXCg68bNEUElwxRA5JpwvuRptXj0oYJf', num: '20b', title: '20_commutator_relation_Notes.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Worked exam notes and problems on quantum commutators: evaluating [x², p], [x, p²], and generalized operator polynomial identities.', pts: ['Step-by-step commutator evaluations with wavefunctions', 'Exam numerical derivations and shortcut formulas'] },
-      { id: '1crVV4HPy4aWkQ0Ok_6iQs9qkW4VbG18c', num: '21', title: '21_UNCERTAINTY PRINCIPLE FROM de Broglie HYPOTHESIS.pdf', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Derivation of Heisenberg uncertainty principle directly from de Broglie matter wavepackets and Fourier spatial bandwidth relations Δx·Δk ≈ 1.', pts: ['Wavepacket group representation and dispersion', 'Physical connection between wavelength spread and momentum uncertainty'] },
+      // B.Sc. Notes (21)
+      { id: '1rQQWgOY-i1-7wtGaIDWKYHU0UZjopEYH', num: '1', title: '1_WAVE FUNCTION IN QUANTUM MECHANICS - WITH EXAM NOTES', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Introduction to matter wavefunctions: physical interpretation, single-valuedness, finiteness, and boundary conditions required for valid wave solutions.', pts: ['Max Born statistical probability interpretation |ψ|²', 'Standard boundary requirements for physical wavefunctions'] },
+      { id: '1D2xu35uzSlWm2TpBwMq90mh8Tl36gdLI', num: '2', title: '2_Physical-significans of Wavefunction', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Physical meaning of quantum amplitude and probability density: why wavefunctions are complex, observables as real quantities, and superposition principle.', pts: ['Probability density P(x) = ψ*(x)ψ(x) non-negativity', 'Superposition of quantum states and interference terms'] },
+      { id: '1g4fOqC86JpR13FYeKymeDZnio2o14Akn', num: '3', title: '3_NORMALIZATION OF WAVE FUNCTION', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Mathematical normalization of wavefunctions: integral condition ∫|ψ|²dx = 1, finding normalization constants for 1D/3D wavepackets and box states.', pts: ['Step-by-step normalization constant derivations', 'Square-integrable Hilbert space requirements'] },
+      { id: '1JNntSDAJY4Hr3dzjh5LtEipC0zcc2pjy', num: '4', title: '4_ORTHOGONALITY OF WAVE FUNCTIONS', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Orthogonality of quantum eigenstates: mathematical definition ∫ψ_m* ψ_n dx = 0 (for m ≠ n), Kronecker delta δ_mn, and orthonormal sets.', pts: ['Proof of orthogonality for distinct energy levels', 'Expansion theorem: representing arbitrary states in orthonormal basis'] },
+      { id: '1vyOx1aBUGXf0BJjomxmjE7Ot3TWzvK0q', num: '6', title: '6_Time-dependent Schroding Equation', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Derivation of the time-dependent Schrödinger equation (TDSE): energy operator Ê = iħ∂/∂t, momentum operator p̂ = -iħ∇, and wave evolution.', pts: ['First-order time derivative ensuring unique state evolution', 'Plane matter wave dispersion relation E = p²/2m'] },
+      { id: '11cl85Ew0fJLFXLXLGOslB_JMoDOxb9XD', num: '7', title: '7_Time-ibdependent Schroding Equation', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Separation of variables for conservative potentials: deriving the time-independent Schrödinger equation (TISE) Ĥψ = Eψ and stationary states.', pts: ['Stationary state definition: constant probability density in time', 'Energy eigenvalue problem and discrete spectrum conditions'] },
+      { id: '1c28Zzkq9n-Y9Pf2lnxeOfXptf5CU41rJ', num: '8', title: '8_PARTICLE IN ONE DIMENSIONAL BOX-INFINITE POTENTIAL WELL', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Undergraduate formulation of particle in a 1D box: sinusoidal solutions, boundary enforcement, energy quantization E_n = n²π²ħ²/(2mL²), and nodes.', pts: ['Zero-point energy E₁ = π²ħ²/(2mL²) origin', 'Wavefunction plots showing n-1 nodes for n-th state'] },
+      { id: '1AN5uu4jwnMULDNgirUjdDAPRDMPh9_jL', num: '9', title: '9_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Foundational formulation of the 1D quantum harmonic oscillator: differential equation setup, dimensionless coordinates, and asymptotic behavior.', pts: ['Asymptotic Gaussian factor e^(-x²/2)', 'Power series expansion and truncation criteria'] },
+      { id: '1qyTRsZiNeE4jDWSYmimUR76cDqTpj8sK', num: '9_ppt', title: '9_PPT_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Class presentation slides accompanying Lecture 9 on the linear harmonic oscillator: potential well visualization, energy levels, and wavefunctions.', pts: ['Even and odd parity state visualizations', 'Hermite polynomial solutions review'] },
+      { id: '1N2BL0UPS5ZBQB9gPekYYQtkj-1AM_ApL', num: '10', title: '10_LINEAR HARMONIC OSCILLATOR IN QUANTUM MECHANICS-PART2', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Quantized energy spectrum E_n = (n + ½)ħω, physical necessity of zero-point energy, Hermite polynomials H_n(x), and classical turning points.', pts: ['Tunneling into classically forbidden regions (E < V)', 'Orthogonality and normalization of Hermite wavefunctions'] },
+      { id: '1Wg5uD_fYo7zTaU7mKjYf5lebwomJnH_g', num: '11', title: '11_PROBABILITY CURRENT DENSITY IN QUANTUM MECHANICS', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Conservation of probability: continuity equation derivation, complex conjugate wavefunction properties, and probability flux vector.', pts: ['Analytical derivation of ∂P/∂t + ∇·J = 0', 'Proof that J = 0 for any real wavefunction'] },
+      { id: '19PMDi-u74CrrEkj5-4XVEd3T0tVo482U', num: '12', title: '12_HERMITIAN OPERATOR', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Hermitian operator theory: definition ∫ψ₁*(Âψ₂)dx = ∫(Âψ₁)*ψ₂dx, role of Hermitian operators as physical observables, and key algebraic identities.', pts: ['Position and momentum as Hermitian operators', 'Linear combinations and properties of self-adjoint operators'] },
+      { id: '1jv2dv8jjBQ75KQW88tjD0kd6dMegsonT', num: '13', title: '13_HERMITION OPERATORS HAVE REAL EIGEN VALUES', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Mathematical proof that all eigenvalues of Hermitian operators are strictly real: ensuring that physical measurement outcomes are real numbers.', pts: ['Rigorous two-line algebraic proof', 'Significance for quantum measurement theory'] },
+      { id: '19qTTQ54OIHcbLc4m9V-mgw0rgnfXzMM8', num: '14', title: '14_EIGEN FUNCTIONS OF HERMITIAN OPERATOR CORRESPONDING TO DIFFERENT EIGEN VALUES ARE ORTHOGONAL', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Mathematical proof: eigenstates of Hermitian operators with distinct eigenvalues are mutually orthogonal, forming an orthonormal basis.', pts: ['Direct derivation from Hermitian definition', 'Gram-Schmidt orthogonalization for degenerate states'] },
+      { id: '1w9Td1mwSdekUDMolDM-jegQqzfYTLrt1', num: '15', title: '15_PRODUCT OF TWO HERMITIAN OPERATORS IS HERMITIAN IF THEY COMMUTE', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Theorem on operator commutativity: (ÂB̂)† = B̂†Â† = B̂Â = ÂB̂ if and only if [Â, B̂] = 0, connecting compatibility to Hermiticity.', pts: ['Proof of Hermiticity condition for operator products', 'Implications for simultaneous measurement of observables'] },
+      { id: '1DISahMxBiGuPhgOyjDENS8bH6W4jelPc', num: '18', title: '18_H-Atom', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Undergraduate formulation of the Hydrogen atom: 3D Schrödinger equation in spherical polar coordinates, Coulomb attraction, and effective potential.', pts: ['Separation into R(r) and angular functions', 'Effective potential with centrifugal repulsive barrier'] },
+      { id: '1otzg3LMdo5ExxhwjdLWlbKnMv_RoSOeT', num: '18_p2', title: '18_H-Atom_part 2', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Radial wavefunctions and Associated Laguerre polynomials: principal quantum number n, orbital l, magnetic m, and energy eigenvalue derivation.', pts: ['Energy level formula E_n = -13.6/n² eV', 'Radial probability distributions for 1s, 2s, 2p states'] },
+      { id: '1ihCABxIB9oVUpJ8NtAOPAoxSB4uYKPp5', num: '18_p3', title: '18_H-Atom_part 3_V1', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Spectroscopic transitions and orbital shapes: visual representation of s, p, d orbital contours, dipole transition rules, and emission series.', pts: ['Lyman, Balmer, Paschen spectroscopic transitions', 'Orbital angular momentum quantum numbers and shapes'] },
+      { id: '1hPcmLa5ESmeCYdhRRjNtsTPsQptOLQSp', num: '20', title: '20_commutator_relation', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Commutator algebra: definition [Â, B̂] = ÂB̂ - B̂Â, canonical commutation relation [x, p] = iħ, and link to Heisenberg uncertainty.', pts: ['Commutator identities and algebraic properties', 'Proof that commuting operators share simultaneous eigenfunctions'] },
+      { id: '1mXCg68bNEUElwxRA5JpwvuRptXj0oYJf', num: '20_notes', title: '20_commutator_relation_Notes', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Supplementary notes and worked examples on commutator algebra: evaluating [x, pⁿ], [L_x, L_y], and Hamiltonian commutators [x, H].', pts: ['Step-by-step solved commutator identities', 'High-frequency exam derivation problems'] },
+      { id: '1crVV4HPy4aWkQ0Ok_6iQs9qkW4VbG18c', num: '21', title: '21_UNCERTAINTY PRINCIPLE FROM de Broglie HYPOTHESIS', sec: 'bsc-notes', cat: 'B.Sc. Quantum Mechanics', desc: 'Derivation of Heisenberg uncertainty principle from wavepacket characteristics: wavepacket width Δx, wavevector spread Δk, and de Broglie relation p = ħk.', pts: ['Fourier transform bandwidth theorem Δx·Δk ≥ ½', 'Proof of minimum uncertainty Gaussian wavepackets'] },
 
-      // CSIR-NET & GATE Class Notes (3 Items)
-      { id: '1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', num: 'M1', title: 'CSIR-NET & GATE Physical Sciences: Comprehensive Core Notes (Module 1)', sec: 'gate-notes', cat: 'CSIR-NET / GATE', desc: 'High-yield conceptual notes tailored for aspirants targeting CSIR-UGC NET (JRF/LS) and GATE Physical Sciences. Focused on core theoretical fundamentals.', pts: ['Lagrangian & Hamiltonian formulations and Poisson brackets', 'Reciprocal lattice physics and dielectric response in media'] },
-      { id: '1PsSogtR4QDR5QxBCvyhmsaMt7VkpRqh-', num: 'M2', title: 'CSIR-NET & GATE Physical Sciences: Advanced Problem Sets & Derivations (Module 2)', sec: 'gate-notes', cat: 'CSIR-NET / GATE', desc: 'Intensive analytical problem set breaking down multi-concept standard and advanced questions from CSIR-NET Part C and GATE advanced numerical sections.', pts: ['Bose-Einstein & Fermi-Dirac distributions and partition functions', 'Time-independent perturbation theory and WKB approximations'] },
-      { id: '1y3iQDobMqpeT9cO2O60wy-B510qEBlR9', num: 'M3', title: 'CSIR-NET & GATE Physical Sciences: Formula Compendium & Revision Guide (Module 3)', sec: 'gate-notes', cat: 'CSIR-NET / GATE', desc: 'Concise high-yield formula compendium designed for last-minute revision, memorization of universal relations, boundary conditions, and direct substitutions.', pts: ['Condensed tables for nuclear models and crystal structures', 'Special functions cheatsheet (Legendre, Hermite, Bessel, Green’s)'] }
+      // CSIR_NET & GATE Notes (3)
+      { id: '1UWqJHolfVjgArk0jo4CxYs7jWoDeGKK3', num: 'M1', title: 'CSIR_NET & GATE Physical Sciences: Comprehensive Core Notes (Module 1)', sec: 'gate-notes', cat: 'CSIR_NET & GATE', desc: 'High-yield conceptual revision notes covering classical mechanics, quantum mechanics, electromagnetic theory, and mathematical physics.', pts: ['Lagrangian & Hamiltonian canonical formalism', 'Perturbation theory and standard exam shortcuts'] },
+      { id: '1PsSogtR4QDR5QxBCvyhmsaMt7VkpRqh-', num: 'M2', title: 'CSIR_NET & GATE Physical Sciences: Advanced Problem Sets & Solved PYQs (Module 2)', sec: 'gate-notes', cat: 'CSIR_NET & GATE', desc: 'Intensive problem bank with fully worked solutions for Part C advanced numerical questions: statistical mechanics, solid state physics, and optics.', pts: ['Partition functions, Bose-Einstein & Fermi-Dirac distributions', 'Reciprocal lattice, band theory, and Brillouin zones'] },
+      { id: '1y3iQDobMqpeT9cO2O60wy-B510qEBlR9', num: 'M3', title: 'CSIR_NET & GATE Physical Sciences: Formula Compendium & Quick Revision Guide (Module 3)', sec: 'gate-notes', cat: 'CSIR_NET & GATE', desc: 'Consolidated reference handbook containing all critical physics formulas, standard values, selection rules, and quick substitution tricks.', pts: ['Spectroscopic term symbols and Landé g-factor formulas', 'Green functions, residue theorem, and Fourier transforms'] },
+
+      // Magnetism Notes (4) - Tab positioned immediately after CSIR_NET & GATE
+      { id: '1u7BT6OHISglH07MoPlB5kBqC5XqTLOkq', num: 'MAG-N1', title: 'Classification of Magnetic Materials: Diamagnetism & Paramagnetism', sec: 'mag-notes', cat: 'Magnetism', desc: 'Langevin classical theory of diamagnetism and paramagnetism, quantum theory of paramagnetism, Brillouin function, and Curie-Weiss law.', pts: ['Langevin susceptibility derivation χ_dia = -μ₀Ne²⟨r²⟩/(6m)', 'Curie law breakdown at low temperatures & Van Vleck paramagnetism'] },
+      { id: '1EHVcLjzSE_fjkOJZvP7uxtvs_TK2iB0Z', num: 'MAG-N2', title: 'Ferromagnetism, Weiss Molecular Field & Exchange Interaction', sec: 'mag-notes', cat: 'Magnetism', desc: 'Microscopic origin of spontaneous magnetization: Weiss molecular field theory, quantum mechanical exchange Hamiltonian H = -2J S₁·S₂, and Curie point.', pts: ['Direct exchange, super-exchange, and RKKY interactions', 'Derivation of Curie-Weiss law χ = C/(T - θ)'] },
+      { id: '1ki7W-5iXRHexwoNmcuEo5Z6lIx8tyohy', num: 'MAG-N3', title: 'Magnetic Domains, Domain Walls & Anisotropy Energies', sec: 'mag-notes', cat: 'Magnetism', desc: 'Energetics of ferromagnetic domains: magnetocrystalline anisotropy, magnetostriction, demagnetizing field energy, and Bloch vs Néel wall structure.', pts: ['Domain wall width calculation δ = π√(A/K)', 'Minimization of magnetostatic vs exchange energy'] },
+      { id: '10xJ06hQhW5TkSc1Ou2ppCBKk-l5lmmLz', num: 'MAG-N4', title: 'Magnetic Hysteresis, Soft & Hard Magnetic Materials & Nanomagnetism', sec: 'mag-notes', cat: 'Magnetism', desc: 'M-H hysteresis loop mechanisms: reversible and irreversible domain wall motion, coercivity H_c, remanence M_r, superparamagnetism in nanoparticles.', pts: ['Stoner-Wohlfarth coherent rotation model', 'Applications in permanent magnets and high-density recording media'] },
+
+      // Spintronics Notes (5) - Tab positioned immediately after Magnetism
+      { id: '11Z62I2_fvjMMZvchblP4K1-muXcuPauE', num: 'SPIN-N1', title: 'Introduction to Spintronics & Spin-Dependent Conduction', sec: 'spin-notes', cat: 'Spintronics', desc: 'Foundations of spin transport: Mott two-current model in ferromagnets, spin polarization definition P, and spin-flip scattering mechanisms.', pts: ['Two-current model: conductivity ratio σ_↑/σ_↓ in 3d transition metals', 'Spin accumulation and spin chemical potential gradient'] },
+      { id: '17L-TxAzPNen7lY0BiABR8skmOaRSwKO0', num: 'SPIN-N2', title: 'Giant Magnetoresistance (GMR) & Spin Valves', sec: 'spin-notes', cat: 'Spintronics', desc: 'Discovery of Giant Magnetoresistance in metallic multilayers: antiferromagnetic exchange coupling, CIP and CPP geometries, and spin valve sensors.', pts: ['Valet-Fert model for spin transport in magnetic multilayers', 'Application in hard disk drive read heads and magnetic sensors'] },
+      { id: '1VDVT_MBHjo4Ot40bvX4wtS18M9iMkXln', num: 'SPIN-N3', title: 'Tunnel Magnetoresistance (TMR) & Magnetic Tunnel Junctions (MTJ)', sec: 'spin-notes', cat: 'Spintronics', desc: 'Spin-dependent tunneling across insulating barriers: Julliere model for TMR, coherent tunneling through crystalline MgO barriers, and giant TMR ratios.', pts: ['Julliere formula TMR = 2P₁P₂/(1 - P₁P₂)', 'Delta-1 symmetry filter effect in Fe/MgO/Fe junctions'] },
+      { id: '1o0AP4G4eHIvkxiVtxCj7qmnXqjL9Wkk3', num: 'SPIN-N4', title: 'Spin-Orbit Coupling, Spin Hall Effect & Spin-Charge Conversion', sec: 'spin-notes', cat: 'Spintronics', desc: 'Relativistic spin-orbit coupling phenomena: Rashba and Dresselhaus interfaces, Direct Spin Hall Effect (SHE), Inverse Spin Hall Effect (ISHE), and Edelstein effect.', pts: ['Spin Hall angle θ_SH definition and experimental detection', 'Pure spin current injection via ferromagnetic resonance (Spin Pumping)'] },
+      { id: '1HW4s97YstqK20cSXsnIOcTUo3aeXYvXh', num: 'SPIN-N5', title: 'Spin-Transfer Torque (STT), Spin-Orbit Torque (SOT) & MRAM', sec: 'spin-notes', cat: 'Spintronics', desc: 'Angular momentum transfer from spin current to magnetization: Slonczewski-Berger STT, SOT switching of perpendicular magnetic anisotropy (PMA) films, and STT-MRAM.', pts: ['Landau-Lifshitz-Gilbert-Slonczewski (LLGS) equation', 'Non-volatile memory architecture: STT-MRAM vs SOT-MRAM scalability'] }
     ];
 
-    // 1C. VIDEO LECTURES (7 Official Masterclasses from Spinstech India)
+    // 1C. VIDEO LECTURES (7 Masterclasses from Spinstech India)
     const videosData = [
-      { id: 'a8-ZmH0TSI4', title: 'Introduction to Quantum Mechanics', length: '11:07', desc: 'Comprehensive conceptual introduction to the foundational principles of quantum theory, particle-wave duality, historical breakdown of classical physics, and state vectors.', pts: ['Origins of quantum theory and Planck quantization', 'Physical interpretation of the state vector and wavefunction'] },
-      { id: '2Ia1G55QpEQ', title: 'Eigen Value Problems in Quantum Mechanics', length: '04:12', desc: 'Focused masterclass on the mathematical formulation and physical interpretation of quantum eigenvalue equations Âψ = λψ and observable measurements.', pts: ['Hermitian operator eigenvalue equations', 'Physical measurement outcomes and state projection'] },
-      { id: 'GhC2eNzUQa0', title: 'Principles of Quantum Mechanics and Computing Foundations', length: '09:26', desc: 'Deep-dive walkthrough exploring the foundational principles connecting quantum mechanical postulates, Hilbert space vectors, and modern quantum computing concepts.', pts: ['Hilbert space state vectors and superposition', 'Bridging quantum mechanics and quantum information'] },
-      { id: 'mem1DFSgivg', title: 'Optical Activity and Laser Physics Principles', length: '09:23', desc: 'Lecture walkthrough covering optical activity, polarization states, quantum transitions in atomic systems, stimulated emission, and laser physics fundamentals.', pts: ['Polarization and optical activity mechanisms', 'Einstein coefficients and population inversion'] },
-      { id: 'QFmjfvyay0s', title: 'Probability and Probability Current Densities', length: '03:38', desc: 'Concise analytical lecture examining quantum probability density P(x,t) = |ψ|² and the vector probability current density J with continuity conservation.', pts: ['Continuity equation ∂P/∂t + ∇·J = 0', 'Physical meaning of flux in stationary and travelling states'] },
-      { id: 'it-XfYts8EQ', title: 'Quantum Mechanics of the Infinite Potential Well', length: '05:35', desc: 'Step-by-step masterclass analyzing the 1D infinite potential well (particle in a box): boundary conditions, standing waves, and discrete quantized spectra.', pts: ['Derivation of quantized eigenenergies E_n = n²h²/(8mL²)', 'Zero-point energy as a consequence of Heisenberg uncertainty'] },
-      { id: 'ptzMffb9sOM', title: 'The Quantum Linear Harmonic Oscillator: Derivation and Solutions', length: '04:11', desc: 'Detailed walkthrough of the quantum linear harmonic oscillator, dimensionless differential formulation, Hermite polynomial solutions, and zero-point energy E₀ = ½ħω.', pts: ['Hermite polynomial solutions and asymptotic behavior', 'Zero-point energy E₀ = ½ħω and classical turning points'] }
+      { id: 'a8-ZmH0TSI4', title: 'Introduction to Quantum Mechanics', length: '11:07', channel: 'Spinstech India', desc: 'Foundational introduction to quantum mechanics: breakdown of classical physics, blackbody radiation ultraviolet catastrophe, and transition to quantum theory.', pts: ['Historical breakdown of classical wave theory', 'Physical meaning of quantization postulates'] },
+      { id: '2Ia1G55QpEQ', title: 'Eigen Value Problems in Quantum Mechanics', length: '4:12', channel: 'Spinstech India', desc: 'Mathematical masterclass on eigenvalue equations Âψ = λψ: Hermitian operators, real physical observables, and orthonormal eigenbases.', pts: ['Eigenvalue equation structure and measurement interpretation', 'Matrix representations of quantum operators'] },
+      { id: 'GhC2eNzUQa0', title: 'Principles of Quantum Mechanics and Computing Foundations', length: '9:26', channel: 'Spinstech India', desc: 'Comprehensive conceptual overview of quantum state superpositions, Hilbert space representations, and foundational principles for quantum information.', pts: ['State vectors, bra-ket notation, and state superposition', 'Transition to quantum computing qubits and operations'] },
+      { id: 'mem1DFSgivg', title: 'Optical Activity and Laser Physics Principles', length: '9:23', channel: 'Spinstech India', desc: 'In-depth lecture on optical activity, polarization rotation, laser principles, stimulated emission, and light-matter interactions in materials.', pts: ['Optical rotation mechanisms in chiral media', 'Population inversion, Einstein A and B coefficients, and resonant cavities'] },
+      { id: 'QFmjfvyay0s', title: 'Probability and Probability Current Densities', length: '3:38', channel: 'Spinstech India', desc: 'Clear graphical and mathematical derivation of quantum probability conservation, continuity equation ∇·J + ∂P/∂t = 0, and physical flux meaning.', pts: ['Derivation of probability current vector J', 'Boundary continuity and probability flux conservation across interfaces'] },
+      { id: 'it-XfYts8EQ', title: 'Quantum Mechanics of the Infinite Potential Well', length: '5:35', channel: 'Spinstech India', desc: 'Step-by-step walkthrough of the 1D infinite square well (particle in a box): boundary conditions, standing matter wave solutions, and energy quantization.', pts: ['Enforcing zero boundary conditions at potential walls', 'Calculation of discrete energy eigenvalues E_n'] },
+      { id: 'ptzMffb9sOM', title: 'The Quantum Linear Harmonic Oscillator: Derivation and Solutions', length: '4:11', channel: 'Spinstech India', desc: 'Visual and analytical exploration of the quantum harmonic oscillator: parabolic potential well, zero-point energy necessity, and Hermite wavefunctions.', pts: ['Parabolic potential V(x) = ½mω²x² solutions', 'Physical significance of zero-point ground state energy E₀ = ½ħω'] }
     ];
 
     /* -------------------------------------------------------------
-       2. DOM BUILDERS: Render Cards & Thumbnails with Contain Fit
+       2. DOM BUILDERS & CARD RENDERERS
        ------------------------------------------------------------- */
 
-    function createDocCard(item, isPresentation = true) {
+    function getDriveThumbUrl(fileId) {
+      return `https://drive.google.com/thumbnail?id=${fileId}&sz=w600`;
+    }
+
+    function createPresentationCard(item) {
       const card = document.createElement('article');
       card.className = 'item-card';
-      card.setAttribute('data-sec', item.sec);
-      card.setAttribute('data-keywords', `${item.title} ${item.desc} ${item.pts.join(' ')} ${item.cat}`.toLowerCase());
+      card.dataset.id = item.id;
+      card.dataset.sec = item.sec;
+      card.dataset.type = 'presentation';
+      card.dataset.title = item.title.toLowerCase();
+      card.dataset.desc = item.desc.toLowerCase();
+      card.dataset.keywords = (item.pts ? item.pts.join(' ') : '').toLowerCase();
 
-      const badgeClass = item.cat.includes('B.Sc') ? 'badge-bsc' : (item.cat.includes('M.Sc') ? 'badge-msc' : 'badge-gate');
-      const actionBtnClass = isPresentation ? 'btn-presentation' : 'btn-notes';
-      const actionBtnLabel = isPresentation ? 'View Slide' : 'View Notes';
-      const typeLabel = isPresentation ? 'Presentation' : 'Class Notes';
+      let badgeClass = 'badge-msc';
+      if (item.sec === 'bsc-qm-pres') badgeClass = 'badge-bsc';
+      else if (item.sec === 'csir-gate-pres') badgeClass = 'badge-gate';
+      else if (item.sec === 'mag-pres') badgeClass = 'badge-mag';
+      else if (item.sec === 'spin-pres') badgeClass = 'badge-spin';
+
+      const thumbUrl = getDriveThumbUrl(item.id);
 
       card.innerHTML = `
-        <div class="thumb-column" onclick="triggerPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${typeLabel}')" title="Click to pop up preview">
+        <div class="thumb-column" onclick="openDocPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${item.cat}')" title="Click to pop up slide deck">
           <div class="slide-frame">
-            <img class="thumb-photo" src="https://drive.google.com/thumbnail?id=${item.id}&sz=w800" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="fallback-slide" style="display: none;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line></svg>
-              <span class="fb-badge">${item.cat} • #${item.num}</span>
+            <img class="thumb-photo" src="${thumbUrl}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="fallback-slide" style="display:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span class="fb-badge">${item.cat}</span>
               <span class="fb-title">${item.title}</span>
             </div>
           </div>
-          <div class="thumb-curtain"><span class="click-pill">Pop Up</span></div>
+          <div class="thumb-curtain">
+            <span class="click-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Pop Up Slide
+            </span>
+          </div>
         </div>
         <div class="desc-column">
           <div class="desc-top">
             <div class="badge-row">
               <span class="mini-badge ${badgeClass}">${item.cat}</span>
-              <span class="mini-badge ${isPresentation ? '' : 'badge-notes'}">${typeLabel} • #${item.num}</span>
+              <span class="mini-badge" style="background:rgba(255,255,255,0.06); color:#cbd5e1;">Slide Presentation</span>
             </div>
             <h3 class="item-title">${item.title}</h3>
-            <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+            <div class="author-line">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              Dr. Sachin Pathak • Academic Lecture Series
+            </div>
             <p class="item-summary">${item.desc}</p>
             <ul class="key-points">
-              <li>${item.pts[0]}</li>
-              <li>${item.pts[1]}</li>
+              ${item.pts.map(p => `<li>${p}</li>`).join('')}
             </ul>
           </div>
           <div class="action-row">
-            <button type="button" class="btn-action ${actionBtnClass}" onclick="triggerPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${typeLabel}')">${actionBtnLabel}</button>
-            <button type="button" class="btn-action btn-fs-card" onclick="triggerPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${typeLabel}', true)">Full Screen</button>
+            <button type="button" class="btn-action btn-presentation" onclick="openDocPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${item.cat}')">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span>View Slide</span>
+            </button>
+            <button type="button" class="btn-action btn-fs-card" onclick="openDocPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${item.cat}', true)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+              <span>Full Screen</span>
+            </button>
+          </div>
+        </div>
+      `;
+      return card;
+    }
+
+    function createNotesCard(item) {
+      const card = document.createElement('article');
+      card.className = 'item-card';
+      card.dataset.id = item.id;
+      card.dataset.sec = item.sec;
+      card.dataset.type = 'notes';
+      card.dataset.title = item.title.toLowerCase();
+      card.dataset.desc = item.desc.toLowerCase();
+      card.dataset.keywords = (item.pts ? item.pts.join(' ') : '').toLowerCase();
+
+      let badgeClass = 'badge-msc';
+      if (item.sec === 'bsc-notes') badgeClass = 'badge-bsc';
+      else if (item.sec === 'gate-notes') badgeClass = 'badge-gate';
+      else if (item.sec === 'mag-notes') badgeClass = 'badge-mag';
+      else if (item.sec === 'spin-notes') badgeClass = 'badge-spin';
+
+      const thumbUrl = getDriveThumbUrl(item.id);
+
+      card.innerHTML = `
+        <div class="thumb-column" onclick="openDocPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${item.cat}')" title="Click to pop up class notes">
+          <div class="slide-frame">
+            <img class="thumb-photo" src="${thumbUrl}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="fallback-slide" style="display:none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              <span class="fb-badge" style="color:#34d399;">${item.cat}</span>
+              <span class="fb-title">${item.title}</span>
+            </div>
+          </div>
+          <div class="thumb-curtain">
+            <span class="click-pill" style="background:#10b981; color:#fff;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Pop Up Notes
+            </span>
+          </div>
+        </div>
+        <div class="desc-column">
+          <div class="desc-top">
+            <div class="badge-row">
+              <span class="mini-badge ${badgeClass}">${item.cat}</span>
+              <span class="mini-badge badge-notes">Handwritten & Typeset Notes</span>
+            </div>
+            <h3 class="item-title">${item.title}</h3>
+            <div class="author-line">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              Dr. Sachin Pathak • Academic Lecture Notes
+            </div>
+            <p class="item-summary">${item.desc}</p>
+            <ul class="key-points">
+              ${item.pts.map(p => `<li>${p}</li>`).join('')}
+            </ul>
+          </div>
+          <div class="action-row">
+            <button type="button" class="btn-action btn-notes" onclick="openDocPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${item.cat}')">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span>View Notes</span>
+            </button>
+            <button type="button" class="btn-action btn-fs-card" onclick="openDocPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', '${item.cat}', true)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+              <span>Full Screen</span>
+            </button>
           </div>
         </div>
       `;
@@ -2003,254 +2181,330 @@
     function createVideoCard(item) {
       const card = document.createElement('article');
       card.className = 'item-card';
-      card.setAttribute('data-keywords', `${item.title} ${item.desc} ${item.pts.join(' ')} video lecture`.toLowerCase());
+      card.dataset.id = item.id;
+      card.dataset.type = 'video';
+      card.dataset.title = item.title.toLowerCase();
+      card.dataset.desc = item.desc.toLowerCase();
+      card.dataset.keywords = (item.pts ? item.pts.join(' ') : '').toLowerCase();
+
+      const ytThumb = `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`;
 
       card.innerHTML = `
-        <div class="thumb-column" onclick="triggerVideoPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}')" title="Click to play video">
+        <div class="thumb-column" onclick="openVideoPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}')" title="Click to pop up video masterclass">
           <div class="slide-frame">
-            <img class="thumb-photo" src="https://img.youtube.com/vi/${item.id}/hqdefault.jpg" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="fallback-slide" style="display: none;">
-              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-              <span class="fb-badge">Video Lecture</span>
+            <img class="thumb-photo" src="${ytThumb}" alt="${item.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="fallback-slide" style="display:none;">
+              <div class="video-play-disc">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+              </div>
+              <span class="fb-badge" style="color:#fb7185;">${item.channel}</span>
               <span class="fb-title">${item.title}</span>
             </div>
           </div>
-          <div class="video-play-disc">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+          <div class="thumb-curtain">
+            <div class="video-play-disc">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+            </div>
           </div>
-          <div class="thumb-curtain"><span class="click-pill" style="background:#f43f5e; color:#fff;">Play Video</span></div>
         </div>
         <div class="desc-column">
           <div class="desc-top">
             <div class="badge-row">
               <span class="mini-badge badge-video">Video Masterclass</span>
-              <span class="mini-badge">Spinstech India</span>
               <span class="mini-badge" style="background:rgba(255,255,255,0.06); color:#cbd5e1;">${item.length}</span>
+              <span class="mini-badge" style="background:rgba(244,63,94,0.1); color:#fda4af;">${item.channel}</span>
             </div>
             <h3 class="item-title">${item.title}</h3>
-            <div class="author-line">Dr. Sachin Pathak • Department of Physics</div>
+            <div class="author-line">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+              Dr. Sachin Pathak • Spinstech India Video Series
+            </div>
             <p class="item-summary">${item.desc}</p>
             <ul class="key-points">
-              <li>${item.pts[0]}</li>
-              <li>${item.pts[1]}</li>
+              ${item.pts.map(p => `<li>${p}</li>`).join('')}
             </ul>
           </div>
           <div class="action-row">
-            <button type="button" class="btn-action btn-video" onclick="triggerVideoPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}')">Watch Video</button>
-            <button type="button" class="btn-action btn-fs-card" onclick="triggerVideoPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', true)">Full Screen</button>
+            <button type="button" class="btn-action btn-video" onclick="openVideoPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}')">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+              <span>Watch Lecture</span>
+            </button>
+            <button type="button" class="btn-action btn-fs-card" onclick="openVideoPopup('${item.id}', '${item.title.replace(/'/g, "\\'")}', true)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+              <span>Full Screen</span>
+            </button>
           </div>
         </div>
       `;
       return card;
     }
 
-    // Populate Containers on Page Load
-    function buildCurriculumDOM() {
-      // 1. Build Presentations DOM (Divided into 3 Subject Sections)
-      const presContainer = document.getElementById('presentations-container');
-      presContainer.innerHTML = `
-        <section class="subject-section" data-pres-sec="msc-qm">
-          <div class="subject-header">
-            <div class="subject-title-wrap">
-              <h2>M.Sc. Quantum Mechanics (Master Lecture Series)</h2>
-              <span class="section-counter">26 Presentations</span>
-            </div>
-          </div>
-          <div class="cards-list" id="pres-msc-list"></div>
-        </section>
+    /* -------------------------------------------------------------
+       3. SECTIONAL MOUNTING WITH SUBJECT GROUPINGS
+       ------------------------------------------------------------- */
 
-        <section class="subject-section" data-pres-sec="bsc-qm-pres">
-          <div class="subject-header">
-            <div class="subject-title-wrap">
-              <h2>B.Sc. Quantum Mechanics (Undergraduate Lecture Series)</h2>
-              <span class="section-counter">15 Presentations</span>
-            </div>
+    function buildSectionGroup(title, counterText, counterClass, cardsArray) {
+      const sec = document.createElement('section');
+      sec.className = 'subject-section';
+      sec.innerHTML = `
+        <div class="subject-header">
+          <div class="subject-title-wrap">
+            <h2>${title}</h2>
+            <span class="section-counter ${counterClass || ''}">${counterText}</span>
           </div>
-          <div class="cards-list" id="pres-bsc-list"></div>
-        </section>
-
-        <section class="subject-section" data-pres-sec="csir-gate-pres">
-          <div class="subject-header">
-            <div class="subject-title-wrap">
-              <h2>CSIR-NET & GATE Physical Sciences (National Exam Modules)</h2>
-              <span class="section-counter">3 Presentations</span>
-            </div>
-          </div>
-          <div class="cards-list" id="pres-gate-list"></div>
-        </section>
+        </div>
+        <div class="cards-list"></div>
       `;
+      const list = sec.querySelector('.cards-list');
+      cardsArray.forEach(c => list.appendChild(c));
+      return sec;
+    }
 
-      const mscPresList = document.getElementById('pres-msc-list');
-      const bscPresList = document.getElementById('pres-bsc-list');
-      const gatePresList = document.getElementById('pres-gate-list');
+    function initPresentationsTab() {
+      const container = document.getElementById('presentations-container');
+      container.innerHTML = '';
 
-      presentationsData.forEach(item => {
-        const card = createDocCard(item, true);
-        if (item.sec === 'msc-qm') mscPresList.appendChild(card);
-        else if (item.sec === 'bsc-qm-pres') bscPresList.appendChild(card);
-        else if (item.sec === 'csir-gate-pres') gatePresList.appendChild(card);
-      });
+      const mscCards = presentationsData.filter(d => d.sec === 'msc-qm').map(createPresentationCard);
+      const bscCards = presentationsData.filter(d => d.sec === 'bsc-qm-pres').map(createPresentationCard);
+      const gateCards = presentationsData.filter(d => d.sec === 'csir-gate-pres').map(createPresentationCard);
+      const magCards = presentationsData.filter(d => d.sec === 'mag-pres').map(createPresentationCard);
+      const spinCards = presentationsData.filter(d => d.sec === 'spin-pres').map(createPresentationCard);
 
-      // 2. Build Class Notes DOM (Divided into 3 Subject Sections)
-      const notesContainer = document.getElementById('notes-container');
-      notesContainer.innerHTML = `
-        <section class="subject-section" data-note-sec="msc-notes">
-          <div class="subject-header">
-            <div class="subject-title-wrap">
-              <h2>M.Sc. Quantum Mechanics Class Notes</h2>
-              <span class="section-counter">33 Modules & Derivations</span>
-            </div>
-          </div>
-          <div class="cards-list" id="notes-msc-list"></div>
-        </section>
+      const secMsc = buildSectionGroup('M.Sc. Quantum Mechanics Presentations', '26 Slides', '', mscCards);
+      secMsc.id = 'sec-pres-msc';
+      container.appendChild(secMsc);
 
-        <section class="subject-section" data-note-sec="bsc-notes">
-          <div class="subject-header">
-            <div class="subject-title-wrap">
-              <h2>B.Sc. Quantum Mechanics Class Notes</h2>
-              <span class="section-counter">21 Lecture Notes & Derivations</span>
-            </div>
-          </div>
-          <div class="cards-list" id="notes-bsc-list"></div>
-        </section>
+      const secBsc = buildSectionGroup('B.Sc. Quantum Mechanics Presentations', '15 Slides', '', bscCards);
+      secBsc.id = 'sec-pres-bsc';
+      container.appendChild(secBsc);
 
-        <section class="subject-section" data-note-sec="gate-notes">
-          <div class="subject-header">
-            <div class="subject-title-wrap">
-              <h2>CSIR-NET & GATE Physical Sciences Notes</h2>
-              <span class="section-counter">3 Comprehensive Modules</span>
-            </div>
-          </div>
-          <div class="cards-list" id="notes-gate-list"></div>
-        </section>
-      `;
+      const secGate = buildSectionGroup('CSIR_NET & GATE Physical Sciences Presentations', '3 Core Modules', '', gateCards);
+      secGate.id = 'sec-pres-gate';
+      container.appendChild(secGate);
 
-      const mscNotesList = document.getElementById('notes-msc-list');
-      const bscNotesList = document.getElementById('notes-bsc-list');
-      const gateNotesList = document.getElementById('notes-gate-list');
+      const secMag = buildSectionGroup('Magnetism Presentations', '3 Modules', 'section-counter-mag', magCards);
+      secMag.id = 'sec-pres-mag';
+      container.appendChild(secMag);
 
-      notesData.forEach(item => {
-        const card = createDocCard(item, false);
-        if (item.sec === 'msc-notes') mscNotesList.appendChild(card);
-        else if (item.sec === 'bsc-notes') bscNotesList.appendChild(card);
-        else if (item.sec === 'gate-notes') gateNotesList.appendChild(card);
-      });
+      const secSpin = buildSectionGroup('Spintronics Presentations', '3 Advanced Modules', 'section-counter-spin', spinCards);
+      secSpin.id = 'sec-pres-spin';
+      container.appendChild(secSpin);
+    }
 
-      // 3. Build Video Lectures DOM
-      const videoList = document.getElementById('videos-container');
-      videoList.innerHTML = '';
-      videosData.forEach(item => {
-        videoList.appendChild(createVideoCard(item));
+    function initNotesTab() {
+      const container = document.getElementById('notes-container');
+      container.innerHTML = '';
+
+      const mscCards = notesData.filter(d => d.sec === 'msc-notes').map(createNotesCard);
+      const bscCards = notesData.filter(d => d.sec === 'bsc-notes').map(createNotesCard);
+      const gateCards = notesData.filter(d => d.sec === 'gate-notes').map(createNotesCard);
+      const magCards = notesData.filter(d => d.sec === 'mag-notes').map(createNotesCard);
+      const spinCards = notesData.filter(d => d.sec === 'spin-notes').map(createNotesCard);
+
+      const secMsc = buildSectionGroup('M.Sc. Quantum Mechanics Class Notes', '33 Comprehensive Notes', '', mscCards);
+      secMsc.id = 'sec-notes-msc';
+      container.appendChild(secMsc);
+
+      const secBsc = buildSectionGroup('B.Sc. Quantum Mechanics Class Notes', '21 Full Notes', '', bscCards);
+      secBsc.id = 'sec-notes-bsc';
+      container.appendChild(secBsc);
+
+      const secGate = buildSectionGroup('CSIR_NET & GATE Physical Sciences Notes', '3 High-Yield Handbooks', '', gateCards);
+      secGate.id = 'sec-notes-gate';
+      container.appendChild(secGate);
+
+      const secMag = buildSectionGroup('Magnetism Class Notes', '4 Modules', 'section-counter-mag', magCards);
+      secMag.id = 'sec-notes-mag';
+      container.appendChild(secMag);
+
+      const secSpin = buildSectionGroup('Spintronics Class Notes', '5 Advanced Modules', 'section-counter-spin', spinCards);
+      secSpin.id = 'sec-notes-spin';
+      container.appendChild(secSpin);
+    }
+
+    function initVideosTab() {
+      const container = document.getElementById('videos-container');
+      container.innerHTML = '';
+      videosData.forEach(v => {
+        container.appendChild(createVideoCard(v));
       });
     }
 
     /* -------------------------------------------------------------
-       3. NAVIGATION, CATEGORY SWITCHING & FILTERING
+       4. TAB SWITCHING, FILTERING & LIVE SEARCH
        ------------------------------------------------------------- */
 
     function switchCategoryTab(tabKey) {
-      document.querySelectorAll('.top-tab-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.tab-viewport').forEach(vp => vp.classList.remove('active'));
+      document.querySelectorAll('.top-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-viewport').forEach(v => v.classList.remove('active'));
 
-      const activeBtn = document.getElementById(`tabBtn-${tabKey}`);
-      const activeVp = document.getElementById(`viewport-${tabKey}`);
-      if (activeBtn) activeBtn.classList.add('active');
-      if (activeVp) activeVp.classList.add('active');
-
-      window.scrollTo({ top: 380, behavior: 'smooth' });
+      const btn = document.getElementById(`tabBtn-${tabKey}`);
+      const viewport = document.getElementById(`viewport-${tabKey}`);
+      if (btn && viewport) {
+        btn.classList.add('active');
+        viewport.classList.add('active');
+      }
     }
 
-    function filterPresSubject(subjectKey, chipBtn) {
-      chipBtn.parentElement.querySelectorAll('.sub-chip').forEach(c => c.classList.remove('active'));
-      chipBtn.classList.add('active');
+    function filterPresSubject(subject, btnElement) {
+      document.querySelectorAll('#viewport-presentations .sub-chip').forEach(c => c.classList.remove('active'));
+      if (btnElement) btnElement.classList.add('active');
 
-      const sections = document.querySelectorAll('#presentations-container .subject-section');
-      sections.forEach(sec => {
-        if (subjectKey === 'all' || sec.getAttribute('data-pres-sec') === subjectKey) {
-          sec.style.display = 'block';
-        } else {
-          sec.style.display = 'none';
-        }
-      });
+      const secMsc = document.getElementById('sec-pres-msc');
+      const secBsc = document.getElementById('sec-pres-bsc');
+      const secGate = document.getElementById('sec-pres-gate');
+      const secMag = document.getElementById('sec-pres-mag');
+      const secSpin = document.getElementById('sec-pres-spin');
+
+      if (subject === 'all') {
+        secMsc.style.display = 'block';
+        secBsc.style.display = 'block';
+        secGate.style.display = 'block';
+        secMag.style.display = 'block';
+        secSpin.style.display = 'block';
+      } else if (subject === 'msc-qm') {
+        secMsc.style.display = 'block';
+        secBsc.style.display = 'none';
+        secGate.style.display = 'none';
+        secMag.style.display = 'none';
+        secSpin.style.display = 'none';
+      } else if (subject === 'bsc-qm-pres') {
+        secMsc.style.display = 'none';
+        secBsc.style.display = 'block';
+        secGate.style.display = 'none';
+        secMag.style.display = 'none';
+        secSpin.style.display = 'none';
+      } else if (subject === 'csir-gate-pres') {
+        secMsc.style.display = 'none';
+        secBsc.style.display = 'none';
+        secGate.style.display = 'block';
+        secMag.style.display = 'none';
+        secSpin.style.display = 'none';
+      } else if (subject === 'mag-pres') {
+        secMsc.style.display = 'none';
+        secBsc.style.display = 'none';
+        secGate.style.display = 'none';
+        secMag.style.display = 'block';
+        secSpin.style.display = 'none';
+      } else if (subject === 'spin-pres') {
+        secMsc.style.display = 'none';
+        secBsc.style.display = 'none';
+        secGate.style.display = 'none';
+        secMag.style.display = 'none';
+        secSpin.style.display = 'block';
+      }
     }
 
-    function filterNotesSubject(subjectKey, chipBtn) {
-      chipBtn.parentElement.querySelectorAll('.sub-chip').forEach(c => c.classList.remove('active'));
-      chipBtn.classList.add('active');
+    function filterNotesSubject(subject, btnElement) {
+      document.querySelectorAll('#viewport-notes .sub-chip').forEach(c => c.classList.remove('active'));
+      if (btnElement) btnElement.classList.add('active');
 
-      const sections = document.querySelectorAll('#notes-container .subject-section');
-      sections.forEach(sec => {
-        if (subjectKey === 'all' || sec.getAttribute('data-note-sec') === subjectKey) {
-          sec.style.display = 'block';
-        } else {
-          sec.style.display = 'none';
-        }
-      });
+      const secMsc = document.getElementById('sec-notes-msc');
+      const secBsc = document.getElementById('sec-notes-bsc');
+      const secGate = document.getElementById('sec-notes-gate');
+      const secMag = document.getElementById('sec-notes-mag');
+      const secSpin = document.getElementById('sec-notes-spin');
+
+      if (subject === 'all') {
+        secMsc.style.display = 'block';
+        secBsc.style.display = 'block';
+        secGate.style.display = 'block';
+        secMag.style.display = 'block';
+        secSpin.style.display = 'block';
+      } else if (subject === 'msc-notes') {
+        secMsc.style.display = 'block';
+        secBsc.style.display = 'none';
+        secGate.style.display = 'none';
+        secMag.style.display = 'none';
+        secSpin.style.display = 'none';
+      } else if (subject === 'bsc-notes') {
+        secMsc.style.display = 'none';
+        secBsc.style.display = 'block';
+        secGate.style.display = 'none';
+        secMag.style.display = 'none';
+        secSpin.style.display = 'none';
+      } else if (subject === 'gate-notes') {
+        secMsc.style.display = 'none';
+        secBsc.style.display = 'none';
+        secGate.style.display = 'block';
+        secMag.style.display = 'none';
+        secSpin.style.display = 'none';
+      } else if (subject === 'mag-notes') {
+        secMsc.style.display = 'none';
+        secBsc.style.display = 'none';
+        secGate.style.display = 'none';
+        secMag.style.display = 'block';
+        secSpin.style.display = 'none';
+      } else if (subject === 'spin-notes') {
+        secMsc.style.display = 'none';
+        secBsc.style.display = 'none';
+        secGate.style.display = 'none';
+        secMag.style.display = 'none';
+        secSpin.style.display = 'block';
+      }
     }
 
-    function searchInTab(tabKey, term) {
-      const q = term.toLowerCase().trim();
+    function searchInTab(tabKey, query) {
+      const q = query.toLowerCase().trim();
       const viewport = document.getElementById(`viewport-${tabKey}`);
       if (!viewport) return;
 
       const cards = viewport.querySelectorAll('.item-card');
       cards.forEach(card => {
-        const text = card.getAttribute('data-keywords') || card.innerText.toLowerCase();
-        if (!q || text.includes(q)) {
+        const title = card.dataset.title || '';
+        const desc = card.dataset.desc || '';
+        const keywords = card.dataset.keywords || '';
+
+        if (!q || title.includes(q) || desc.includes(q) || keywords.includes(q)) {
           card.style.display = 'flex';
         } else {
           card.style.display = 'none';
         }
       });
-
-      // Hide empty subject sections
-      const sections = viewport.querySelectorAll('.subject-section');
-      sections.forEach(sec => {
-        const hasVisible = Array.from(sec.querySelectorAll('.item-card')).some(c => c.style.display !== 'none');
-        sec.style.display = hasVisible ? 'block' : 'none';
-      });
     }
 
     /* -------------------------------------------------------------
-       4. LIGHTBOX PREVIEW POPUP & FULLSCREEN
+       5. POPUP LIGHTBOX & POPDOWN (SIDE-CLICK / ESC / FULLSCREEN)
        ------------------------------------------------------------- */
 
-    function triggerPopup(fileId, title, badgeText = 'Presentation', autoFullscreen = false) {
+    function openDocPopup(fileId, title, category, startFullscreen) {
       const modal = document.getElementById('popupModal');
       const iframe = document.getElementById('viewerIframe');
+      const loader = document.getElementById('frameLoader');
       const headTitle = document.getElementById('popupTitle');
       const headBadge = document.getElementById('popupBadge');
-      const loader = document.getElementById('frameLoader');
 
       headTitle.textContent = title;
-      headBadge.textContent = badgeText;
+      headBadge.textContent = category || 'Document';
+
       loader.style.opacity = '1';
       iframe.src = `https://drive.google.com/file/d/${fileId}/preview`;
 
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
 
-      if (autoFullscreen) {
+      if (startFullscreen) {
         setTimeout(togglePopupFullscreen, 100);
       }
     }
 
-    function triggerVideoPopup(youtubeId, title, autoFullscreen = false) {
+    function openVideoPopup(videoId, title, startFullscreen) {
       const modal = document.getElementById('popupModal');
       const iframe = document.getElementById('viewerIframe');
+      const loader = document.getElementById('frameLoader');
       const headTitle = document.getElementById('popupTitle');
       const headBadge = document.getElementById('popupBadge');
-      const loader = document.getElementById('frameLoader');
 
       headTitle.textContent = title;
-      headBadge.textContent = 'Video Lecture';
+      headBadge.textContent = 'Video Masterclass';
+
       loader.style.opacity = '1';
-      iframe.src = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0`;
+      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
 
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
 
-      if (autoFullscreen) {
+      if (startFullscreen) {
         setTimeout(togglePopupFullscreen, 100);
       }
     }
@@ -2258,35 +2512,37 @@
     function closePopup() {
       const modal = document.getElementById('popupModal');
       const iframe = document.getElementById('viewerIframe');
-      const windowEl = document.getElementById('popupWindow');
+      const popupWindow = document.getElementById('popupWindow');
+
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
+        if (document.exitFullscreen) document.exitFullscreen();
+        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+      }
+      popupWindow.classList.remove('is-fullscreen');
 
       modal.classList.remove('active');
       document.body.style.overflow = '';
-      if (document.fullscreenElement) {
-        document.exitFullscreen().catch(() => {});
-      }
-      windowEl.classList.remove('is-fullscreen');
 
       setTimeout(() => {
         iframe.src = '';
       }, 250);
     }
 
-    function handleModalBackdropClick(e) {
-      if (e.target.id === 'popupModal') {
+    function handleModalBackdropClick(event) {
+      if (event.target.id === 'popupModal') {
         closePopup();
       }
     }
 
     function togglePopupFullscreen() {
-      const win = document.getElementById('popupWindow');
-      if (!document.fullscreenElement && !win.classList.contains('is-fullscreen')) {
-        if (win.requestFullscreen) {
-          win.requestFullscreen().catch(() => win.classList.add('is-fullscreen'));
-        } else if (win.webkitRequestFullscreen) {
-          win.webkitRequestFullscreen();
+      const windowElem = document.getElementById('popupWindow');
+      if (!document.fullscreenElement && !document.webkitFullscreenElement && !windowElem.classList.contains('is-fullscreen')) {
+        if (windowElem.requestFullscreen) {
+          windowElem.requestFullscreen().catch(() => windowElem.classList.add('is-fullscreen'));
+        } else if (windowElem.webkitRequestFullscreen) {
+          windowElem.webkitRequestFullscreen();
         } else {
-          win.classList.add('is-fullscreen');
+          windowElem.classList.add('is-fullscreen');
         }
       } else {
         if (document.exitFullscreen) {
@@ -2294,55 +2550,43 @@
         } else if (document.webkitExitFullscreen) {
           document.webkitExitFullscreen();
         }
-        win.classList.remove('is-fullscreen');
+        windowElem.classList.remove('is-fullscreen');
       }
     }
 
     /* -------------------------------------------------------------
-       5. VISITOR ANALYTICS & GEOLOCATION MODAL
+       6. ANALYTICS & TELEMETRY MODAL
        ------------------------------------------------------------- */
 
     function openAnalyticsModal() {
       const modal = document.getElementById('analyticsModal');
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
-
-      // Detect visitor geolocation seamlessly
-      fetch('https://ipapi.co/json/')
-        .then(res => res.json())
-        .then(data => {
-          if (data && data.country_name) {
-            document.getElementById('geoUserCountry').textContent = `${data.country_name} (${data.country_code})`;
-            document.getElementById('geoUserCity').textContent = `${data.city || 'Academic Network'}, ${data.region || ''}`;
-          }
-        })
-        .catch(() => {
-          document.getElementById('geoUserCountry').textContent = 'India (Academic Network)';
-          document.getElementById('geoUserCity').textContent = 'Delhi NCR / IIT Network';
-        });
+      detectClientGeoLocation();
     }
 
     function closeAnalyticsModal() {
-      document.getElementById('analyticsModal').classList.remove('active');
+      const modal = document.getElementById('analyticsModal');
+      modal.classList.remove('active');
       document.body.style.overflow = '';
     }
 
-    function handleAnalyticsBackdropClick(e) {
-      if (e.target.id === 'analyticsModal') {
+    function handleAnalyticsBackdropClick(event) {
+      if (event.target.id === 'analyticsModal') {
         closeAnalyticsModal();
       }
     }
 
     function switchAnaTab(tabKey, btn) {
-      btn.parentElement.querySelectorAll('.ana-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.ana-tab-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
       document.getElementById('anaTab-country').style.display = (tabKey === 'country') ? 'block' : 'none';
       document.getElementById('anaTab-trend').style.display = (tabKey === 'trend') ? 'block' : 'none';
     }
 
-    function filterCountryRows(term) {
-      const q = term.toLowerCase().trim();
+    function filterCountryRows(query) {
+      const q = query.toLowerCase().trim();
       const rows = document.querySelectorAll('#analyticsCountryTable tbody tr');
       rows.forEach(r => {
         const text = r.innerText.toLowerCase();
@@ -2350,22 +2594,47 @@
       });
     }
 
-    // Global Key Listener: Esc & F shortcuts
+    async function detectClientGeoLocation() {
+      const countryEl = document.getElementById('geoUserCountry');
+      const cityEl = document.getElementById('geoUserCity');
+      try {
+        const res = await fetch('https://ipapi.co/json/');
+        if (res.ok) {
+          const data = await res.json();
+          countryEl.textContent = `${data.country_name || 'India'} (${data.country_code || 'IN'})`;
+          cityEl.textContent = `${data.city || 'Academic Region'}, ${data.region || 'Campus Network'}`;
+        } else {
+          fallbackGeo();
+        }
+      } catch (e) {
+        fallbackGeo();
+      }
+    }
+
+    function fallbackGeo() {
+      const countryEl = document.getElementById('geoUserCountry');
+      const cityEl = document.getElementById('geoUserCity');
+      countryEl.textContent = 'India (Academic Campus)';
+      cityEl.textContent = 'IIT / University Network Node';
+    }
+
+    // Global Keyboard Handler (Esc to close, F to toggle Fullscreen)
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
-        closePopup();
-        closeAnalyticsModal();
-      } else if (e.key === 'f' || e.key === 'F') {
-        const modal = document.getElementById('popupModal');
-        if (modal.classList.contains('active')) {
-          togglePopupFullscreen();
-        }
+        const popupModal = document.getElementById('popupModal');
+        const analyticsModal = document.getElementById('analyticsModal');
+        if (popupModal.classList.contains('active')) closePopup();
+        if (analyticsModal.classList.contains('active')) closeAnalyticsModal();
+      } else if ((e.key === 'f' || e.key === 'F') && document.getElementById('popupModal').classList.contains('active')) {
+        togglePopupFullscreen();
       }
     });
 
-    // Initialize DOM
-    document.addEventListener('DOMContentLoaded', () => {
-      buildCurriculumDOM();
+    // Initialize all tabs on load
+    window.addEventListener('DOMContentLoaded', () => {
+      initPresentationsTab();
+      initNotesTab();
+      initVideosTab();
     });
   </script>
 </body>
